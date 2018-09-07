@@ -319,7 +319,7 @@ function update() {
   new THREE.Vector3(-34.7, 27.2, 40.6),
   new THREE.Vector3(17.4, 13.9, 21.2)
 ])
-curve.closed = false;
+curve.closed = true;
 
 let mouseX;
 let mouseXOnMouseDown;
@@ -358,16 +358,18 @@ function onDocumentMouseOut(event) {
   document.removeEventListener('mouseout', onDocumentMouseOut, false);
 }
 
+
+
 function render(){
   requestAnimationFrame( render );
   TWEEN.update();
   if (!animating) {
     controls.update();
   }
-  if (!modelPlacementMode) {
+  if (!animating && !modelPlacementMode) {
   curve.getPoint(currPoint, camera.position);
   camera.lookAt(scene.position);
-  }
+}
 
   renderer.render( scene, camera );
 }

@@ -9,7 +9,7 @@ function trigger_animations(scene,objects,animating){
       });
       node.on('click', function(ev) {
         animating = true;
-        // moveCamera(node);
+        moveCamera(node);
         var titleBox = document.getElementById("objectTitleBox");
         var backButton = document.getElementById("backButton");
         var title = document.getElementById("objectTitle");
@@ -48,6 +48,7 @@ function bounce(object){
   let cpy = JSON.parse(JSON.stringify(obj));
 
   if (!object.animating) {
+    console.log(object);
     object.animating = true;
     new TWEEN.Tween( object.scale).to( {
       x: object.scale.x * 1.5,
@@ -84,8 +85,8 @@ function bounce(object){
 
 
 function moveCamera(object){
-  moveCamera(object);
-
+  // moveCamera(object);
+  animating = true;
   new TWEEN.Tween( camera.position ).to( {
     x: object.cameraPosition.x,
     y: object.cameraPosition.y,
@@ -101,9 +102,9 @@ function moveCamera(object){
 
 function resetCamera() {
   new TWEEN.Tween( camera.position ).to( {
-    x: 0,
-    y: 5,
-    z: 9}, 2400)
+    x: 21.7,
+    y: 17.1,
+    z: -25.7}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).start();
 
   new TWEEN.Tween( controls.target).to( {
@@ -119,4 +120,5 @@ function resetCamera() {
     title.innerHTML = "";
     var more = document.getElementById("more");
     more.innerHTML = "";
+    animating = false;
 }
