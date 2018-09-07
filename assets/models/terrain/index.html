@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mohonk 360</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+
+    <!-- Initial Loading Screen -->
+    <div  id="loadingScreen" class="fullscreen">
+      <img id="loadingLogo"src="assets/img/logo.5x.png" alt="">
+      <h3 id="loadingText" class="text-center"></h3>
+    </div>
+
+    <div id="modelPlacementscreen" hidden="true">
+      <table>
+        <tr>
+          <th></th>
+          <th>Model Position</th>
+          <th>Camera Position</th>
+        </tr>
+        <tr>
+          <th>X:</th>
+          <td id="modelX">1</td>
+          <td id="cameraX">2</td>
+        </tr>
+        <tr>
+          <th>y:</th>
+          <td id="modelY" >1</td>
+          <td id="cameraY">2</td>
+        </tr>
+        <tr>
+          <th>z:</th>
+          <td id="modelZ">1</td>
+          <td id="cameraZ">2</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Transparent Tutorial Screens -->
+    <!-- <div id="tutorialScreen" class="fullscreen" onclick="hide(tutorialScreen);endIntro();resetCamera()">
+      <h1 id="tutorialOne" class="text-center tutorialText">CLICK, DRAG, ROTATE ANYWHERE TO EXPLORE</h1>
+      <img id="click" class="tutorialImage" src="assets/icons/CLICK.png" alt="">
+      <img id="zoom" class="tutorialImage"  src="assets/icons/DRAG.png" alt="">
+      <img id="rotate" class="tutorialImage" src="assets/icons/ROTATE.png" alt="">
+      <h1 id="tutorialTwo" class="text-center tutorialText">FIND OUT DIFFERNT THINGS TO DO IN DIFFERENT SEASONS</h1>
+    </div> -->
+
+    <!-- Nav Interface -->
+    <div class="container-fluid">
+      <div id="topbar" class="row">
+        <!-- Back Button-->
+        <div id="backButton" class="col-4 col-md-3 col-lg-2" hidden="true">
+          <button id="backButtonButton" type="button" class="btn btn-lg btn-outline-light" onclick="resetCamera()">
+            <i  class="material-icons backArrow">
+              arrow_back_ios
+            </i>
+            BACK
+          </button>
+        </div>
+
+        <!-- Season Selection Dropdown -->
+        <div class="col-8 col-md-9 col-lg-10 align-self-start"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <div class="accordion" id="seasonDropdown">
+            <div id="seasonCard" class="card">
+              <div class="card-header" id="seasonHeading">
+                <button class="btn seasonButton collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  SEASON
+                  <i id="expandIcon" class="material-icons">
+                  expand_more
+                  </i>
+                </button>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="seasonHeading" data-parent="#seasonDropdown">
+                <div class="card-header" id="springHeading">
+                    <button class="btn seasonButton collapsed" type="button" onclick="seasonChanger(1)">
+                      SPRING
+                    </button>
+                </div>
+                <div class="card-header" id="summerHeading">
+                  <button class="btn seasonButton collapsed" type="button" onclick="seasonChanger(2)">
+                    SUMMER
+                  </button>
+                </div>
+                <div class="card-header" id="autumnHeading">
+                  <button class="btn seasonButton collapsed" type="button" onclick="seasonChanger(3)">
+                    AUTUMN
+                  </button>
+                </div>
+                <div class="card-header" id="winterHeading">
+                  <button class="btn seasonButton collapsed" type="button" onclick="seasonChanger(4)">
+                    WINTER
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="logoWrapper" class="d-none d-sm-none d-md-block" align="center">
+          <!-- <h1 id="sunTitle">Map Tests</h1> -->
+          <img id="topbarLogo"src="assets/img/logo.5x.png" alt="">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Object Description -->
+    <div id="objectTitleBox" hidden="true" class="text-center" data-toggle="modal" data-target="#mainModal">
+      <h1 id="objectTitle"></h1>
+      <p id="more" class="text-center"></p>
+    </div>
+
+
+
+    <!-- Main Model Modal -->
+    <div class="modal fade" id="mainModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div id="mainModalDialog" class="modal-dialog modal-dialog-centered" role="document">
+        <div id="modalFullscreen" class="modal-content">
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div id="infoBox" class="col-md-12 col-lg-6 align-items-center">
+                  <div class="row align-self-start">
+                    <a id="exitButton"class="btn btn-outline-light btn-lg" data-dismiss="modal" aria-label="Close">
+                      <i class="material-icons backArrow">
+                      arrow_back_ios
+                      </i>
+                      BACK
+                    </a>
+                  </div>
+                  <div id="modalTitleRow" class="row justify-content-center text-center">
+                    <div class="col-12">
+                      <i id="modalPlayButton" class="material-icons md-24" data-toggle="modal" data-target="#videoModal">
+                      play_circle_filled
+                      </i>
+                    </div>
+                    <div class="col-12">
+                      <h1 id="modalTitle"></h1>
+                    </div>
+                    <div class="col-12">
+                      <h3 id="modalSeason">All Seasons</h3>
+                    </div>
+                    <div class="col-12">
+                      <p id="modalDescription"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+
+        <div class="videoModalContent modal-content" data-toggle="modal" data-target="#videoModal">
+          <video id="mainVideo" controls onclick="this.paused? this.play() : this.pause()"></video>
+        </div>
+      </div>
+    </div>
+
+    <!-- Libs -->
+    <script src="js/libs/three.min.js"></script>
+    <script src="js/libs/OrbitControls.js"></script>
+    <script src="js/libs/three.interaction.js"></script>
+    <script src="js/libs/Tween.js"></script>
+    <script src="js/libs/GLTFLoader.js"></script>
+
+    <script src="js/libs/EffectComposer.js"></script>
+    <script src="js/libs/RenderPass.js"></script>
+    <script src="js/libs/ShaderPass.js"></script>
+    <script src="js/libs/CopyShader.js"></script>
+    <script src="js/libs/BokehShader.js"></script>
+
+    <!-- <script src="json/test.js"></script> -->
+    <!-- Subjects -->
+    <script src="js/subjects/lights.js"></script>
+    <script src="js/subjects/summer.js"></script>
+    <script src="js/subjects/winter.js"></script>
+    <script src="js/subjects/test.js"></script>
+
+    <!-- Load Animations -->
+    <script src="js/animations.js"></script>
+
+    <!-- Load Scene-->
+    <script src="js/SceneManager.js"></script>
+    <!-- <script src="js/main.jss"></script> -->
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

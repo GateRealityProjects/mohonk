@@ -1,0 +1,619 @@
+{
+  "accessors": [
+    {
+      "name": "Mesh1 Group1 Tennis_Red1 Model_1_positions",
+      "componentType": 5126,
+      "count": 64,
+      "min": [
+        -198.55599975585938,
+        0,
+        -124.38500213623047
+      ],
+      "max": [
+        196.43899536132812,
+        0,
+        119.73600006103516
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Tennis_Red1 Model_1_normals",
+      "componentType": 5126,
+      "count": 64,
+      "min": [
+        0,
+        -1,
+        0
+      ],
+      "max": [
+        0,
+        1,
+        0
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 3552
+    },
+    {
+      "name": "Mesh1 Group1 Tennis_Red1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 64,
+      "min": [
+        -534.3560180664062,
+        -329.25
+      ],
+      "max": [
+        0,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Tennis_Red1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 174,
+      "min": [
+        0
+      ],
+      "max": [
+        62
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 0
+    },
+    {
+      "name": "Mesh1 Group1 Tennis_Red1 Model_1_1_indices",
+      "componentType": 5123,
+      "count": 60,
+      "min": [
+        4
+      ],
+      "max": [
+        63
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 348
+    },
+    {
+      "name": "Mesh1 Group1 Tennis_Red1 Model_1_2_indices",
+      "componentType": 5123,
+      "count": 114,
+      "min": [
+        5
+      ],
+      "max": [
+        63
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 468
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model_1_positions",
+      "componentType": 5126,
+      "count": 184,
+      "min": [
+        -4.05856990814209,
+        0,
+        -107.29199981689453
+      ],
+      "max": [
+        1.9414299726486206,
+        36,
+        106.09300231933594
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 768
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model_1_normals",
+      "componentType": 5126,
+      "count": 184,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 4320
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 184,
+      "min": [
+        -394.12701416015625,
+        -226.02699279785156
+      ],
+      "max": [
+        394.12701416015625,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 512
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 78,
+      "min": [
+        0
+      ],
+      "max": [
+        183
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 696
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model_1_1_indices",
+      "componentType": 5123,
+      "count": 24,
+      "min": [
+        31
+      ],
+      "max": [
+        168
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 852
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model_1_2_indices",
+      "componentType": 5123,
+      "count": 123,
+      "min": [
+        35
+      ],
+      "max": [
+        170
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 900
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model_1_3_indices",
+      "componentType": 5123,
+      "count": 21,
+      "min": [
+        42
+      ],
+      "max": [
+        104
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 1148
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model_1_4_indices",
+      "componentType": 5123,
+      "count": 138,
+      "min": [
+        49
+      ],
+      "max": [
+        178
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 1192
+    },
+    {
+      "name": "Mesh11 Tennis_Red1 Model_1_positions",
+      "componentType": 5126,
+      "count": 48,
+      "min": [
+        -4.05856990814209,
+        0,
+        -110.05000305175781
+      ],
+      "max": [
+        1.9414299726486206,
+        36,
+        -104.53399658203125
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 2976
+    },
+    {
+      "name": "Mesh11 Tennis_Red1 Model_1_normals",
+      "componentType": 5126,
+      "count": 48,
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "type": "VEC3",
+      "bufferView": 0,
+      "byteOffset": 6528
+    },
+    {
+      "name": "Mesh11 Tennis_Red1 Model_1_texcoords",
+      "componentType": 5126,
+      "count": 48,
+      "min": [
+        -229.78599548339844,
+        -228.78599548339844
+      ],
+      "max": [
+        229.78599548339844,
+        1
+      ],
+      "type": "VEC2",
+      "bufferView": 1,
+      "byteOffset": 1984
+    },
+    {
+      "name": "Mesh11 Tennis_Red1 Model_1_0_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        0
+      ],
+      "max": [
+        41
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 1468
+    },
+    {
+      "name": "Mesh11 Tennis_Red1 Model_1_1_indices",
+      "componentType": 5123,
+      "count": 36,
+      "min": [
+        4
+      ],
+      "max": [
+        47
+      ],
+      "type": "SCALAR",
+      "bufferView": 2,
+      "byteOffset": 1540
+    }
+  ],
+  "asset": {
+    "generator": "obj2gltf",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "name": "RedTennisCourt",
+      "byteLength": 11084,
+      "uri": "data:application/octet-stream;base64,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AAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAPwAAAAAAAACAAACAvwAAAIAAAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAgL8AAAAAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAACAPwAAAAAAAACAAACAvwAAAIAAAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAACAPwAAAIAAAAAAAAAAgAAAgD8AAAAAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAAAAgAAAgL8AAAAAAAAAgAAAAIAAAIC/AAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAAAAgAAAgL8AAAAAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAAAAAgL8AAACAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAAAAgAAAgD8AAAAAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAvwAAAAAAAACAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAACAPwAAAIAAAAAAAAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAAAAAAAAAAIA/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAAIAAAIC/AAAAgAAAgD8AAAAAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAPwAAAAAAAACAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAACAvwAAAIAAAAAAAAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAAAAAAAAAAIC/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAgAAAAIAAAIA/AAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAAAAAgD8AAACAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAgL8AAAAAAAAAgAAAAIAAAIC/AACAPwAAAIAAAAAAAAAAAACgpMMrBwzCGx+TwwAAAAAAAIA/yZYFxACgpMMAAAAAAACAPysHDMIbH5PDAAAAAACgpMMrBwzCKwcIwsmWBcQAAIA/yZYFxAAAgD8rBwzCKwcIwqys+cMrBwjC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NQAjADwAPQA6ADAAPwAyADkAMgA/ADYAOgA9ACQAIwA1AAUABAAKAAwADwAKABEADwAMABkACgAPAAoAGQAFABsABQAZABsAEQAMACEAGwAZACIAGwAhACMAGwAiACQAGwAjABUAGwAkABEAGwAVACkAFAAqABQAKQAPACkAKwAPAC8AKwAiACsALwAPAC8AGQAPAC0AIgArADAAIgAtADIAIgAwADQAIgAyACMAIgA0ADUANgAVADQANgA1ADkANAAyADoANAA5ADYANAA6AD0AKgAVADAAKgA9ACoAMAAtAD8AMAA9AD8APAA5ADwAPwA9ADoAOQA8ABUAKgAUADYAPQAVACQANQAVAAAAAQACAAEAAAADAAQABQAGAAcABgAFAAgACQAKAAkACAALAAwADQAOAA8AEAARABAADwASABMAFAAVABYAFQAUABcAGAAZABgAFwAaABsAHAAdAB4AHQAcACcAIgAfACIAJwAoACUAJgApAGEAKQAmACgAJwBiAGMAKQBhALMADgANAAgACgC0ALUAswANALQACgC2ALcAswC1AB8AIAAhACAAHwAiAGQAYgAnAGIAZABlAG0ATQBPAE0AbQBuAKcAUQBQAFEApwCoACMAJAAlACYAJQAkAC4ALwAwADkAOgA7AD8AQAA5AEIAQAA/AEcASABJAEoASQBIAEwASQBKAFcAMAAvAFgAMABXAF0AXgBfAGAAXwBeACkAYwBmAGcAZgBjAGkATABKAGwAawBvAHAAbwBrAHkAOQBAADoAOQB5AHsAfAB6AH0AfAB7AH4AfAB9AEIAfAB+AHwAQgA/AIMAhACFAIoAiwCMAJEAkgCTAJgAmQCaAJsAjACLAHwAOwA6AHoAfAA6AJwAmgCZAKEAogCjAKQAowCiAKUAhQCEAKYAkwCSAH0AewBAAKkAqgBUAHsAeQBAAGoAVACqAAAAKgArACwAKwAqAC0AQwBEAEUARABDAEYARgBDAEsALQAqAFYARgBLAGgAAAAxADIAMwA0ADIAMQA1ADIANAA2ADIANQA2ADcAMgA3ADYAOAA8ADgANgA9ADgAPAA4AD0APgA+AD0AQQBNAE4ATwBQAE4ATQBRAE4AUABOAFEAUgBTAFQAVQBZAFoAWwBaAFkAXABqAFUAVABrAFUAagBsAFUAawBxAHIAcwByAHEAdAB1AHYAdwB4AHcAdgA9ADQAMQA9ADwANAA1ADwANgA8ADUANAA6AHkAegB7AHoAeQAzADIAQQA+AEEAMgB/AIAAgQCAAH8AggCGAIcAiACHAIYAiQCNAI4AjwCOAI0AkACUAJUAlgCVAJQAlwCdAJ4AnwCeAJ0AoACrAKwArQCsAKsArgCvALAAsQCyALEAsAAAAAEAAgABAAAAAwAHAAgACQAIAAcACgAOAA8AEAAPAA4AEQAWABcAGAAXABYAGQAeAB8AIAAfAB4AIQAmACcAKAAnACYAKQAEAAUABgALAAwADQASABMAFAAVAAYABQAaABsAHAAdABwAGwAiACMAJAAlACQAIwAqACsALAAtACwAKwAuABQAEwAvAA0ADAA="
+    }
+  ],
+  "bufferViews": [
+    {
+      "name": "bufferView_0",
+      "buffer": 0,
+      "byteLength": 7104,
+      "byteOffset": 0,
+      "byteStride": 12,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_1",
+      "buffer": 0,
+      "byteLength": 2368,
+      "byteOffset": 7104,
+      "byteStride": 8,
+      "target": 34962
+    },
+    {
+      "name": "bufferView_2",
+      "buffer": 0,
+      "byteLength": 1612,
+      "byteOffset": 9472,
+      "target": 34963
+    }
+  ],
+  "materials": [
+    {
+      "name": "Color_M07",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.227451,
+          0.227451,
+          0.227451,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "RED",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.662745,
+          0.278431,
+          0.117647,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Color_000",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Color_M00",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Color_M03",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.666667,
+          0.666667,
+          0.666667,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "BackColor",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.643137,
+          0.698039,
+          0.733333,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    },
+    {
+      "name": "Concrete_Masonry_Unit",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.94902,
+          0.94902,
+          0.94902,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      },
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Mesh1 Group1 Tennis_Red1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 4,
+          "material": 1,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 5,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 3,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 10,
+          "material": 4,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 11,
+          "material": 5,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 12,
+          "material": 6,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 6,
+            "NORMAL": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 13,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Mesh11 Tennis_Red1 Model_1",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 14,
+            "NORMAL": 15,
+            "TEXCOORD_0": 16
+          },
+          "indices": 17,
+          "material": 0,
+          "mode": 4
+        },
+        {
+          "attributes": {
+            "POSITION": 14,
+            "NORMAL": 15,
+            "TEXCOORD_0": 16
+          },
+          "indices": 18,
+          "material": 5,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Mesh1 Group1 Tennis_Red1 Model",
+      "mesh": 0
+    },
+    {
+      "name": "Mesh10 Tennis_Red1 Model",
+      "mesh": 1
+    },
+    {
+      "name": "Mesh11 Tennis_Red1 Model",
+      "mesh": 2
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0,
+        1,
+        2
+      ]
+    }
+  ]
+}
