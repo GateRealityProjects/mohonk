@@ -23,12 +23,12 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.enabled = true;
 
 	// "target" sets the location of focus, where the object orbits around
-	
+
 	this.target = new THREE.Vector3();
 
 	// How far you can dolly in and out ( PerspectiveCamera only )
 	this.minDistance = 3;
-	this.maxDistance = 60; //14
+	this.maxDistance = Infinity; //14 // NOTE: was at 60 but changed for modelPlacementMode
 
 	// How far you can zoom in and out ( OrthographicCamera only )
 	this.minZoom = 0;
@@ -36,8 +36,8 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	// How far you can orbit vertically, upper and lower limits.
 	// Range is 0 to Math.PI radians.
-	this.minPolarAngle = 1.1; // radians
-	this.maxPolarAngle = 1.1 // radians 1.2
+	this.minPolarAngle = - Infinity; // radians // NOTE: was at 1.1 changed for modelPlacementMode
+	this.maxPolarAngle = Infinity // radians 1.2 NOTE: also at 1.1
 
 	// How far you can orbit horizontally, upper and lower limits.
 	// If set, must be a sub-interval of the interval [ - Math.PI, Math.PI ].
@@ -59,7 +59,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.rotateSpeed = 0.05;
 
 	// Set to false to disable panning
-	this.enablePan = false;
+	this.enablePan = true;
 	this.panSpeed = 0.05;
 	this.screenSpacePanning = false; // if true, pan in screen-space
 	this.keyPanSpeed = 7.0;	// pixels moved per arrow key push

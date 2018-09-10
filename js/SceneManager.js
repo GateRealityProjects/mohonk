@@ -16,7 +16,7 @@ var current_season = 0;
 var objects = [];
 var animating = false;
 
-var modelPlacementMode = false;
+var modelPlacementMode = true;
 var globalModel;
 
 init();
@@ -42,9 +42,6 @@ async function init(){
   document.body.appendChild( renderer.domElement );
 
 
-  if (modelPlacementMode) {
-    camera.position.set(0, 0, 0)
-  }
   //terrain files from json for season changer
   await loadJSON('json/terrains.json',function(response) {
     terrains = JSON.parse(response);
@@ -144,7 +141,7 @@ async function seasonChanger(season){
       for (var key in spring){
         loadGlb(spring[key], true);
       }
-    }else if(season ==2) { //SUMMER
+    } else if(season == 2) { //SUMMER
       current_season = 2;
       refresh();
       loadGlb(terrains.summerTerrain,false);
@@ -255,7 +252,6 @@ async function testGlb(object) {
         scene.add(globalModel);
 
 
-
       }
     );
 }
@@ -296,6 +292,7 @@ function update() {
   if (globalModel) {
     globalModel.position.copy(controls.target);
     globalModel.position.y = camera.position.y - 2;
+    globalModel.position.z = camera.position.z - 2;
   }
 
   if (modelPlacementMode) {
@@ -312,7 +309,12 @@ function update() {
 
 
 
-//path
+  if (modelPlacementMode) {
+    camera.position.set( 0, 5, 9);
+  }
+//Camera Rotation Path
+
+
  let curve = new THREE.CatmullRomCurve3([
   new THREE.Vector3(21.7, 17.1, -25.7),
   new THREE.Vector3(-12.2, 10.8, -17.3),
@@ -324,24 +326,23 @@ curve.closed = true;
 let mouseX;
 let mouseXOnMouseDown;
 let rotateOnMouseDown;
-let windowHalfX = window.innerWidth / 2;
-let windowHalfY = window.innerHeight / 2;
 let targetRotation = 0;
 let currPoint = 0;
 
+
 document.addEventListener('mousedown', onDocumentMouseDown, false);
 
-function onDocumentMouseDown(event) {
+ function onDocumentMouseDown(event) {
   event.preventDefault();
   document.addEventListener('mousemove', onDocumentMouseMove, false);
   document.addEventListener('mouseup', onDocumentMouseUp, false);
   document.addEventListener('mouseout', onDocumentMouseOut, false);
-  mouseXOnMouseDown = event.clientX - windowHalfX;
+  mouseXOnMouseDown = event.clientX - window.innerWidth / 2;;
   rotateOnMouseDown = targetRotation;
 }
 
 function onDocumentMouseMove(event) {
-  mouseX = event.clientX - windowHalfX;
+  mouseX = event.clientX - window.innerWidth / 2;;
   targetRotation = rotateOnMouseDown + (mouseX - mouseXOnMouseDown) * 0.02;
   currPoint = (targetRotation - rotateOnMouseDown) * 0.05;
 }
@@ -358,8 +359,6 @@ function onDocumentMouseOut(event) {
   document.removeEventListener('mouseout', onDocumentMouseOut, false);
 }
 
-
-
 function render(){
   requestAnimationFrame( render );
   TWEEN.update();
@@ -367,11 +366,28 @@ function render(){
     controls.update();
   }
   if (!animating && !modelPlacementMode) {
-  curve.getPoint(currPoint, camera.position);
-  camera.lookAt(scene.position);
-}
+    curve.getPoint(currPoint, camera.position);
+    camera.lookAt(scene.position);
+  } else {
+    if (globalModel) {
+      globalModel.position.copy(controls.target);
+      globalModel.position.y = camera.position.y - 2;
+      controls.update();
+    }
 
+    if (modelPlacementMode) {
+      document.getElementById("modelX").innerHTML = controls.target.x;
+      document.getElementById("modelY").innerHTML = camera.position.y - 2;
+      document.getElementById("modelZ").innerHTML = controls.target.z;
+
+      document.getElementById("cameraX").innerHTML = camera.position.x;
+      document.getElementById("cameraY").innerHTML = camera.position.y;
+      document.getElementById("cameraZ").innerHTML = camera.position.z;
+    }
+  }
   renderer.render( scene, camera );
 }
+
+
 render();
 };
