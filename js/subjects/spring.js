@@ -17,7 +17,7 @@ function Spring(scene,object){
         object = spring_objects[i];
         // console.log(object.name);
         object.castShadow = true;
-        // object.selectable = true;
+        object.selectable = true;
         scene.add(object);
       }
     });

@@ -98,9 +98,12 @@ function moveCamera(object){
     y: object.position.y,
     z: object.position.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).onUpdate(function(){controls.update()}).start();
+
+    
 }
 
 function resetCamera() {
+  debugger
   new TWEEN.Tween( camera.position ).to( {
     x: 21.7,
     y: 17.1,

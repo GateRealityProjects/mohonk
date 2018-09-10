@@ -28,7 +28,7 @@ function Winter(scene,object){
 
         // console.log(object.name);
         object.castShadow = true;
-        // object.selectable = true;
+        object.selectable = true;
         scene.add(object);
       }
       trigger_animations(scene);

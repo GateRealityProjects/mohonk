@@ -16,7 +16,7 @@ var current_season = 0;
 var objects = [];
 var animating = false;
 
-var modelPlacementMode = true;
+var modelPlacementMode = false;
 var globalModel;
 
 init();
