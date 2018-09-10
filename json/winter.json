@@ -19,9 +19,9 @@
       "z":0
     },
     "cameraPosition":{
-      "x":0,
-      "y":0,
-      "z":0
+      "x":-0.27,
+      "y":3.41,
+      "z":8.97
     },
     "season":"2",
     "photo":"assets/img/mohonk.jpg",
@@ -47,9 +47,9 @@
       "z":0
     },
     "cameraPosition":{
-      "x":0,
-      "y":0,
-      "z":0
+      "x":-20.57,
+      "y":2.17,
+      "z":11.48
     },
     "season":"2",
     "photo":"assets/img/mohonk.jpg",
@@ -75,9 +75,9 @@
       "z":"-6.17"
     },
     "cameraPosition":{
-      "x":0,
-      "y":0,
-      "z":0
+      "x":10.56,
+      "y":1.03,
+      "z":-9.38
     },
     "season":"2",
     "photo":"assets/img/mohonk.jpg",
@@ -103,9 +103,9 @@
       "z":0
     },
     "cameraPosition":{
-      "x":0,
-      "y":0,
-      "z":0
+      "x":0.23,
+      "y":0.72,
+      "z":1.76
     },
     "season":"2",
     "photo":"assets/img/mohonk.jpg",
@@ -131,9 +131,9 @@
       "z":0
     },
     "cameraPosition":{
-      "x":0,
-      "y":0,
-      "z":0
+      "x":7.05,
+      "y":3.43,
+      "z":4.42
     },
     "season":"2",
     "photo":"assets/img/mohonk.jpg",
