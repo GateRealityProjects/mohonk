@@ -32,19 +32,19 @@
     "description":"The Granary",
     "path":"assets/models/granary/Granary.gltf",
     "position":{
-      "x":"-11.48",
+      "x":"-11.04",
       "y":"0.19",
-      "z":"5.4"
+      "z":"6.55"
     },
     "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+      "x":".0008",
+      "y":".0008",
+      "z":".0008"
     },
     "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+      "x":0.03,
+      "y":-10.1,
+      "z":0.01
     },
     "cameraPosition":{
       "x":-14.26,
@@ -367,6 +367,34 @@
     "name":"Archery and Tomahawk Throwing",
     "description":"Shoot Targets",
     "path":"assets/models/archery/BowTarget.gltf",
+    "position":{
+      "x":"-21.06",
+      "y":"0.01",
+      "z":"9.35"
+    },
+    "scale":{
+      "x":".001",
+      "y":".001",
+      "z":".001"
+    },
+    "rotation":{
+      "x":0,
+      "y":0,
+      "z":0
+    },
+    "cameraPosition":{
+      "x":-23.50,
+      "y":1.30,
+      "z":7.43
+    },
+    "season":"3",
+    "photo":"assets/img/mohonk.jpg",
+    "video":""
+  },
+  "summerHouse":{
+    "name":"Summer House",
+    "description":"Stay Over",
+    "path":"assets/models/summerHouse/SummerHouse.gltf",
     "position":{
       "x":"-21.06",
       "y":"0.01",

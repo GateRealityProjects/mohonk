@@ -5,7 +5,7 @@
     "path":"assets/models/iceSkating/IceSkating.gltf",
     "position":{
       "x":"2.302",
-      "y":"2.36",
+      "y":"2.27",
       "z":"10.66"
     },
     "scale":{
@@ -62,7 +62,7 @@
     "position":{
       "x":"9.06",
       "y":"-0.47",
-      "z":"-5.9"
+      "z":"-6"
     },
     "scale":{
       "x":".02",

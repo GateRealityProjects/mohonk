@@ -32,9 +32,9 @@
     "description":"The Spa",
     "path":"assets/models/spa/Spa_tilted.gltf",
     "position":{
-      "x":"-8.512",
+      "x":"-7.552",
       "y":0,
-      "z":"2.403"
+      "z":"2"
     },
     "scale":{
       "x":".001",
@@ -43,7 +43,7 @@
     },
     "rotation":{
       "x":0,
-      "y": 0,
+      "y":0.43,
       "z":0
     },
     "cameraPosition":{
@@ -226,20 +226,20 @@
   "kidsClub":{
     "name":"Kids Club",
     "description":"The Kids Club",
-    "path":"assets/models/kidsClub/KidsClub_tilted.gltf",
+    "path":"assets/models/kidsClub/KidsClub.gltf",
     "position":{
-      "x":"4.3659",
-      "y":"-0.3146",
-      "z":"4.05"
+      "x":"3.503",
+      "y":"0.483",
+      "z":"3.053"
     },
     "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+      "x":".005",
+      "y":".005",
+      "z":".005"
     },
     "rotation":{
       "x":0,
-      "y":0,
+      "y":10.5,
       "z":0
     },
     "cameraPosition":{

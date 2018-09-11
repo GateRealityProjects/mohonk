@@ -16,7 +16,7 @@ var current_season = 0;
 var objects = [];
 var animating = false;
 
-var modelPlacementMode = false;
+var modelPlacementMode = true;
 var globalModel;
 
 init();
@@ -125,7 +125,7 @@ async function seasonChanger(season){
 
     // Model Placement mode
     if (modelPlacementMode) {
-      await testGlb(spring.golf);
+      await testGlb(allSeasons.kidsClub);
     }
 
 
