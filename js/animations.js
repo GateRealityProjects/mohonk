@@ -85,6 +85,7 @@ function bounce(object){
 
 
 function moveCamera(object){
+  resetCamera();
   // moveCamera(object);
   animating = true;
   new TWEEN.Tween( camera.position ).to( {
@@ -93,18 +94,18 @@ function moveCamera(object){
     z: object.cameraPosition.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).start();
 
+    debugger
   new TWEEN.Tween( controls.target).to( {
     x: object.position.x,
     y: object.position.y,
     z: object.position.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).onUpdate(function(){controls.update()}).start();
 
-
 }
 
+
 function resetCamera() {
-  debugger
-  new TWEEN.Tween( camera.position ).to( {
+    new TWEEN.Tween( camera.position ).to( {
     x: 21.7,
     y: 17.1,
     z: -25.7}, 2400)
