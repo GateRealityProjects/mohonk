@@ -124,9 +124,9 @@ async function seasonChanger(season){
     document.getElementById('loadingScreen').style.opacity = 1;
 
     // Model Placement mode
-    if (modelPlacementMode) {
-      await testGlb(allSeasons.kidsClub);
-    }
+    // if (modelPlacementMode) {
+    //   await testGlb(allSeasons.kidsClub);
+    // }
 
 
     for (var key in allSeasons){
