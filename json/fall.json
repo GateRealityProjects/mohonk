@@ -144,9 +144,9 @@
     "description":"A Beautiful Garden",
     "path":"assets/models/garden/Garden.gltf",
     "position":{
-      "x":"11.849",
-      "y":"0.694",
-      "z":"1.771"
+      "x":"8.8523",
+      "y":"-0.0413",
+      "z":"0.9830"
     },
     "scale":{
       "x":".001",
@@ -159,9 +159,9 @@
       "z":0
     },
     "cameraPosition":{
-      "x":14.26,
-      "y":3.24,
-      "z":0.48
+      "x":11.003,
+      "y":2.1977,
+      "z":-1.873
     },
     "season":"3",
     "photo":"assets/img/mohonk.jpg",

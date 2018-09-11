@@ -16,7 +16,7 @@ var current_season = 0;
 var objects = [];
 var animating = false;
 
-var modelPlacementMode = true;
+var modelPlacementMode = false;
 var globalModel;
 
 init();
@@ -124,9 +124,9 @@ async function seasonChanger(season){
     document.getElementById('loadingScreen').style.opacity = 1;
 
     // Model Placement mode
-    // if (modelPlacementMode) {
-    //   await testGlb(allSeasons.kidsClub);
-    // }
+    if (modelPlacementMode) {
+      await testGlb(spring.garden);
+    }
 
 
     for (var key in allSeasons){
