@@ -123,10 +123,10 @@ async function init(){
 async function seasonChanger(season){
     document.getElementById('loadingScreen').style.opacity = 1;
 
-    //Model Placement mode
-    // if (modelPlacementMode) {
-    //   await testGlb(summer.garden);
-    // }
+    // Model Placement mode
+    if (modelPlacementMode) {
+      await testGlb(spring.golf);
+    }
 
 
     for (var key in allSeasons){

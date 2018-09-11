@@ -58,26 +58,82 @@
   "diningRoom":{
     "name":"The Dining Room",
     "description":"The Dining Room",
-    "path":"assets/models/diningRoom/DiningRoom.glb",
+    "path":"assets/models/diningRoom/DinningRoom.gltf",
     "position":{
-      "x":"3.3461",
-      "y":"-.8",
-      "z":"-5.987"
+      "x":"3.609",
+      "y":"-0.622",
+      "z":"-5.747"
     },
     "scale":{
-      "x":".015",
-      "y":".015",
-      "z":".015"
+      "x":".001",
+      "y":".0009",
+      "z":".0009"
     },
     "rotation":{
       "x":0,
-      "y":4,
+      "y":6.3,
       "z":0
     },
     "cameraPosition":{
       "x":0.04,
       "y":-0.14,
       "z":-8.84
+    },
+    "season":"0",
+    "photo":"assets/img/mohonk.jpg",
+    "video":""
+  },
+  "carriageLounge":{
+    "name":"The Carriage Lounge",
+    "description":"The Carriage Lounge",
+    "path":"assets/models/CarriageLounge/CarriageLounge.gltf",
+    "position":{
+      "x":"2.726",
+      "y":"-0.649",
+      "z":"-4.2671"
+    },
+    "scale":{
+      "x":".0009",
+      "y":".0009",
+      "z":".0009"
+    },
+    "rotation":{
+      "x":0,
+      "y":6.3,
+      "z":0
+    },
+    "cameraPosition":{
+      "x":0.04,
+      "y":-0.14,
+      "z":-8.84
+    },
+    "season":"0",
+    "photo": "assets/img/mohonk.jpg",
+    "video":""
+  },
+  "giftShop":{
+    "name":"Gift Shop",
+    "description":"Gift Shop",
+    "path":"assets/models/GiftShop/GiftShop.gltf",
+    "position":{
+      "x":1.826,
+      "y":-0.308,
+      "z":-3.612
+    },
+    "scale":{
+      "x":".001",
+      "y":".001",
+      "z":".001"
+    },
+    "rotation":{
+      "x":0,
+      "y":0,
+      "z":0
+    },
+    "cameraPosition":{
+      "x":0,
+      "y":0,
+      "z":0
     },
     "season":"0",
     "photo":"assets/img/mohonk.jpg",
