@@ -4,19 +4,19 @@
     "description":"A tower in the sky!",
     "path":"assets/models/tower/Tower.glb",
     "position":{
-      "x":"-2.8",
+      "x":"-3.2",
       "y":"3.3",
       "z":"20.3"
     },
     "scale":{
-      "x":".015",
-      "y":".015",
-      "z":".015"
+      "x":".03",
+      "y":".04",
+      "z":".03"
     },
     "rotation":{
       "x":0,
       "y":90,
-      "z":0
+      "z":0.05
     },
     "cameraPosition":{
       "x":-4.38,

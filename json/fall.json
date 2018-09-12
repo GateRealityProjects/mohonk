@@ -4,9 +4,9 @@
     "description":"Go for a stroll in a winter wonderland",
     "path":"assets/models/forest/ForestBathing.gltf",
     "position":{
-      "x":"8.4",
-      "y":"2.08",
-      "z":"7.8"
+      "x":"1.563",
+      "y":"-2",
+      "z":"-18.59"
     },
     "scale":{
       "x":".002",
@@ -16,12 +16,12 @@
     "rotation":{
       "x":0,
       "y":0,
-      "z":0
+      "z":-0.07
     },
     "cameraPosition":{
-      "x":7.05,
-      "y":3.43,
-      "z":4.42
+      "x":-0.878,
+      "y":-0.285,
+      "z":-23.26
     },
     "season":"3",
     "photo":"assets/img/mohonk.jpg",
@@ -201,7 +201,7 @@
     "path":"assets/models/tennis/RedTennisCourt.gltf",
     "position":{
       "x":"-15.4",
-      "y":"-0.33",
+      "y":"-0.52",
       "z":"-0.204"
     },
     "scale":{
@@ -210,9 +210,9 @@
       "z":".01"
     },
     "rotation":{
-      "x":0,
+      "x":-0.1,
       "y":0,
-      "z":0
+      "z":0.07
     },
     "cameraPosition":{
       "x":-22.38,
@@ -223,35 +223,7 @@
     "photo":"assets/img/mohonk.jpg",
     "video":""
   },
-  "tennisGreen":{
-    "name":"Tennis",
-    "description":"Play Tennis",
-    "path":"assets/models/tennis/GreenTennisCourt.gltf",
-    "position":{
-      "x":"-12.26",
-      "y":"-0.62",
-      "z":"-3.69"
-    },
-    "scale":{
-      "x":".01",
-      "y":".01",
-      "z":".01"
-    },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
-    },
-    "cameraPosition":{
-      "x":-22.38,
-      "y":3.07,
-      "z":8.60
-    },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
-  },
-  "archery":{
+    "archery":{
     "name":"Archery and Tomahawk Throwing",
     "description":"Shoot Targets",
     "path":"assets/models/archery/BowTarget.gltf",

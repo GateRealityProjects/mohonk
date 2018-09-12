@@ -37,9 +37,8 @@ function trigger_animations(scene,objects,animating){
   });
 }
 
-function bounce(object){
-
-  let obj = {
+  function bounce(object){
+    let obj = {
     x:object.scale.x,
     y:object.scale.y,
     z:object.scale.z
@@ -94,7 +93,7 @@ function moveCamera(object){
     z: object.cameraPosition.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).start();
 
-    debugger
+    
   new TWEEN.Tween( controls.target).to( {
     x: object.position.x,
     y: object.position.y,
