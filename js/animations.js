@@ -83,6 +83,13 @@ function trigger_animations(scene,objects,animating){
 }
 
 
+function resetTarget() {
+    controls.target.x = 0;
+    controls.target.y = 0;
+    controls.target.z = 0;
+}
+
+
 function moveCamera(object){
   resetCamera();
   // moveCamera(object);
@@ -93,6 +100,9 @@ function moveCamera(object){
     z: object.cameraPosition.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).start();
 
+    if (controls.target.x !== 0) {
+      resetTarget();
+    }
     
   new TWEEN.Tween( controls.target).to( {
     x: object.position.x,
