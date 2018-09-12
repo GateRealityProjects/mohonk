@@ -200,13 +200,13 @@
     "description":"The Barn",
     "path":"assets/models/barn/Barn_Positioned.gltf",
     "position":{
-      "x":"8.17385",
-      "y":"-1.5588",
-      "z":"-13.155"
+      "x":"8.204",
+      "y":"-1.7",
+      "z":"-13.145"
     },
     "scale":{
-      "x":".001",
-      "y":".001",
+      "x":".002",
+      "y":".002",
       "z":".001"
     },
     "rotation":{

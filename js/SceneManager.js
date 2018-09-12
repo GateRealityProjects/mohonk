@@ -125,7 +125,7 @@ async function seasonChanger(season){
 
     // Model Placement mode
     if (modelPlacementMode) {
-      await testGlb(allSeasons.tower);
+      await testGlb(allSeasons.barn);
     }
 
 

@@ -19,7 +19,7 @@ function Summer(scene,object){
         object = summer_objects[i];
         object.castShadow = true;
         object.receiveShadow = true;
-        // object.selectable = true;
+        object.selectable = true;
         scene.add(object);
       }
       trigger_animations(scene);
