@@ -125,7 +125,7 @@ async function seasonChanger(season){
 
     // Model Placement mode
     if (modelPlacementMode) {
-      await testGlb(allSeasons.barn);
+      await testGlb(spring.garden);
     }
 
 
@@ -303,18 +303,15 @@ function update() {
     document.getElementById("cameraX").innerHTML = camera.position.x;
     document.getElementById("cameraY").innerHTML = camera.position.y;
     document.getElementById("cameraZ").innerHTML = camera.position.z;
+
+    camera.position.set( 0, 5, 9);
   }
   // var title = document.getElementById("sunTitle");
   // title.innerHTML = ("Camera: "+camera.position.x+" "+camera.position.y+ " "+ camera.position.z+ "Origin: "+controls.target.x+" "+controls.target.y+ " "+ controls.target.z);
 
 
 
-  if (modelPlacementMode) {
-    camera.position.set( 0, 5, 9);
-  }
 //Camera Rotation Path
-
-
  let curve = new THREE.CatmullRomCurve3([
   new THREE.Vector3(21.7, 17.1, -25.7),
   new THREE.Vector3(-12.2, 10.8, -17.3),

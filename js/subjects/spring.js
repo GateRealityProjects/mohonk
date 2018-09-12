@@ -6,6 +6,7 @@ function Spring(scene,object){
   loader.load(
     // resource URL
     'assets/models/GasStation/GasStation.gltf',
+
     // called when the resource is loaded
     function ( gltf ) {
       gltf.scene.traverse(function(node){
@@ -15,6 +16,7 @@ function Spring(scene,object){
       objects = spring_objects;
       for (var i = 0; i < spring_objects.length; i++) {
         object = spring_objects[i];
+        
         // console.log(object.name);
         object.castShadow = true;
         object.selectable = true;

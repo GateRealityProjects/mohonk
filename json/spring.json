@@ -167,34 +167,6 @@
     "photo":"assets/img/mohonk.jpg",
     "video":""
   },
-  "garden":{
-    "name":"The Garden",
-    "description":"A Beautiful Garden",
-    "path":"assets/models/garden/Garden.gltf",
-    "position":{
-      "x":"8.8523",
-      "y":"-0.0413",
-      "z":"0.9830"
-    },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
-    },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
-    },
-    "cameraPosition":{
-      "x":11.003,
-      "y":2.1977,
-      "z":-1.873
-    },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
-  },
   "climbing":{
     "name":"Rock climbing",
     "description":"Rock Climbing Adventures!",
@@ -274,6 +246,62 @@
       "x":-22.38,
       "y":3.07,
       "z":-1.92
+    },
+    "season":"3",
+    "photo":"assets/img/mohonk.jpg",
+    "video":""
+  },
+  "garden":{
+    "name":"The Garden",
+    "description":"A Beautiful Garden",
+    "path":"assets/models/garden/garden.gltf",
+    "position":{
+      "x":"7.8960",
+      "y":"-0.1336",
+      "z":"1.4226"
+    },
+    "scale":{
+      "x":".001",
+      "y":".001",
+      "z":".001"
+    },
+    "rotation":{
+      "x":-0.05,
+      "y":0,
+      "z":0
+    },
+    "cameraPosition":{
+      "x":11.003,
+      "y":2.1977,
+      "z":-1.873
+    },
+    "season":"3",
+    "photo":"assets/img/mohonk.jpg",
+    "video":""
+  },
+  "garden2":{
+    "name":"The Garden2",
+    "description":"A Beautiful Garden",
+    "path":"assets/models/garden/garden.gltf",
+    "position":{
+      "x":"7.8960",
+      "y":"-0.1336",
+      "z":"1.4226"
+    },
+    "scale":{
+      "x":".001",
+      "y":".001",
+      "z":".001"
+    },
+    "rotation":{
+      "x":-0.05,
+      "y":0,
+      "z":0
+    },
+    "cameraPosition":{
+      "x":11.003,
+      "y":2.1977,
+      "z":-1.873
     },
     "season":"3",
     "photo":"assets/img/mohonk.jpg",

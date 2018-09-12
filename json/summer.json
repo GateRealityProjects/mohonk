@@ -383,9 +383,9 @@
       "z":0
     },
     "cameraPosition":{
-      "x":-23.50,
-      "y":1.30,
-      "z":7.43
+      "x":-4.031,
+      "y":1.898,
+      "z":6.087
     },
     "season":"3",
     "photo":"assets/img/mohonk.jpg",
@@ -394,11 +394,11 @@
   "garden":{
     "name":"The Garden",
     "description":"A Beautiful Garden",
-    "path":"assets/models/garden/Garden.gltf",
+    "path":"assets/models/garden/garden.gltf",
     "position":{
-      "x":"8.8523",
-      "y":"-0.0413",
-      "z":"0.9830"
+      "x":"7.8960",
+      "y":"-0.1336",
+      "z":"1.4226"
     },
     "scale":{
       "x":".001",
@@ -407,6 +407,34 @@
     },
     "rotation":{
       "x":0,
+      "y":0,
+      "z":0
+    },
+    "cameraPosition":{
+      "x":11.003,
+      "y":2.1977,
+      "z":-1.873
+    },
+    "season":"3",
+    "photo":"assets/img/mohonk.jpg",
+    "video":""
+  },
+  "garden2":{
+    "name":"The Garden2",
+    "description":"A Beautiful Garden",
+    "path":"assets/models/garden/garden.gltf",
+    "position":{
+      "x":"7.8960",
+      "y":"-0.1336",
+      "z":"1.4226"
+    },
+    "scale":{
+      "x":".001",
+      "y":".001",
+      "z":".001"
+    },
+    "rotation":{
+      "x":-0.05,
       "y":0,
       "z":0
     },

@@ -142,11 +142,11 @@
   "garden":{
     "name":"The Garden",
     "description":"A Beautiful Garden",
-    "path":"assets/models/garden/Garden.gltf",
+    "path":"assets/models/garden/garden.gltf",
     "position":{
-      "x":"8.8523",
-      "y":"-0.0413",
-      "z":"0.9830"
+      "x":"7.8960",
+      "y":"-0.1336",
+      "z":"1.4226"
     },
     "scale":{
       "x":".001",
