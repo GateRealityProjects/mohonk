@@ -132,7 +132,7 @@ async function seasonChanger(season){
     for (var key in allSeasons){
       loadGlb(allSeasons[key], true);
     }
-    if (season == 0) { //TESTING SEASON
+    if (season === 0) { //TESTING SEASON
       current_season = 0;
     } else if(season == 1) { //SPRING
       current_season = 1;

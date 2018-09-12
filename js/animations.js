@@ -1,7 +1,8 @@
 var count = 0;
 function trigger_animations(scene,objects,animating){
   scene.traverse( function( node ) {
-    if ( node.selectable ) {
+    let nodeOffArr = ["Rock climbing"]
+    if ( node.selectable && !nodeOffArr.includes(node.name) ) {
       // console.log(node);
       node.on('mouseover', function(ev) {
         // node.scale.set(1.2,1.2,1.2);
@@ -103,7 +104,7 @@ function moveCamera(object){
     if (controls.target.x !== 0) {
       resetTarget();
     }
-    
+
   new TWEEN.Tween( controls.target).to( {
     x: object.position.x,
     y: object.position.y,
