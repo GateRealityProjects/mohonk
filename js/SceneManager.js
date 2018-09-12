@@ -10,6 +10,7 @@ var camera,
     fall,
     winter,
     attractions,
+    opening,
     composer;
 
 var current_season = 0;
@@ -134,28 +135,28 @@ async function seasonChanger(season){
     }
     if (season === 0) { //TESTING SEASON
       current_season = 0;
-    } else if(season == 1) { //SPRING
+    } else if(season === 1) { //SPRING
       current_season = 1;
       refresh();
       loadGlb(terrains.springTerrain,false);
       for (var key in spring){
         loadGlb(spring[key], true);
       }
-    } else if(season == 2) { //SUMMER
+    } else if(season === 2) { //SUMMER
       current_season = 2;
       refresh();
       loadGlb(terrains.summerTerrain,false);
       for (var key in summer){
         loadGlb(summer[key], true);
       }
-    } else if (season == 3) { //FALL
+    } else if (season === 3) { //FALL
       current_season = 3;
       refresh();
       loadGlb(terrains.fallTerrain,false);
       for (var key in fall){
         loadGlb(fall[key], true);
       }
-    } else if (season == 4) { //WINTER
+    } else if (season === 4) { //WINTER
       current_season = 4;
       refresh();
       loadGlb(terrains.winterTerrain,false);
@@ -275,6 +276,7 @@ function endIntro(){
   // make custom camera animation to do 1 more camera spin AND bounce all objects
   // Set camera to default starting position
   // Set all fullscreen divs to hidden
+  opening = false
 }
 
 
