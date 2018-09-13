@@ -116,9 +116,9 @@
     "description":"Go for a stroll in a winter wonderland",
     "path":"assets/models/forest/ForestBathing_Winter.gltf",
     "position":{
-      "x":"8.4",
-      "y":"2.08",
-      "z":"7.8"
+      "x":"1.563",
+      "y":"-2",
+      "z":"-18.59"
     },
     "scale":{
       "x":".0015",
@@ -131,9 +131,9 @@
       "z":0
     },
     "cameraPosition":{
-      "x":7.05,
-      "y":3.43,
-      "z":4.42
+      "x":-0.878,
+      "y":-0.285,
+      "z":-23.26
     },
     "season":"2",
     "photo":"assets/img/mohonk.jpg",

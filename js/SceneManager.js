@@ -42,6 +42,27 @@ async function init(){
   renderer.setSize( window.innerWidth, window.innerHeight );
   document.body.appendChild( renderer.domElement );
 
+  //Load correct season by current month
+  function seasonActualizer() {
+    let date = new Date
+    console.log(date);
+    let month = (date.getMonth() + 1) % 12;
+    console.log(month);
+    const summer = [6, 7, 8];
+    const fall = [9, 10, 11];
+    const winter = [12, 1, 2];
+    const spring = [3, 4, 5];
+
+    if (summer.includes(month)) {
+      return 2;
+    } else if (fall.includes(month)) {
+      return 3;
+    } else if (winter.includes(month)) {
+      return 4;
+    } else {
+      return 1;
+    }
+  }
 
   //terrain files from json for season changer
   await loadJSON('json/terrains.json',function(response) {
@@ -61,7 +82,7 @@ async function init(){
   });
   await loadJSON('json/allSeasons.json',async function(response) {
     allSeasons = JSON.parse(response);
-    seasonChanger(1); //Load inital season after parsing json
+    seasonChanger(seasonActualizer()); //Load inital season after parsing json
     // console.log("allseasons: " + allSeasons.tower);
   });
 
@@ -120,13 +141,14 @@ async function init(){
 }
 
 
+
 // Refresh scene and switch to selected Season
 async function seasonChanger(season){
     document.getElementById('loadingScreen').style.opacity = 1;
 
     // Model Placement mode
     if (modelPlacementMode) {
-      await testGlb(allSeasons.kidsClub);
+      await testGlb(winter.forestBathing);
     }
 
 
