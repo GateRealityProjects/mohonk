@@ -386,7 +386,7 @@ function render(){
   TWEEN.update();
   if (!animating) {
     controls.update();
-    // controls.dispose();
+    controls.dispose();
   }
   if (!animating && !modelPlacementMode) {
     curve.getPoint(currPoint, camera.position);
