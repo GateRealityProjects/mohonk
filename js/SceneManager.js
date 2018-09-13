@@ -295,9 +295,9 @@ function startIntro(){
 
 function endIntro(){
   controls.autoRotate = false;
-  // make custom camera animation to do 1 more camera spin AND bounce all objects
-  // Set camera to default starting position
-  // Set all fullscreen divs to hidden
+  for (let i = 0; i < objects.length; i++) {
+    objects[i].bounce()
+  }
   opening = false
 }
 
@@ -342,6 +342,7 @@ function update() {
   new THREE.Vector3(-34.7, 27.2, 40.6),
   new THREE.Vector3(17.4, 13.9, 21.2)
 ])
+console.log(curve);
 curve.closed = true;
 
 let mouseX;
@@ -385,11 +386,12 @@ function render(){
   TWEEN.update();
   if (!animating) {
     controls.update();
+    // controls.dispose();
   }
   if (!animating && !modelPlacementMode) {
     curve.getPoint(currPoint, camera.position);
     camera.lookAt(scene.position);
-  } else {
+    } else {
     if (globalModel) {
       globalModel.position.copy(controls.target);
       globalModel.position.y = camera.position.y - 2;

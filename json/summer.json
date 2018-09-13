@@ -145,7 +145,7 @@
     "path":"assets/models/carriage/CarriageRides.gltf",
     "position":{
       "x":"5.37",
-      "y":"-0.31",
+      "y":"-0.27",
       "z":"-2.07"
     },
     "scale":{
@@ -154,8 +154,8 @@
       "z":".0002"
     },
     "rotation":{
-      "x":0,
-      "y":0,
+      "x":-0.1,
+      "y":-0.3,
       "z":0
     },
     "cameraPosition":{
@@ -442,6 +442,34 @@
       "x":11.003,
       "y":2.1977,
       "z":-1.873
+    },
+    "season":"3",
+    "photo":"assets/img/mohonk.jpg",
+    "video":""
+  },
+  "golf":{
+    "name":"Golfing",
+    "description":"Go golfing!",
+    "path":"assets/models/golf/Golf.gltf",
+    "position":{
+      "x":"22.5239",
+      "y":"-1.6401",
+      "z":"-21.4919"
+    },
+    "scale":{
+      "x":".001",
+      "y":".001",
+      "z":".001"
+    },
+    "rotation":{
+      "x":0,
+      "y":0,
+      "z":0
+    },
+    "cameraPosition":{
+      "x":35.735,
+      "y":8.1890,
+      "z":-11.981
     },
     "season":"3",
     "photo":"assets/img/mohonk.jpg",
