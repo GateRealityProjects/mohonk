@@ -1,7 +1,7 @@
 var count = 0;
 function trigger_animations(scene,objects,animating){
   scene.traverse( function( node ) {
-    let nodeOffswitch = ["Rock climbing"];
+    let nodeOffswitch = ["Rock climbing", "cloud"];
     if ( node.selectable && !nodeOffswitch.includes(node.name) ) {
       // console.log(node);
       node.on('mouseover', function(ev) {

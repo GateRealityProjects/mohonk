@@ -1,0 +1,119 @@
+Model Citations
+
+CAMPFIRE:
+Campfire
+Poly by Google
+Sep 14, 2017
+
+POND:
+Pond
+Poly by Google
+Sep 28, 2017
+
+GOLF:
+Golf cart
+Eric Wilson
+Jul 18, 2017
+
+BIKING:
+Bike
+Poly by Google
+Oct 10, 2017
+
+LAKE:
+Kayak
+Poly by Google
+Oct 21, 2017
+
+GRANARY:
+Picnic bench
+Samson Davis
+Feb 7, 2018
+
+ARCHERY:
+Bow and arrow
+Poly by Google
+Sep 18, 2017
+
+Target
+Вадим Алешин
+Sep 1, 2017
+
+HORSEBACK RIDING:
+Saddle
+Poly by Google
+Oct 21, 2017
+
+Horse
+Poly by Google
+Oct 10, 2017
+
+SNOW SHOES:
+Moon V.
+Snow shoes
+Jan 5, 2016
+
+ENVIRONMENT:
+TerrainAlien1
+Aimé Tribolet
+Nov 9, 2017
+
+House plants
+Poly by Google
+Oct 23, 2017
+
+Garden
+Poly by Google
+Sep 25, 2017
+
+Cloud
+Poly by Google
+Oct 11, 2017
+
+Deer
+Poly by Google
+Oct 22, 2017
+
+Little Fox
+Rachael Hosein
+Jul 29, 2017
+
+Forest
+Poly by Google
+Sep 14, 2017
+
+Weeping willow
+Poly by Google
+Oct 10, 2017
+
+Tree
+Poly by Google
+Oct 21, 2017
+
+Apple tree
+Poly by Google
+Oct 22, 2017
+
+Fall Tree V2
+Danny Bittman
+Jul 6, 2017
+
+Maple tree
+Poly by Google
+Oct 22, 2017
+
+Desert willow tree
+Poly by Google
+Oct 22, 2017
+
+Fall Tree V1
+Danny Bittman
+Jul 6, 2017
+
+Winter Island
+SharkFin
+Nov 1, 2017
+
+Mountain Cabin
+Alex “SAFFY” Safayan
+Dec 10, 2017

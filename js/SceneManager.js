@@ -148,7 +148,7 @@ async function seasonChanger(season){
 
     // Model Placement mode
     if (modelPlacementMode) {
-      await testGlb(winter.forestBathing);
+      await testGlb(allSeasons.cloud2);
     }
 
 
@@ -385,37 +385,37 @@ function onDocumentMouseOut(event) {
 
 
 //snow
-// function createParticles() {
-  // let particleCount;
-  // if (window.current_season === 4) {
-     const particleCount = 3000;
-//   } else {
-//      particleCount = 0;
-//    }
-//    return particleCount;
-// };
-
-  // const particleCount = createParticles();
-  const pMaterial = new THREE.PointsMaterial({
+  let particleCount = 3000;
+  let pMaterial = new THREE.PointsMaterial({
    color: 0xc1c0bd,
    size: 1,
    blending: THREE.AdditiveBlending,
   });
   let particles = new THREE.Geometry;
 
-  for (let i = 0; i < particleCount; i++) {
-      let pX = Math.random()*1000 - 500;
-      let pY = Math.random()* window.innerHeight;
-      let pZ = Math.random()*1000 - 700;
-      particle = new THREE.Vector3(pX, pY, pZ);
-      particle.velocity = {};
-      particle.velocity.y = -0.1;
-      particles.vertices.push(particle);
-  }
+function renderParticles() {
+    for (let i = 0; i < particleCount; i++) {
+        let pX = Math.random()*1000 - 500;
+        let pY = Math.random()* window.innerHeight;
+        let pZ = Math.random()*1000 - 700;
+        particle = new THREE.Vector3(pX, pY, pZ);
+        particle.velocity = {};
+        particle.velocity.y = -0.1;
+        particles.vertices.push(particle);
+    }
 
-  let particleSystem = new THREE.Points(particles, pMaterial);
-  particleSystem.position.y = 200;
-  scene.add(particleSystem);
+      let particleSystem = new THREE.Points(particles, pMaterial);
+      particleSystem.position.y = 200;
+      scene.add(particleSystem);
+
+      if (window.current_season !== 4) {
+        pMaterial.color.set(0x87ceeb)
+        scene.remove(particleSystem);
+        scene.remove(particles);
+      }
+  };
+
+
 
 
   function simulateSnow(){
@@ -426,12 +426,9 @@ function onDocumentMouseOut(event) {
         particle.y = 200;
         particle.velocity.y = -1;
       }
-
       particle.velocity.y -= Math.random() * .005;
-
       particle.y += particle.velocity.y;
     }
-
     particles.verticesNeedUpdate = true;
   };
 
@@ -439,12 +436,14 @@ function onDocumentMouseOut(event) {
 function render(){
   requestAnimationFrame( render );
   TWEEN.update();
-  // if (window.current_season === 4){
+  if (window.current_season === 4){
+    renderParticles();
     simulateSnow();
-  // }
+  }
+
   if (!animating) {
     controls.update();
-    controls.dispose();
+    // controls.dispose();// NOTE: comment in after model placement
   }
   if (!animating && !modelPlacementMode) {
     curve.getPoint(currPoint, camera.position);
