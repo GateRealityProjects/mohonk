@@ -144,7 +144,7 @@ async function seasonChanger(season){
 
     // Select Model for Placement
     if (modelPlacementMode) {
-      await testGlb(allSeasons.cloud2);
+      await testGlb(summer.paddleBoard);
     }
 
 
