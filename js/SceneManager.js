@@ -1,5 +1,3 @@
-import Snow from './subjects/snow';
-
 var camera,
     scene,
     renderer,
@@ -13,6 +11,7 @@ var camera,
     winter,
     attractions,
     opening,
+    winterSnow,
     composer;
 
 var current_season = 0;
@@ -48,7 +47,6 @@ async function init(){
   function seasonActualizer() {
     let date = new Date
     let month = (date.getMonth() + 1) % 12;
-    console.log(month);
     const summer = [6, 7, 8];
     const fall = [9, 10, 11];
     const winter = [12, 1, 2];
@@ -117,9 +115,6 @@ async function init(){
   ambient.intensity = 0.6;
   scene.add(ambient);
 
-  //Camera Shadow Box Helper (uncomment to see shadow map)
-  // var helper = new THREE.CameraHelper( light.shadow.camera );
-  // scene.add( helper );
 
   //Have loading screen update on Loading Manager
   THREE.DefaultLoadingManager.onLoad = function ( ) {
@@ -136,7 +131,6 @@ async function init(){
   THREE.DefaultLoadingManager.onProgress = function ( url, itemsLoaded, itemsTotal ) {
     var percent = Math.round((itemsLoaded/itemsTotal)*100);
     document.getElementById('loadingText').innerHTML = "Loading " + percent + "%";
-    // console.log( 'Loading file: ' + url + '.\nLoaded ' + itemsLoaded + ' of ' + itemsTotal + ' files.' );
   };
   update();
 
@@ -148,7 +142,7 @@ async function init(){
 async function seasonChanger(season){
     document.getElementById('loadingScreen').style.opacity = 1;
 
-    // Model Placement mode
+    // Select Model for Placement
     if (modelPlacementMode) {
       await testGlb(allSeasons.cloud2);
     }
@@ -161,12 +155,14 @@ async function seasonChanger(season){
       current_season = 0;
     } else if(season === 1) { //SPRING
       current_season = 1;
+       winterSnow = false
       refresh();
       loadGlb(terrains.springTerrain,false);
       for (var key in spring){
         loadGlb(spring[key], true);
       }
     } else if(season === 2) { //SUMMER
+       winterSnow = false
       current_season = 2;
       refresh();
       loadGlb(terrains.summerTerrain,false);
@@ -175,6 +171,7 @@ async function seasonChanger(season){
       }
     } else if (season === 3) { //FALL
       current_season = 3;
+       winterSnow = false
       refresh();
       loadGlb(terrains.fallTerrain,false);
       for (var key in fall){
@@ -182,6 +179,7 @@ async function seasonChanger(season){
       }
     } else if (season === 4) { //WINTER
       current_season = 4;
+       winterSnow = true
       refresh();
       loadGlb(terrains.winterTerrain,false);
       for (var key in winter){
@@ -386,82 +384,42 @@ function onDocumentMouseOut(event) {
 }
 
 
-<<<<<<< HEAD
 //snow
-  let particleCount = 3000;
-  let pMaterial = new THREE.PointsMaterial({
-   color: 0xc1c0bd,
-   size: 1,
-   blending: THREE.AdditiveBlending,
-  });
-  let particles = new THREE.Geometry;
-
-function renderParticles() {
-    for (let i = 0; i < particleCount; i++) {
-        let pX = Math.random()*1000 - 500;
-        let pY = Math.random()* window.innerHeight;
-        let pZ = Math.random()*1000 - 700;
-        particle = new THREE.Vector3(pX, pY, pZ);
-        particle.velocity = {};
-        particle.velocity.y = -0.1;
-        particles.vertices.push(particle);
-    }
-
-      let particleSystem = new THREE.Points(particles, pMaterial);
-      particleSystem.position.y = 200;
-      scene.add(particleSystem);
-
-      if (window.current_season !== 4) {
-        pMaterial.color.set(0x87ceeb)
-        scene.remove(particleSystem);
-        scene.remove(particles);
-      }
-  };
-
-
-
-
-  function simulateSnow(){
-    let pCount = particleCount;
-    while (pCount--) {
-      let particle = particles.vertices[pCount];
-      if (particle.y < -200) {
-        particle.y = 200;
-        particle.velocity.y = -1;
-      }
-      particle.velocity.y -= Math.random() * .005;
-      particle.y += particle.velocity.y;
-    }
-    particles.verticesNeedUpdate = true;
-  };
-=======
-// //snow
-// function createParticles() {
-//  const particleCount = 3000;
-//   const pMaterial = new THREE.PointsMaterial({
-//    color: 0xc1c0bd,
-//    size: 1,
-//    blending: THREE.AdditiveBlending,
-//   });
-//   let particles = new THREE.Geometry;
+// let particleCount = 2000;
+// let pMaterial = new THREE.PointsMaterial({
+//   color: 0xc1c0bd,
+//   size: 1,
+//   blending: THREE.AdditiveBlending,
+// });
+// let particles = new THREE.Geometry;
 //
-//   for (let i = 0; i < particleCount; i++) {
-//       let pX = Math.random()*1000 - 500;
-//       let pY = Math.random()* window.innerHeight;
-//       let pZ = Math.random()*1000 - 700;
-//       particle = new THREE.Vector3(pX, pY, pZ);
-//       particle.velocity = {};
-//       particle.velocity.y = -0.1;
-//       particles.vertices.push(particle);
-//   }
 //
-//   let particleSystem = new THREE.Points(particles, pMaterial);
-//   particleSystem.position.y = 200;
-//   scene.add(particleSystem);
-//   simulateSnow(particleCount, particles);
-// }
+// function renderParticles() {
+//     for (let i = 0; i < particleCount; i++) {
+//       if (winterSnow) {
+//         let pX = Math.random()*1000 - 500;
+//         let pY = Math.random()* window.innerHeight;
+//         let pZ = Math.random()*1000 - 700;
+//         particle = new THREE.Vector3(pX, pY, pZ);
+//         particle.velocity = {};
+//         particle.velocity.y = -0.1;
+//         particles.vertices.push(particle);
+//       } else {
+//         particleCount = 0;
 //
-//   function simulateSnow(particleCount, particles){
+//       }
+//     }
+//
+//       let particleSystem = new THREE.Points(particles, pMaterial);
+//       particleSystem.position.y = 200;
+//       scene.add(particleSystem);
+//
+//   };
+//
+//
+//
+//
+//   function simulateSnow(){
 //     let pCount = particleCount;
 //     while (pCount--) {
 //       let particle = particles.vertices[pCount];
@@ -469,30 +427,21 @@ function renderParticles() {
 //         particle.y = 200;
 //         particle.velocity.y = -1;
 //       }
-//
 //       particle.velocity.y -= Math.random() * .005;
-//
 //       particle.y += particle.velocity.y;
 //     }
-//
 //     particles.verticesNeedUpdate = true;
 //   };
->>>>>>> a4fd29e960f10f822bedd9b0a751f732080cb5f9
 
 
 function render(){
   requestAnimationFrame( render );
   TWEEN.update();
-  if (window.current_season === 4){
-<<<<<<< HEAD
-    renderParticles();
-    simulateSnow();
-  }
+  // if (winterSnow){
+  //   renderParticles();
+  //   simulateSnow();
+  // }
 
-=======
-    Snow.update();
-  }
->>>>>>> a4fd29e960f10f822bedd9b0a751f732080cb5f9
   if (!animating) {
     controls.update();
     // controls.dispose();// NOTE: comment in after model placement
