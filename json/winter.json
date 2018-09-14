@@ -32,24 +32,24 @@
     "description":"Ski Cross Country!",
     "path":"assets/models/ski/Ski.gltf",
     "position":{
-      "x":"-22.33",
-      "y":"0.65",
-      "z":"13.7"
+      "x":"-15.038",
+      "y":"-0.441",
+      "z":"1.036"
     },
     "scale":{
-      "x":".01",
-      "y":".01",
-      "z":".01"
+      "x":"1",
+      "y":"1",
+      "z":"1"
     },
     "rotation":{
       "x":0,
-      "y":0,
+      "y":-2,
       "z":0
     },
     "cameraPosition":{
-      "x":-20.57,
-      "y":2.17,
-      "z":11.48
+      "x":-13.186,
+      "y":0.690,
+      "z":3.578
     },
     "season":"2",
     "photo":"assets/img/mohonk.jpg",
@@ -61,18 +61,18 @@
     "path":"assets/models/snowShoe/SnowShoe.gltf",
     "position":{
       "x":"9.06",
-      "y":"-0.47",
+      "y":"-0.54",
       "z":"-6"
     },
     "scale":{
-      "x":".02",
-      "y":".02",
-      "z":".02"
+      "x":"1",
+      "y":"1",
+      "z":"1"
     },
     "rotation":{
-      "x":0,
-      "y":0,
-      "z":"-6.17"
+      "x":0.1,
+      "y":3,
+      "z":0
     },
     "cameraPosition":{
       "x":10.56,

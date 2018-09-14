@@ -144,7 +144,7 @@ async function seasonChanger(season){
 
     // Select Model for Placement
     if (modelPlacementMode) {
-      await testGlb(summer.paddleBoard);
+      await testGlb(winter.ski);
     }
 
 
@@ -385,62 +385,62 @@ function onDocumentMouseOut(event) {
 
 
 //snow
-// let particleCount = 2000;
-// let pMaterial = new THREE.PointsMaterial({
-//   color: 0xc1c0bd,
-//   size: 1,
-//   blending: THREE.AdditiveBlending,
-// });
-// let particles = new THREE.Geometry;
-//
-//
-// function renderParticles() {
-//     for (let i = 0; i < particleCount; i++) {
-//       if (winterSnow) {
-//         let pX = Math.random()*1000 - 500;
-//         let pY = Math.random()* window.innerHeight;
-//         let pZ = Math.random()*1000 - 700;
-//         particle = new THREE.Vector3(pX, pY, pZ);
-//         particle.velocity = {};
-//         particle.velocity.y = -0.1;
-//         particles.vertices.push(particle);
-//       } else {
-//         particleCount = 0;
-//
-//       }
-//     }
-//
-//       let particleSystem = new THREE.Points(particles, pMaterial);
-//       particleSystem.position.y = 200;
-//       scene.add(particleSystem);
-//
-//   };
-//
-//
-//
-//
-//   function simulateSnow(){
-//     let pCount = particleCount;
-//     while (pCount--) {
-//       let particle = particles.vertices[pCount];
-//       if (particle.y < -200) {
-//         particle.y = 200;
-//         particle.velocity.y = -1;
-//       }
-//       particle.velocity.y -= Math.random() * .005;
-//       particle.y += particle.velocity.y;
-//     }
-//     particles.verticesNeedUpdate = true;
-//   };
+let particleCount = 2000;
+let pMaterial = new THREE.PointsMaterial({
+  color: 0xc1c0bd,
+  size: 1,
+  blending: THREE.AdditiveBlending,
+});
+let particles = new THREE.Geometry;
+
+
+function renderParticles() {
+    for (let i = 0; i < particleCount; i++) {
+      if (winterSnow) {
+        let pX = Math.random()*1000 - 500;
+        let pY = Math.random()* window.innerHeight;
+        let pZ = Math.random()*1000 - 700;
+        particle = new THREE.Vector3(pX, pY, pZ);
+        particle.velocity = {};
+        particle.velocity.y = -0.1;
+        particles.vertices.push(particle);
+      } else {
+        particleCount = 0;
+
+      }
+    }
+
+      let particleSystem = new THREE.Points(particles, pMaterial);
+      particleSystem.position.y = 200;
+      scene.add(particleSystem);
+
+  };
+
+
+
+
+  function simulateSnow(){
+    let pCount = particleCount;
+    while (pCount--) {
+      let particle = particles.vertices[pCount];
+      if (particle.y < -200) {
+        particle.y = 200;
+        particle.velocity.y = -1;
+      }
+      particle.velocity.y -= Math.random() * .005;
+      particle.y += particle.velocity.y;
+    }
+    particles.verticesNeedUpdate = true;
+  };
 
 
 function render(){
   requestAnimationFrame( render );
   TWEEN.update();
-  // if (winterSnow){
-  //   renderParticles();
-  //   simulateSnow();
-  // }
+  if (winterSnow){
+    renderParticles();
+    simulateSnow();
+  }
 
   if (!animating) {
     controls.update();
