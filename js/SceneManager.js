@@ -444,7 +444,7 @@ function render(){
 
   if (!animating) {
     controls.update();
-    // controls.dispose();// NOTE: comment in after model placement
+    controls.dispose();
   }
   if (!animating && !modelPlacementMode) {
     curve.getPoint(currPoint, camera.position);
