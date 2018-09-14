@@ -86,7 +86,7 @@
   "paddleBoard":{
     "name":"Paddle Boarding",
     "description":"Paddle Boarding!",
-    "path":"assets/models/paddleBoard/Paddle.gltf",
+    "path":"assets/models/paddleBoard/Paddle.obj",
     "position":{
       "x":"-8.46",
       "y":"0.17",
