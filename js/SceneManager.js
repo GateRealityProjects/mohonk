@@ -409,15 +409,10 @@ function renderParticles() {
 
       }
     }
-
-      let particleSystem = new THREE.Points(particles, pMaterial);
-      particleSystem.position.y = 200;
-      scene.add(particleSystem);
-
+    let particleSystem = new THREE.Points(particles, pMaterial);
+    particleSystem.position.y = 200;
+    scene.add(particleSystem);
   };
-
-
-
 
   function simulateSnow(){
     let pCount = particleCount;
@@ -444,7 +439,7 @@ function render(){
 
   if (!animating) {
     controls.update();
-    controls.dispose();
+    // controls.dispose(); // NOTE: comment in for deploy
   }
   if (!animating && !modelPlacementMode) {
     curve.getPoint(currPoint, camera.position);
