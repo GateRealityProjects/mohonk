@@ -365,23 +365,7 @@ let currPoint = 0;
 let windowHalfX = window.innerWidth / 2;
 
 
-// document.addEventListener('touchstart', onDocumentTouchStart, false);
 document.addEventListener('mousedown', onDocumentMouseDown, false);
-
-// function onDocumentLoad(event) {
-//   event.preventDefault();
-//   mouseXOnMouseDown = event.clientX - windowHalfX;
-//   rotateOnMouseDown = targetRotation;
-// }
-//
-// function onDocumentTouchStart( event ) {
-//   if ( event.touches.length == 1 ) {
-//       event.preventDefault();
-//       document.addEventListener( 'touchmove', onTouchMove, false);
-//       mouseXOnMouseDown = event.touches[ 0 ].clinetX - windowHalfX;
-//       rotatieOnMouseDown = targetRotation;
-//     }
-// };
 
  function onDocumentMouseDown(event) {
   event.preventDefault();
