@@ -61,7 +61,7 @@
     "path":"assets/models/diningRoom/DinningRoom.gltf",
     "position":{
       "x":"3.609",
-      "y":"-0.622",
+      "y":"-0.655",
       "z":"-5.747"
     },
     "scale":{
@@ -145,7 +145,7 @@
     "path":"assets/models/greenhouse/Greenhouse_.gltf",
     "position":{
       "x":"20.4162",
-      "y":"1.1",
+      "y":"1",
       "z":"-8.234"
     },
     "scale":{
@@ -201,7 +201,7 @@
     "path":"assets/models/barn/Barn_Positioned.gltf",
     "position":{
       "x":"8.204",
-      "y":"-1.7",
+      "y":"-1.8",
       "z":"-13.145"
     },
     "scale":{
@@ -210,9 +210,9 @@
       "z":".001"
     },
     "rotation":{
-      "x":0,
+      "x":-0.1,
       "y":0,
-      "z":0
+      "z":0.05
     },
     "cameraPosition":{
       "x":8.40,

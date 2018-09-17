@@ -302,14 +302,14 @@ function startIntro(){
   //Fade in Season dropdown
   document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
   document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
+  endIntro()
 }
 
 function endIntro(){
-  controls.autoRotate = false;
   for (let i = 0; i < objects.length; i++) {
     objects[i].bounce()
   }
-  opening = false
+  controls.autoRotate = false;
 }
 
 
@@ -364,12 +364,14 @@ let targetRotation = 0;
 let currPoint = 0;
 let windowHalfX = window.innerWidth / 2;
 
-
 document.addEventListener('mousedown', onDocumentMouseDown, false);
+document.addEventListener('click', (event) => {
+  console.log(event);
+})
 
  function onDocumentMouseDown(event) {
   event.preventDefault();
-  document.addEventListener( 'touchmove', onTouchMove, false);
+  document.addEventListener('touchmove', onTouchMove, false);
   document.addEventListener('mousemove', onDocumentMouseMove, false);
   document.addEventListener('mouseup', onDocumentMouseUp, false);
   document.addEventListener('mouseout', onDocumentMouseOut, false);
@@ -407,18 +409,11 @@ function onDocumentMouseOut(event) {
 
 
 // snow
-// let color;
-// if (winterSnow) {
-//   snowColor = 0xc1c0bd;(white)
-// } else {
-//   snowColor = 0x7EC0EE;(skyBlue)
-// }
 
 let particleCount = 2000;
 let pMaterial = new THREE.PointsMaterial({
-  color: 0x7EC0EE,
+  color: 0x49A5FB,
   size: 1
-  // blending: THREE.AdditiveBlending,
 });
 let particles = new THREE.Geometry;
 
@@ -456,14 +451,13 @@ function renderParticles() {
 function render(){
   requestAnimationFrame( render );
   TWEEN.update();
-  if (winterSnow){
+  if (winterSnow) {
     pMaterial.color.set(0xffffff);
     renderParticles();
     simulateSnow();
   } else {
     pMaterial.color.set(0x49A5FB);
   }
-
   if (!animating) {
     controls.update();
     // controls.dispose(); // NOTE: comment in for deploy

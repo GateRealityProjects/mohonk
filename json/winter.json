@@ -89,7 +89,7 @@
     "path":"assets/models/porch/Porch_HotChoco.gltf",
     "position":{
       "x":"-1.25",
-      "y":"0",
+      "y":"-0.15",
       "z":"0.52"
     },
     "scale":{
@@ -117,18 +117,18 @@
     "path":"assets/models/forest/ForestBathing_Winter.gltf",
     "position":{
       "x":"1.563",
-      "y":"-2",
+      "y":"-2.02",
       "z":"-18.59"
     },
     "scale":{
-      "x":".0015",
-      "y":".0015",
-      "z":".0015"
+      "x":".002",
+      "y":".002",
+      "z":".002"
     },
     "rotation":{
       "x":0,
-      "y":0,
-      "z":0
+      "y":-0.5,
+      "z":-0.1
     },
     "cameraPosition":{
       "x":-0.878,

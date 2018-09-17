@@ -32,14 +32,14 @@
     "description":"The Granary",
     "path":"assets/models/granary/Granary.gltf",
     "position":{
-      "x":"-11.04",
+      "x":"-12",
       "y":"0.19",
       "z":"6.55"
     },
     "scale":{
-      "x":".0008",
-      "y":".0008",
-      "z":".0008"
+      "x":".0015",
+      "y":".0015",
+      "z":".0015"
     },
     "rotation":{
       "x":0.03,
@@ -114,7 +114,7 @@
     "path":"assets/models/forest/ForestBathing.gltf",
     "position":{
       "x":"1.563",
-      "y":"-2",
+      "y":"-2.02",
       "z":"-18.59"
     },
     "scale":{
@@ -124,8 +124,8 @@
     },
     "rotation":{
       "x":0,
-      "y":0,
-      "z":-0.07
+      "y":-0.5,
+      "z":-0.1
     },
     "cameraPosition":{
       "x":-0.878,
@@ -142,13 +142,13 @@
     "path":"assets/models/carriage/CarriageRides.gltf",
     "position":{
       "x":"5.37",
-      "y":"-0.27",
+      "y":"-0.15",
       "z":"-2.07"
     },
     "scale":{
-      "x":".0002",
-      "y":".0002",
-      "z":".0002"
+      "x":".0006",
+      "y":".0006",
+      "z":".0006"
     },
     "rotation":{
       "x":-0.1,
@@ -156,9 +156,9 @@
       "z":0
     },
     "cameraPosition":{
-      "x":3.37,
-      "y":0.27,
-      "z":-3.92
+      "x":3.783,
+      "y":1.400,
+      "z":-5.188
     },
     "season":"3",
     "photo":"assets/img/mohonk.jpg",
@@ -174,9 +174,9 @@
       "z":"-11.071"
     },
     "scale":{
-      "x":".0005",
-      "y":".0005",
-      "z":".0005"
+      "x":".001",
+      "y":".001",
+      "z":".001"
     },
     "rotation":{
       "x":0,
@@ -202,9 +202,9 @@
       "z":"6.55"
     },
     "scale":{
-      "x":".02",
-      "y":".02",
-      "z":".02"
+      "x":".04",
+      "y":".04",
+      "z":".04"
     },
     "rotation":{
       "x":"6.2",
@@ -370,9 +370,9 @@
       "z":"8.825"
     },
     "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+      "x":".002",
+      "y":".002",
+      "z":".002"
     },
     "rotation":{
       "x":0,
@@ -417,7 +417,7 @@
     "video":""
   },
   "garden2":{
-    "name":"The Garden2",
+    "name":"The Garden",
     "description":"A Beautiful Garden",
     "path":"assets/models/garden/garden.gltf",
     "position":{
