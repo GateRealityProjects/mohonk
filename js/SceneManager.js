@@ -92,6 +92,17 @@ async function init(){
   //Orbit Controls
   controls = new THREE.OrbitControls( camera );
   controls.update();
+  // var options = {
+	// 		speedFactor: 0.5,
+	// 		delta: 1,
+	// 		rotationFactor: 0.002,
+	// 		maxPitch: 55,
+	// 		hitTest: true,
+	// 		hitTestDistance: 40
+	// 	};
+	// 	controls = new TouchControls(container.parent(), camera, options);
+	// 	controls.setPosition(0, 35, 400);
+	// 	controls.addToScene(scene);
 
 
 
@@ -344,7 +355,6 @@ function update() {
   new THREE.Vector3(-34.7, 27.2, 40.6),
   new THREE.Vector3(17.4, 13.9, 21.2)
 ])
-console.log(curve);
 curve.closed = true;
 
 let mouseX;
@@ -352,17 +362,30 @@ let mouseXOnMouseDown;
 let rotateOnMouseDown;
 let targetRotation = 0;
 let currPoint = 0;
+let windowHalfX = window.innerWidth / 2;
 
 
 document.addEventListener('mousedown', onDocumentMouseDown, false);
+
 
  function onDocumentMouseDown(event) {
   event.preventDefault();
   document.addEventListener('mousemove', onDocumentMouseMove, false);
   document.addEventListener('mouseup', onDocumentMouseUp, false);
   document.addEventListener('mouseout', onDocumentMouseOut, false);
-  mouseXOnMouseDown = event.clientX - window.innerWidth / 2;;
+  // document.addEventListener( 'touchstart', onTouchStart, false);
+  document.addEventListener( 'touchmove', onTouchMove, false);
+  mouseXOnMouseDown = event.clientX - windowHalfX;
   rotateOnMouseDown = targetRotation;
+}
+
+function onTouchMove( event ) {
+  if ( event.touches.length == 1 ) {
+    event.preventDefault();
+    mouseX = event.touches[ 0 ].clientX - windowHalfX;
+    targetRotation = rotateOnMouseDown + ( mouseX - mouseXOnMouseDown ) * 0.05;
+    currPoint = (targetRotation - rotateOnMouseDown) * 0.05;
+  }
 }
 
 function onDocumentMouseMove(event) {
@@ -370,6 +393,17 @@ function onDocumentMouseMove(event) {
   targetRotation = rotateOnMouseDown + (mouseX - mouseXOnMouseDown) * 0.02;
   currPoint = (targetRotation - rotateOnMouseDown) * 0.05;
 }
+
+// function onTouchStart( event ) {
+//   if ( event.touches.length == 1 ) {
+//       // event.preventDefault();
+//       mouseXOnMouseDown = event.touches[ 0 ].pageX - windowHalfX;
+//       targetRotationOnMouseDown = targetRotation;
+//   }
+// };
+
+
+
 
 function onDocumentMouseUp(event) {
   document.removeEventListener('mousemove', onDocumentMouseMove, false);
@@ -384,7 +418,14 @@ function onDocumentMouseOut(event) {
 }
 
 
-//snow
+// snow
+let color;
+if (winterSnow) {
+  snowColor = 0xc1c0bd;
+} else {
+  snowColor = 0x7EC0EE;
+}
+
 let particleCount = 2000;
 let pMaterial = new THREE.PointsMaterial({
   color: 0xc1c0bd,
@@ -396,7 +437,6 @@ let particles = new THREE.Geometry;
 
 function renderParticles() {
     for (let i = 0; i < particleCount; i++) {
-      if (winterSnow) {
         let pX = Math.random()*1000 - 500;
         let pY = Math.random()* window.innerHeight;
         let pZ = Math.random()*1000 - 700;
@@ -404,10 +444,6 @@ function renderParticles() {
         particle.velocity = {};
         particle.velocity.y = -0.1;
         particles.vertices.push(particle);
-      } else {
-        particleCount = 0;
-
-      }
     }
     let particleSystem = new THREE.Points(particles, pMaterial);
     particleSystem.position.y = 200;

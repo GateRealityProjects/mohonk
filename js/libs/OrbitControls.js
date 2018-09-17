@@ -28,7 +28,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	// How far you can dolly in and out ( PerspectiveCamera only )
 	this.minDistance = 3;
-	this.maxDistance = Infinity; //14 // NOTE: was at 60 but changed for modelPlacementMode
+	this.maxDistance = 60; //14 // NOTE: was at 60 but changed for modelPlacementMode
 
 	// How far you can zoom in and out ( OrthographicCamera only )
 	this.minZoom = 0;
@@ -36,8 +36,8 @@ THREE.OrbitControls = function ( object, domElement ) {
 
 	// How far you can orbit vertically, upper and lower limits.
 	// Range is 0 to Math.PI radians.
-	this.minPolarAngle = - Infinity; // radians // NOTE: was at 1.1 changed for modelPlacementMode
-	this.maxPolarAngle = Infinity // radians 1.2 NOTE: also at 1.1
+	this.minPolarAngle = -1.1; // radians // NOTE: was at 1.1 changed for modelPlacementMode
+	this.maxPolarAngle = 1.1 // radians 1.2 NOTE: also at 1.1
 
 	// How far you can orbit horizontally, upper and lower limits.
 	// If set, must be a sub-interval of the interval [ - Math.PI, Math.PI ].
@@ -252,7 +252,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	var startEvent = { type: 'start' };
 	var endEvent = { type: 'end' };
 
-	var STATE = { NONE: - 1, ROTATE: 0, DOLLY: 1, PAN: 2, TOUCH_ROTATE: 3, TOUCH_DOLLY_PAN: 4 };
+	var STATE = { NONE: - 1, ROTATE: 0, DOLLY: 1, PAN: 2, TOUCH_ROTATE: 5, TOUCH_DOLLY_PAN: 4 };
 
 	var state = STATE.NONE;
 
