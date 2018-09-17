@@ -167,6 +167,7 @@ async function seasonChanger(season){
     } else if(season === 1) { //SPRING
       current_season = 1;
        winterSnow = false
+       fallBugs = false;
       refresh();
       loadGlb(terrains.springTerrain,false);
       for (var key in spring){
@@ -174,6 +175,7 @@ async function seasonChanger(season){
       }
     } else if(season === 2) { //SUMMER
        winterSnow = false
+       fallBugs = false;
       current_season = 2;
       refresh();
       loadGlb(terrains.summerTerrain,false);
@@ -182,7 +184,8 @@ async function seasonChanger(season){
       }
     } else if (season === 3) { //FALL
       current_season = 3;
-       winterSnow = false
+       winterSnow = false;
+       fallBugs = true;
       refresh();
       loadGlb(terrains.fallTerrain,false);
       for (var key in fall){
@@ -191,6 +194,7 @@ async function seasonChanger(season){
     } else if (season === 4) { //WINTER
       current_season = 4;
        winterSnow = true
+       fallBugs = true;
       refresh();
       loadGlb(terrains.winterTerrain,false);
       for (var key in winter){
@@ -302,14 +306,13 @@ function startIntro(){
   //Fade in Season dropdown
   document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
   document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
-  endIntro()
 }
 
 function endIntro(){
-  for (let i = 0; i < objects.length; i++) {
-    objects[i].bounce()
-  }
-  controls.autoRotate = false;
+  // for (let i = 0; i < objects.length; i++) {
+  //   objects[i].bounce()
+  // }
+  // controls.autoRotate = false;
 }
 
 
@@ -408,7 +411,7 @@ function onDocumentMouseOut(event) {
 }
 
 
-// snow
+// snow/firefly
 
 let particleCount = 2000;
 let pMaterial = new THREE.PointsMaterial({
@@ -455,7 +458,7 @@ function render(){
     pMaterial.color.set(0xffffff);
     renderParticles();
     simulateSnow();
-  } else {
+    } else {
     pMaterial.color.set(0x49A5FB);
   }
   if (!animating) {
