@@ -407,18 +407,18 @@ function onDocumentMouseOut(event) {
 
 
 // snow
-let color;
-if (winterSnow) {
-  snowColor = 0xc1c0bd;
-} else {
-  snowColor = 0x7EC0EE;
-}
+// let color;
+// if (winterSnow) {
+//   snowColor = 0xc1c0bd;(white)
+// } else {
+//   snowColor = 0x7EC0EE;(skyBlue)
+// }
 
 let particleCount = 2000;
 let pMaterial = new THREE.PointsMaterial({
-  color: 0xc1c0bd,
-  size: 1,
-  blending: THREE.AdditiveBlending,
+  color: 0x7EC0EE,
+  size: 1
+  // blending: THREE.AdditiveBlending,
 });
 let particles = new THREE.Geometry;
 
@@ -457,8 +457,11 @@ function render(){
   requestAnimationFrame( render );
   TWEEN.update();
   if (winterSnow){
+    pMaterial.color.set(0xffffff);
     renderParticles();
     simulateSnow();
+  } else {
+    pMaterial.color.set(0x49A5FB);
   }
 
   if (!animating) {
