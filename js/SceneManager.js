@@ -295,6 +295,7 @@ async function testGlb(object) {
 }
 
 function startIntro(){
+
   controls.autoRotate = true; //upgrade to custom camera animation
   //Transition between 3 different Icons
   document.getElementById("click").style.animation = "fadeInOut 2s";
@@ -308,11 +309,14 @@ function startIntro(){
   document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
 }
 
+function hide(element) {
+  //remove tutorial screen
+}
+
 function endIntro(){
-  // for (let i = 0; i < objects.length; i++) {
-  //   objects[i].bounce()
-  // }
+  // controls.autoRotate = true;
   // controls.autoRotate = false;
+  console.log("end intro");
 }
 
 
@@ -368,9 +372,7 @@ let currPoint = 0;
 let windowHalfX = window.innerWidth / 2;
 
 document.addEventListener('mousedown', onDocumentMouseDown, false);
-document.addEventListener('click', (event) => {
-  console.log(event);
-})
+
 
  function onDocumentMouseDown(event) {
   event.preventDefault();
