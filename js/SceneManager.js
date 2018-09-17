@@ -148,7 +148,6 @@ async function init(){
 }
 
 
-
 // Refresh scene and switch to selected Season
 async function seasonChanger(season){
     document.getElementById('loadingScreen').style.opacity = 1;
@@ -204,6 +203,7 @@ async function seasonChanger(season){
 }
 
 function refresh(){
+  animating = false
   for (var i = 0; i < objects.length; i++) {
     scene.remove(objects[i]);
   }
