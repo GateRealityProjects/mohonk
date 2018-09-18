@@ -409,3 +409,18 @@ canvas {
     opacity: 0;
   }
 }
+
+/* .sun-parent{
+  margin-right: 120px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+}
+.sun{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: linear-gradient(#e9ed07 ,#ffd600 );
+  padding: 10px;
+} */

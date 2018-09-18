@@ -13,6 +13,7 @@ var camera,
     opening,
     winterSnow,
     fallFog,
+    intro,
     composer;
 
 var current_season = 0;
@@ -94,17 +95,6 @@ async function init(){
   //Orbit Controls
   controls = new THREE.OrbitControls( camera );
   controls.update();
-  // var options = {
-	// 		speedFactor: 0.5,
-	// 		delta: 1,
-	// 		rotationFactor: 0.002,
-	// 		maxPitch: 55,
-	// 		hitTest: true,
-	// 		hitTestDistance: 40
-	// 	};
-	// 	controls = new TouchControls(container.parent(), camera, options);
-	// 	controls.setPosition(0, 35, 400);
-	// 	controls.addToScene(scene);
 
 
   // Lighting
@@ -297,8 +287,8 @@ async function testGlb(object) {
 
 function startIntro(){
 
-  controls.autoRotate = true; //upgrade to custom camera animation
-  //Transition between 3 different Icons
+  // controls.autoRotate = true; //upgrade to custom camera animation
+  // //Transition between 3 different Icons
   document.getElementById("click").style.animation = "fadeInOut 2s";
   document.getElementById("zoom").style.animation = "fadeInOut 2s 2s";
   document.getElementById("rotate").style.animation = "fadeInOut 2s 4s";
@@ -312,14 +302,29 @@ function startIntro(){
 
 function hide(element) {
   //remove tutorial screen
-}
+};
 
 function endIntro(){
-  // controls.autoRotate = true;
-  // controls.autoRotate = false;
-  console.log("end intro");
-}
+  intro = true;
+  camera = new THREE.PerspectiveCamera
+  new TWEEN.Tween(camera.position).to({
+    x:-12.2,
+    y: 10.8,
+    z: -17.3
+  }, 2000).start();
 
+  new TWEEN.Tween( controls.target).to( {
+    x: 0,
+    y: 0,
+    z: 0}, 2400)
+    .easing( TWEEN.Easing.Cubic.Out).onUpdate(function(){controls.update()}).start();
+    intro = false;
+};
+
+// new THREE.Vector3(-12.2, 10.8, -17.3),
+// new THREE.Vector3(-34.7, 27.2, 40.6),
+// new THREE.Vector3(17.4, 13.9, 21.2)
+// new THREE.Vector3(21.7, 17.1, -25.7),
 
 
 
@@ -357,11 +362,11 @@ function update() {
 
 
 //Camera Rotation Path
- let curve = new THREE.CatmullRomCurve3([
-  new THREE.Vector3(21.7, 17.1, -25.7),
-  new THREE.Vector3(-12.2, 10.8, -17.3),
-  new THREE.Vector3(-34.7, 27.2, 40.6),
-  new THREE.Vector3(17.4, 13.9, 21.2)
+ const curve = new THREE.CatmullRomCurve3([
+   new THREE.Vector3(21.7, 17.1, -25.7),
+   new THREE.Vector3(-12.2, 10.8, -17.3),
+   new THREE.Vector3(-34.7, 27.2, 40.6),
+   new THREE.Vector3(17.4, 13.9, 21.2)
 ])
 curve.closed = true;
 
@@ -396,19 +401,22 @@ function onTouchMove( event ) {
 }
 
 function onDocumentMouseMove(event) {
+  event.preventDefault();
   mouseX = event.clientX - window.innerWidth / 2;;
   targetRotation = rotateOnMouseDown + (mouseX - mouseXOnMouseDown) * 0.02;
-  currPoint = (targetRotation - rotateOnMouseDown) * 0.05;
+  currPoint = (targetRotation - rotateOnMouseDown);
 }
 
 
 function onDocumentMouseUp(event) {
+  event.preventDefault();
   document.removeEventListener('mousemove', onDocumentMouseMove, false);
   document.removeEventListener('mouseup', onDocumentMouseUp, false);
   document.removeEventListener('mouseout', onDocumentMouseOut, false);
 }
 
 function onDocumentMouseOut(event) {
+  event.preventDefault();
   document.removeEventListener('mousemove', onDocumentMouseMove, false);
   document.removeEventListener('mouseup', onDocumentMouseUp, false);
   document.removeEventListener('mouseout', onDocumentMouseOut, false);
@@ -468,8 +476,7 @@ function render(){
   }
    if (fallFog) {
      pMaterial.color.set(0x49A5FB);
-
-     scene.fog = new THREE.Fog('white', 0.000025, 200);
+     scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
    } else {
      scene.fog = false;
    }
