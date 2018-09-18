@@ -12,6 +12,7 @@ var camera,
     attractions,
     opening,
     winterSnow,
+    fallFog,
     composer;
 
 var current_season = 0;
@@ -20,6 +21,7 @@ var animating = false;
 
 var modelPlacementMode = false;
 var globalModel;
+
 
 init();
 
@@ -105,7 +107,6 @@ async function init(){
 	// 	controls.addToScene(scene);
 
 
-
   // Lighting
   var light = new THREE.DirectionalLight( 0xffffff, 1, 100);
   light.position.set(-30,60,45);
@@ -166,7 +167,7 @@ async function seasonChanger(season){
     } else if(season === 1) { //SPRING
       current_season = 1;
        winterSnow = false
-       fallBugs = false;
+       fallFog = false;
       refresh();
       loadGlb(terrains.springTerrain,false);
       for (var key in spring){
@@ -174,7 +175,7 @@ async function seasonChanger(season){
       }
     } else if(season === 2) { //SUMMER
        winterSnow = false
-       fallBugs = false;
+       fallFog = false;
       current_season = 2;
       refresh();
       loadGlb(terrains.summerTerrain,false);
@@ -184,7 +185,7 @@ async function seasonChanger(season){
     } else if (season === 3) { //FALL
       current_season = 3;
        winterSnow = false;
-       fallBugs = true;
+       fallFog = true;
       refresh();
       loadGlb(terrains.fallTerrain,false);
       for (var key in fall){
@@ -193,7 +194,7 @@ async function seasonChanger(season){
     } else if (season === 4) { //WINTER
       current_season = 4;
        winterSnow = true
-       fallBugs = true;
+       fallFog = true;
       refresh();
       loadGlb(terrains.winterTerrain,false);
       for (var key in winter){
@@ -372,17 +373,8 @@ let currPoint = 0;
 let windowHalfX = window.innerWidth / 2;
 
 
-var device = window.matchMedia("(max-width: 700px)")
-function triggerEventListeners(device) {
-  if (device.matches) {
-    console.log("phone");
-    document.addEventListener('mousedown', onDocumentMouseDown, false);
-  } else {
-  document.addEventListener('touchstart', onDocumentMouseDown, false)
-  console.log("comp");
-  }
-};
-triggerEventListeners(device);
+document.addEventListener('mousedown', onDocumentMouseDown, false);
+
 
  function onDocumentMouseDown(event) {
   event.preventDefault();
@@ -466,15 +458,24 @@ function renderParticles() {
 function render(){
   requestAnimationFrame( render );
   TWEEN.update();
+
   if (winterSnow) {
     pMaterial.color.set(0xffffff);
     renderParticles();
     simulateSnow();
-    } else {
+  } else  {
     pMaterial.color.set(0x49A5FB);
   }
+   if (fallFog) {
+     pMaterial.color.set(0x49A5FB);
+
+     scene.fog = new THREE.Fog('white', 0.000025, 200);
+   } else {
+     scene.fog = false;
+   }
+
   if (!animating) {
-    controls.update();
+    // controls.update();
     // controls.dispose(); // NOTE: comment in for deploy
   }
   if (!animating && !modelPlacementMode) {
