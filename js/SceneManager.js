@@ -371,8 +371,18 @@ let targetRotation = 0;
 let currPoint = 0;
 let windowHalfX = window.innerWidth / 2;
 
-document.addEventListener('mousedown', onDocumentMouseDown, false);
 
+var device = window.matchMedia("(max-width: 700px)")
+function triggerEventListeners(device) {
+  if (device.matches) {
+    console.log("phone");
+    document.addEventListener('mousedown', onDocumentMouseDown, false);
+  } else {
+  document.addEventListener('touchstart', onDocumentMouseDown, false)
+  console.log("comp");
+  }
+};
+triggerEventListeners(device);
 
  function onDocumentMouseDown(event) {
   event.preventDefault();
