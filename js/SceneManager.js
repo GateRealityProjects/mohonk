@@ -425,15 +425,22 @@ function onDocumentMouseOut(event) {
 
 // snow/firefly
 
+let particleSystem;
 let particleCount = 2000;
-let pMaterial = new THREE.PointsMaterial({
-  color: 0x49A5FB,
+const pMaterial = new THREE.PointsMaterial({
+  color: 0xffffff,
   size: 1
 });
-let particles = new THREE.Geometry;
+const particles = new THREE.Geometry;
 
+function removeParticleSystem() {
+  if (particleSystem) {
+    scene.remove(particleSystem);
+  }
+}
 
 function renderParticles() {
+    pMaterial.color.set(0xffffff);
     for (let i = 0; i < particleCount; i++) {
         let pX = Math.random()*1000 - 500;
         let pY = Math.random()* window.innerHeight;
@@ -443,7 +450,7 @@ function renderParticles() {
         particle.velocity.y = -0.1;
         particles.vertices.push(particle);
     }
-    let particleSystem = new THREE.Points(particles, pMaterial);
+    particleSystem = new THREE.Points(particles, pMaterial);
     particleSystem.position.y = 200;
     scene.add(particleSystem);
   };
@@ -452,7 +459,7 @@ function renderParticles() {
     let pCount = particleCount;
     while (pCount--) {
       let particle = particles.vertices[pCount];
-      if (particle.y < -200) {
+      if (particle.y < -300) {
         particle.y = 200;
         particle.velocity.y = -1;
       }
@@ -468,18 +475,17 @@ function render(){
   TWEEN.update();
 
   if (winterSnow) {
-    pMaterial.color.set(0xffffff);
     renderParticles();
     simulateSnow();
+  } else if (fallFog) {
+      removeParticleSystem();
+      // pMaterial.color.set(0x49A5FB);
+      scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
   } else  {
+    removeParticleSystem();
+    scene.fog = false;
     pMaterial.color.set(0x49A5FB);
   }
-   if (fallFog) {
-     pMaterial.color.set(0x49A5FB);
-     scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
-   } else {
-     scene.fog = false;
-   }
 
   if (!animating) {
     // controls.update();
