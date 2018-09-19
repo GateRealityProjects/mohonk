@@ -455,7 +455,6 @@ class Particle {
         flake.y = 200;
         this.particle.velocity.y = -1;
       }
-      debugger
       this.particle.velocity.y -= Math.random() * .005;
       flake.y += this.particle.velocity.y;
     }
@@ -468,7 +467,7 @@ class Particle {
   }
 };
 
-let particle = new Particle();
+const particle = new Particle();
 
 
 function render(){
@@ -486,7 +485,7 @@ function render(){
 
   if (!animating) {
     // controls.update();
-    // controls.dispose(); // NOTE: comment in for deploy
+    controls.dispose(); // NOTE: comment in for deploy
   }
   if (!animating && !modelPlacementMode) {
     curve.getPoint(currPoint, camera.position);

@@ -1,5 +1,5 @@
 var count = 0;
-let currPos;
+let prevPos;
 function trigger_animations(scene,objects,animating){
   scene.traverse( function( node ) {
     let nodeOffswitch = ["Rock climbing", "cloud"];
@@ -79,7 +79,7 @@ function resetTarget() {
 
 
 function moveCamera(object){
-  currPos = {
+  prevPos = {
     x: camera.position.x,
     y: camera.position.y,
     z: camera.position.z
@@ -105,9 +105,9 @@ function moveCamera(object){
 
 function resetCamera() {
   new TWEEN.Tween( camera.position ).to( {
-    x: currPos.x,
-    y: currPos.y,
-    z: currPos.z}, 2400)
+    x: prevPos.x,
+    y: prevPos.y,
+    z: prevPos.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).start();
 
   new TWEEN.Tween( controls.target).to( {
@@ -123,7 +123,10 @@ function resetCamera() {
     title.innerHTML = "";
     var more = document.getElementById("more");
     more.innerHTML = "";
-    animating = false;
+
+    setTimeout(() => {
+      animating = false;
+    }, 2400)
 }
 
 // "transfer test"
