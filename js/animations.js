@@ -71,31 +71,20 @@ function trigger_animations(scene,objects,animating){
 
 
 function resetTarget() {
-    controls.target.x = 0;
-    controls.target.y = 0;
-    controls.target.z = 0;
+    controls.target.x =0;
+    controls.target.y =0;
+    controls.target.z =0;
 };
 
-function disableNodes() {
-  for (let i = 0; i < objects.length; i++) {
-    nodeOffswitch.push(object[i].name);
-  }
-  trigger_animations(scene, objects, false)
-}
-
-function enableNodes() {
-  nodeOffswitch = ["Rock climbing", "cloud"];
-  trigger_animations(scene, objects, false)
-}
 
 function moveCamera(object){
   if (!animating) {
-  prevPos = {
-    x: camera.position.x,
-    y: camera.position.y,
-    z: camera.position.z
-  };
-}
+    prevPos = {
+      x: camera.position.x,
+      y: camera.position.y,
+      z: camera.position.z
+    };
+  }
   animating = true;
   new TWEEN.Tween( camera.position ).to( {
     x: object.cameraPosition.x,
@@ -103,9 +92,9 @@ function moveCamera(object){
     z: object.cameraPosition.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).start();
 
-    if (controls.target.x !== 0) {
+    if (controls.target !== 0) {
       resetTarget();
-    };
+    }
 
   new TWEEN.Tween( controls.target).to( {
     x: object.position.x,
@@ -119,13 +108,13 @@ function resetCamera() {
   new TWEEN.Tween( camera.position ).to( {
     x: prevPos.x,
     y: prevPos.y,
-    z: prevPos.z}, 2400)
+    z: prevPos.z}, 1000)
     .easing( TWEEN.Easing.Cubic.Out).start();
 
   new TWEEN.Tween( controls.target).to( {
     x: 0,
     y: 0,
-    z: 0}, 2400)
+    z: 0}, 1000)
     .easing( TWEEN.Easing.Cubic.Out).onUpdate(function(){controls.update()}).start();
     var titleBox = document.getElementById("objectTitleBox");
     titleBox.hidden = true;
@@ -138,7 +127,7 @@ function resetCamera() {
 
     setTimeout(() => {
       animating = false;
-    }, 2400);
+    }, 1000);
 }
 
 // "transfer test"
