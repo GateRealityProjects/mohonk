@@ -434,48 +434,57 @@ class Particle {
   }
 
    removeParticleSystem() {
-
-
+    let pointLocation = scene.children
+    for (let i = 0; i < pointLocation.length; i++) {
+        if (pointLocation[i].type === "Points") {
+        scene.remove(pointLocation[i]);
+      }
+    }
   }
 
-    renderParticles() {
-      // this.pMaterial.color.set(0xffffff);
-      for (let i = 0; i < this.particleCount; i++) {
-          let pX = Math.random()*1000 - 500;
-          let pY = Math.random()* window.innerHeight;
-          let pZ = Math.random()*1000 - 700;
-          this.particle = new THREE.Vector3(pX, pY, pZ);
-          this.particle.velocity = {};
-          this.particle.velocity.y = -0.1;
-          this.particles.vertices.push(this.particle);
-      }
-      this.particleSystem = new THREE.Points(this.particles, this.pMaterial);
-      this.particleSystem.position.y = 200;
-      scene.add(this.particleSystem);
-    };
 
-    simulateSnow(){
-      let pCount = this.particleCount;
-      while (pCount--) {
-        let flake = this.particles.vertices[pCount];
-        if (flake < -300) {
-          flake.y = 200;
-          this.particle.velocity.y = -1;
-        }
-        debugger
-        this.particle.velocity.y -= Math.random() * .005;
-        flake.y += this.particle.velocity.y;
-      }
-      this.particles.verticesNeedUpdate = true;
-    };
+  renderParticles() {
+    this.pMaterial.color.set(0xffffff);
+    for (let i = 0; i < this.particleCount; i++) {
+        let pX = Math.random()*1000 - 500;
+        let pY = Math.random()* window.innerHeight;
+        let pZ = Math.random()*1000 - 700;
+        this.particle = new THREE.Vector3(pX, pY, pZ);
+        this.particle.velocity = {};
+        this.particle.velocity.y = -0.1;
+        this.particles.vertices.push(this.particle);
+    }
+    this.particleSystem = new THREE.Points(this.particles, this.pMaterial);
+    this.particleSystem.position.y = 200;
+    scene.add(this.particleSystem);
+  };
 
-    update() {
-      this.renderParticles();
-      this.simulateSnow();
+  simulateSnow(){
+    let pCount = this.particleCount;
+    while (pCount--) {
+      let flake = this.particles.vertices[pCount];
+      if (flake < -300) {
+        flake.y = 200;
+        this.particle.velocity.y = -1;
       }
+      debugger
+      this.particle.velocity.y -= Math.random() * .005;
+      flake.y += this.particle.velocity.y;
+    }
+    this.particles.verticesNeedUpdate = true;
+  };
+
+  update() {
+    if (this.particleCount === 0) {
+      this.resetParticleSystem();
+    }
+    this.renderParticles();
+    this.simulateSnow();
+    }
 };
 
 let particle = new Particle();
+
 
 function render(){
   TWEEN.update();
@@ -484,11 +493,10 @@ function render(){
     particle.update();
   } else if (fallFog) {
       particle.removeParticleSystem();
-      particle.pMaterial.color.set(0x49A5FB);
       scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
   } else  {
-    particle.removeParticleSystem();
-    scene.fog = false;
+      particle.removeParticleSystem();
+      scene.fog = false;
   }
 
   if (!animating) {
