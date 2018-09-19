@@ -410,18 +410,6 @@ function removeListeners() {
 }
 
 
-
-// function resize(renderer) {
-//   const document = renderer.domElement;
-//   const width = document.clientWidth;
-//   const height = document.clientHeight;
-//   const needResize = document.width !== width || document.height !== height;
-//   if (needResize) {
-//     renderer.setSize(width, height, false);
-//   }
-//   return needResize;
-// }
-
 // snow
 class Particle {
   constructor() {
@@ -475,12 +463,9 @@ class Particle {
   };
 
   update() {
-    if (this.particleCount === 0) {
-      this.resetParticleSystem();
-    }
     this.renderParticles();
     this.simulateSnow();
-    }
+  }
 };
 
 let particle = new Particle();
