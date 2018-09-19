@@ -376,18 +376,6 @@ let windowHalfX = window.innerWidth / 2
 let rotateOnMouseDown;
 let targetRotation = 0;
 
-// let device = window.matchMedia("(max-width: 700px)")
-// function triggerEventListeners(device) {
-  // if (device.matches) {
-    // console.log("phone");
-    // document.addEventListener('mousedown', onDocumentMouseDown, false);
-  // } else {
-    // document.addEventListener('touchstart', onDocumentMouseDown, false)
-  // console.log("comp");
-  // }
-// };
-// triggerEventListeners(device);
-
 document.addEventListener('mousedown', onDocumentMouseDown, true);
 
 function onDocumentMouseDown(event) {
@@ -423,78 +411,84 @@ function removeListeners() {
 
 
 
-function resize(renderer) {
-  const document = renderer.domElement;
-  const width = document.clientWidth;
-  const height = document.clientHeight;
-  const needResize = document.width !== width || document.height !== height;
-  if (needResize) {
-    renderer.setSize(width, height, false);
+// function resize(renderer) {
+//   const document = renderer.domElement;
+//   const width = document.clientWidth;
+//   const height = document.clientHeight;
+//   const needResize = document.width !== width || document.height !== height;
+//   if (needResize) {
+//     renderer.setSize(width, height, false);
+//   }
+//   return needResize;
+// }
+
+// snow
+class Particle {
+  constructor() {
+  this.particleCount = 2000;
+  this.pMaterial = new THREE.PointsMaterial({
+    color: 0xffffff,
+    size: 1
+  });
+  this.particles = new THREE.Geometry;
   }
-  return needResize;
-}
 
-// snow/firefly
+   removeParticleSystem() {
 
-let particleSystem;
-let particleCount = 2000;
-const pMaterial = new THREE.PointsMaterial({
-  color: 0xffffff,
-  size: 1
-});
-const particles = new THREE.Geometry;
 
-function removeParticleSystem() {
-  if (particleSystem) {
-    scene.remove(particleSystem);
   }
-}
 
-function renderParticles() {
-    pMaterial.color.set(0xffffff);
-    for (let i = 0; i < particleCount; i++) {
-        let pX = Math.random()*1000 - 500;
-        let pY = Math.random()* window.innerHeight;
-        let pZ = Math.random()*1000 - 700;
-        particle = new THREE.Vector3(pX, pY, pZ);
-        particle.velocity = {};
-        particle.velocity.y = -0.1;
-        particles.vertices.push(particle);
-    }
-    particleSystem = new THREE.Points(particles, pMaterial);
-    particleSystem.position.y = 200;
-    scene.add(particleSystem);
-  };
-
-  function simulateSnow(){
-    let pCount = particleCount;
-    while (pCount--) {
-      let particle = particles.vertices[pCount];
-      if (particle.y < -300) {
-        particle.y = 200;
-        particle.velocity.y = -1;
+    renderParticles() {
+      // this.pMaterial.color.set(0xffffff);
+      for (let i = 0; i < this.particleCount; i++) {
+          let pX = Math.random()*1000 - 500;
+          let pY = Math.random()* window.innerHeight;
+          let pZ = Math.random()*1000 - 700;
+          this.particle = new THREE.Vector3(pX, pY, pZ);
+          this.particle.velocity = {};
+          this.particle.velocity.y = -0.1;
+          this.particles.vertices.push(this.particle);
       }
-      particle.velocity.y -= Math.random() * .005;
-      particle.y += particle.velocity.y;
-    }
-    particles.verticesNeedUpdate = true;
-  };
+      this.particleSystem = new THREE.Points(this.particles, this.pMaterial);
+      this.particleSystem.position.y = 200;
+      scene.add(this.particleSystem);
+    };
 
+    simulateSnow(){
+      let pCount = this.particleCount;
+      while (pCount--) {
+        let flake = this.particles.vertices[pCount];
+        if (flake < -300) {
+          flake.y = 200;
+          this.particle.velocity.y = -1;
+        }
+        debugger
+        this.particle.velocity.y -= Math.random() * .005;
+        flake.y += this.particle.velocity.y;
+      }
+      this.particles.verticesNeedUpdate = true;
+    };
+
+    update() {
+      this.renderParticles();
+      this.simulateSnow();
+      }
+};
+
+let particle = new Particle();
 
 function render(){
   TWEEN.update();
 
   if (winterSnow) {
-    renderParticles();
-    simulateSnow();
+    particle.update();
   } else if (fallFog) {
-      removeParticleSystem();
-      // pMaterial.color.set(0x49A5FB);
+      particle.removeParticleSystem();
+      particle.pMaterial.color.set(0x49A5FB);
       scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
   } else  {
-    removeParticleSystem();
+    particle.removeParticleSystem();
     scene.fog = false;
-    pMaterial.color.set(0x49A5FB);
   }
 
   if (!animating) {
