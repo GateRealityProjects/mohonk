@@ -1,15 +1,14 @@
 var count = 0;
 let prevPos;
+let nodeOffswitch;
 function trigger_animations(scene,objects,animating){
-  scene.traverse( function( node ) {
-    let nodeOffswitch = ["Rock climbing", "cloud"];
+  scene.traverse((node) => {
+    nodeOffswitch = ["Rock climbing", "cloud"];
     if ( node.selectable && !nodeOffswitch.includes(node.name) ) {
-      // console.log(node);
-      node.on('mouseover', function(ev) {
-        // node.scale.set(1.2,1.2,1.2);
+      node.on('mouseover', (ev) => {
         bounce(node);
       });
-      node.on('click', function(ev) {
+      node.on('click', (ev) => {
         animating = true;
         moveCamera(node);
         var titleBox = document.getElementById("objectTitleBox");
@@ -75,15 +74,28 @@ function resetTarget() {
     controls.target.x = 0;
     controls.target.y = 0;
     controls.target.z = 0;
+};
+
+function disableNodes() {
+  for (let i = 0; i < objects.length; i++) {
+    nodeOffswitch.push(object[i].name);
+  }
+  trigger_animations(scene, objects, false)
 }
 
+function enableNodes() {
+  nodeOffswitch = ["Rock climbing", "cloud"];
+  trigger_animations(scene, objects, false)
+}
 
 function moveCamera(object){
+  if (!animating) {
   prevPos = {
     x: camera.position.x,
     y: camera.position.y,
     z: camera.position.z
   };
+}
   animating = true;
   new TWEEN.Tween( camera.position ).to( {
     x: object.cameraPosition.x,
@@ -93,7 +105,7 @@ function moveCamera(object){
 
     if (controls.target.x !== 0) {
       resetTarget();
-    }
+    };
 
   new TWEEN.Tween( controls.target).to( {
     x: object.position.x,
@@ -126,7 +138,7 @@ function resetCamera() {
 
     setTimeout(() => {
       animating = false;
-    }, 2400)
+    }, 2400);
 }
 
 // "transfer test"

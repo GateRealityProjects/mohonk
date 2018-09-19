@@ -430,7 +430,6 @@ class Particle {
     }
   }
 
-
   renderParticles() {
     this.pMaterial.color.set(0xffffff);
     for (let i = 0; i < this.particleCount; i++) {
@@ -472,41 +471,43 @@ const particle = new Particle();
 
 function render(){
   TWEEN.update();
-
   if (winterSnow) {
     particle.update();
   } else if (fallFog) {
-      particle.removeParticleSystem();
-      scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
+    particle.removeParticleSystem();
+    scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
   } else  {
-      particle.removeParticleSystem();
-      scene.fog = false;
+    particle.removeParticleSystem();
+    scene.fog = false;
   }
-
   if (!animating) {
-    // controls.update();
-    controls.dispose(); // NOTE: comment in for deploy
+    controls.update();
+    controls.dispose();
+    // curve.getPoint(currPoint, camera.position);
+    // camera.lookAt(scene.position);
   }
+  // // NOTE: excepting requestAnimationFrame and renderer
+  // // NOTE: everything below this line to be removed fro production
   if (!animating && !modelPlacementMode) {
     curve.getPoint(currPoint, camera.position);
     camera.lookAt(scene.position);
-    } else {
-    if (globalModel) {
-      globalModel.position.copy(controls.target);
-      globalModel.position.y = camera.position.y - 2;
-      controls.update();
-    }
-
-    if (modelPlacementMode) {
-      document.getElementById("modelX").innerHTML = controls.target.x;
-      document.getElementById("modelY").innerHTML = camera.position.y - 2;
-      document.getElementById("modelZ").innerHTML = controls.target.z;
-
-      document.getElementById("cameraX").innerHTML = camera.position.x;
-      document.getElementById("cameraY").innerHTML = camera.position.y;
-      document.getElementById("cameraZ").innerHTML = camera.position.z;
-    }
-  }
+  } //else {
+    // if (globalModel) {
+    //   globalModel.position.copy(controls.target);
+    //   globalModel.position.y = camera.position.y - 2;
+    //   controls.update();
+    // }
+    //
+    // if (modelPlacementMode) {
+    //   document.getElementById("modelX").innerHTML = controls.target.x;
+    //   document.getElementById("modelY").innerHTML = camera.position.y - 2;
+    //   document.getElementById("modelZ").innerHTML = controls.target.z;
+    //
+    //   document.getElementById("cameraX").innerHTML = camera.position.x;
+    //   document.getElementById("cameraY").innerHTML = camera.position.y;
+    //   document.getElementById("cameraZ").innerHTML = camera.position.z;
+    // }
+  // }
   renderer.render( scene, camera );
   requestAnimationFrame( render );
 }
