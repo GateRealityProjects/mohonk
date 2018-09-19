@@ -1,4 +1,5 @@
 var count = 0;
+let currPos;
 function trigger_animations(scene,objects,animating){
   scene.traverse( function( node ) {
     let nodeOffswitch = ["Rock climbing", "cloud"];
@@ -66,10 +67,8 @@ function trigger_animations(scene,objects,animating){
       onComplete(function() {
         object.animating = false
       }).start();
-
   }
-
-}
+};
 
 
 function resetTarget() {
@@ -80,7 +79,11 @@ function resetTarget() {
 
 
 function moveCamera(object){
-  // moveCamera(object);
+  currPos = {
+    x: camera.position.x,
+    y: camera.position.y,
+    z: camera.position.z
+  };
   animating = true;
   new TWEEN.Tween( camera.position ).to( {
     x: object.cameraPosition.x,
@@ -97,15 +100,14 @@ function moveCamera(object){
     y: object.position.y,
     z: object.position.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).onUpdate(function(){controls.update()}).start();
-
 }
 
 
 function resetCamera() {
   new TWEEN.Tween( camera.position ).to( {
-    x: 21.7,
-    y: 17.1,
-    z: -25.7}, 2400)
+    x: currPos.x,
+    y: currPos.y,
+    z: currPos.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).start();
 
   new TWEEN.Tween( controls.target).to( {
