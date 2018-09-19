@@ -321,11 +321,6 @@ function endIntro(){
     intro = false;
 };
 
-// new THREE.Vector3(-12.2, 10.8, -17.3),
-// new THREE.Vector3(-34.7, 27.2, 40.6),
-// new THREE.Vector3(17.4, 13.9, 21.2)
-// new THREE.Vector3(21.7, 17.1, -25.7),
-
 
 
 //scaling
@@ -370,28 +365,33 @@ function update() {
 ])
 curve.closed = true;
 
+curve.getPoint(0, camera.position);
+camera.lookAt(scene.position);
+
 let mouseX;
-let mouseXOnMouseDown;
+var mouseXOnMouseDown = 0;
+var currPoint = 0;
+var currPointOnMouseDown = 0;
+let windowHalfX = window.innerWidth / 2
 let rotateOnMouseDown;
 let targetRotation = 0;
-let currPoint = 0;
-let windowHalfX = window.innerWidth / 2;
 
 
-document.addEventListener('mousedown', onDocumentMouseDown, false);
 
+document.addEventListener('mousedown touchstart', onDocumentMouseDown, true);
 
- function onDocumentMouseDown(event) {
+function onDocumentMouseDown(event) {
   event.preventDefault();
-  document.addEventListener('touchmove', onTouchMove, false);
-  document.addEventListener('mousemove', onDocumentMouseMove, false);
-  document.addEventListener('mouseup', onDocumentMouseUp, false);
-  document.addEventListener('mouseout', onDocumentMouseOut, false);
-  mouseXOnMouseDown = event.clientX - windowHalfX;
-  rotateOnMouseDown = targetRotation;
-};
+  event.stopPropagation();
+  window.addEventListener('touchmove', onTouchMove, true)
+  window.addEventListener('mousemove', onDocumentMouseMove, true);
+  window.addEventListener('mouseup', removeListeners, true);
+  mouseXOnMouseDown = event.clientX;
+  currPointOnMouseDown = currPoint;
+}
 
 function onTouchMove( event ) {
+  debugger
   if ( event.touches.length == 1 ) {
     event.preventDefault();
     mouseX = event.touches[ 0 ].clientX - windowHalfX;
@@ -399,29 +399,30 @@ function onTouchMove( event ) {
     currPoint = (targetRotation - rotateOnMouseDown) * 0.05;
   }
 }
-
 function onDocumentMouseMove(event) {
   event.preventDefault();
-  mouseX = event.clientX - window.innerWidth / 2;;
-  targetRotation = rotateOnMouseDown + (mouseX - mouseXOnMouseDown) * 0.02;
-  currPoint = (targetRotation - rotateOnMouseDown);
+  event.stopPropagation();
+  var deltaMouseX = event.clientX - mouseXOnMouseDown;
+  currPoint = THREE.Math.euclideanModulo(currPointOnMouseDown + deltaMouseX * 0.0005, 1);
+}
+
+function removeListeners() {
+  window.removeEventListener('mousemove', onDocumentMouseMove, true);
+  window.removeEventListener('mouseup', removeListeners, true);
 }
 
 
-function onDocumentMouseUp(event) {
-  event.preventDefault();
-  document.removeEventListener('mousemove', onDocumentMouseMove, false);
-  document.removeEventListener('mouseup', onDocumentMouseUp, false);
-  document.removeEventListener('mouseout', onDocumentMouseOut, false);
-}
 
-function onDocumentMouseOut(event) {
-  event.preventDefault();
-  document.removeEventListener('mousemove', onDocumentMouseMove, false);
-  document.removeEventListener('mouseup', onDocumentMouseUp, false);
-  document.removeEventListener('mouseout', onDocumentMouseOut, false);
+function resize(renderer) {
+  const document = renderer.domElement;
+  const width = document.clientWidth;
+  const height = document.clientHeight;
+  const needResize = document.width !== width || document.height !== height;
+  if (needResize) {
+    renderer.setSize(width, height, false);
+  }
+  return needResize;
 }
-
 
 // snow/firefly
 
@@ -471,7 +472,6 @@ function renderParticles() {
 
 
 function render(){
-  requestAnimationFrame( render );
   TWEEN.update();
 
   if (winterSnow) {
@@ -512,6 +512,7 @@ function render(){
     }
   }
   renderer.render( scene, camera );
+  requestAnimationFrame( render );
 }
 
 
