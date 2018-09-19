@@ -369,32 +369,42 @@ curve.getPoint(0, camera.position);
 camera.lookAt(scene.position);
 
 let mouseX;
-var mouseXOnMouseDown = 0;
-var currPoint = 0;
-var currPointOnMouseDown = 0;
+let mouseXOnMouseDown = 0;
+let currPoint = 0;
+let currPointOnMouseDown = 0;
 let windowHalfX = window.innerWidth / 2
 let rotateOnMouseDown;
 let targetRotation = 0;
 
+// let device = window.matchMedia("(max-width: 700px)")
+// function triggerEventListeners(device) {
+  // if (device.matches) {
+    // console.log("phone");
+    // document.addEventListener('mousedown', onDocumentMouseDown, false);
+  // } else {
+    // document.addEventListener('touchstart', onDocumentMouseDown, false)
+  // console.log("comp");
+  // }
+// };
+// triggerEventListeners(device);
 
-
-document.addEventListener('mousedown touchstart', onDocumentMouseDown, true);
+document.addEventListener('mousedown', onDocumentMouseDown, true);
 
 function onDocumentMouseDown(event) {
   event.preventDefault();
   event.stopPropagation();
-  window.addEventListener('touchmove', onTouchMove, true)
+  window.addEventListener('touchmove', onDocumentTouchMove, true)
   window.addEventListener('mousemove', onDocumentMouseMove, true);
   window.addEventListener('mouseup', removeListeners, true);
+  rotateOnMouseDown = targetRotation;
   mouseXOnMouseDown = event.clientX;
   currPointOnMouseDown = currPoint;
 }
 
-function onTouchMove( event ) {
-  debugger
+function onDocumentTouchMove( event ) {
   if ( event.touches.length == 1 ) {
     event.preventDefault();
-    mouseX = event.touches[ 0 ].clientX - windowHalfX;
+    mouseX = event.touches[0].clientX - windowHalfX;
     targetRotation = rotateOnMouseDown + ( mouseX - mouseXOnMouseDown ) * 0.05;
     currPoint = (targetRotation - rotateOnMouseDown) * 0.05;
   }
@@ -402,7 +412,7 @@ function onTouchMove( event ) {
 function onDocumentMouseMove(event) {
   event.preventDefault();
   event.stopPropagation();
-  var deltaMouseX = event.clientX - mouseXOnMouseDown;
+  let deltaMouseX = event.clientX - mouseXOnMouseDown;
   currPoint = THREE.Math.euclideanModulo(currPointOnMouseDown + deltaMouseX * 0.0005, 1);
 }
 
