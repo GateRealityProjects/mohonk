@@ -57,13 +57,13 @@ async function init(){
     const spring = [3, 4, 5];
 
     if (summer.includes(month)) {
-      return 2;
-    } else if (fall.includes(month)) {
       return 3;
-    } else if (winter.includes(month)) {
+    } else if (fall.includes(month)) {
       return 4;
-    } else {
+    } else if (winter.includes(month)) {
       return 1;
+    } else {
+      return 2;
     }
   }
 
@@ -87,7 +87,6 @@ async function init(){
     allSeasons = JSON.parse(response);
     seasonChanger(seasonActualizer()); //Load inital season after parsing json
   });
-
 
   // Object Interaction
   interaction = new THREE.Interaction(renderer, scene, camera);
@@ -118,7 +117,6 @@ async function init(){
   ambient.intensity = 0.6;
   scene.add(ambient);
 
-
   //Have loading screen update on Loading Manager
   THREE.DefaultLoadingManager.onLoad = function ( ) {
     document.getElementById('loadingScreen').style.animation = "fadeOut 1s";
@@ -138,7 +136,6 @@ async function init(){
   update();
 
 }
-
 
 // Refresh scene and switch to selected Season
 async function seasonChanger(season){
@@ -286,27 +283,25 @@ async function testGlb(object) {
     );
 }
 
+//intro sequence
 function startIntro(){
-  // //Transition between 3 different Icons
   if (document.getElementById('click')) {
+    document.getElementById("click").style.animation = "fadeInOut 2s";
+    document.getElementById("zoom").style.animation = "fadeInOut 2s 2s";
+    document.getElementById("rotate").style.animation = "fadeInOut 2s 4s";
+    document.getElementById("tutorialOne").style.animation = "fadeOut 1s 5s forwards";
+    //Switch to Season text
+    document.getElementById("tutorialTwo").style.animation = "fadeIn 1s 6s forwards";
+    //Fade in Season dropdown
+    document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
+    document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
+    setTimeout(() => {
+      endIntro()
+    }, 9000)
+  }
+};
 
-  document.getElementById("click").style.animation = "fadeInOut 2s";
-  document.getElementById("zoom").style.animation = "fadeInOut 2s 2s";
-  document.getElementById("rotate").style.animation = "fadeInOut 2s 4s";
-  document.getElementById("tutorialOne").style.animation = "fadeOut 1s 5s forwards";
-  //Switch to Season text
-  document.getElementById("tutorialTwo").style.animation = "fadeIn 1s 6s forwards";
-  //Fade in Season dropdown
-  document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
-  document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
-  setTimeout(() => {
-    endIntro()
-  }, 9000)
-}
 
-
-}
-//
 function hide() {
    let elem = document.getElementById('tutorialScreen');
    elem.parentNode.removeChild(elem);
@@ -330,8 +325,6 @@ function endIntro(){
     animating = false
   },9000);
 };
-
-
 
 
 //scaling
@@ -362,12 +355,8 @@ function update() {
 
     camera.position.set( 0, 5, 9);
   }
-  // var title = document.getElementById("sunTitle");
-  // title.innerHTML = ("Camera: "+camera.position.x+" "+camera.position.y+ " "+ camera.position.z+ "Origin: "+controls.target.x+" "+controls.target.y+ " "+ controls.target.z);
 
-
-
-//Camera Rotation Path
+//Camera Rotation Path and event listeners
  const curve = new THREE.CatmullRomCurve3([
    new THREE.Vector3(21.7, 17.1, -25.7),
    new THREE.Vector3(-12.2, 10.8, -17.3),
@@ -421,7 +410,7 @@ function removeListeners() {
 }
 
 
-// snow
+// make snow particles
 class Particle {
   constructor(particleCount, color) {
   this.particleCount = particleCount;
@@ -490,7 +479,6 @@ class Particle {
 
 
 const snow = new Particle(2000, 0xffffff);
-const leaf = new Particle(2000, 0xff7300);
 
 
 function render(){
@@ -502,16 +490,12 @@ function render(){
 
     TWEEN.update();
     if (winterSnow) {
-      // leaf.removeParticleSystem();
       snow.update();
     } else if (fallFog) {
       snow.removeParticleSystem();
-      // leaf.update();
       scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
     } else  {
-      // leaf.removeParticleSystem();
       snow.removeParticleSystem();
-      // leaf.removeParticleSystem();
       scene.fog = false;
     }
     if (!animating) {
@@ -520,7 +504,6 @@ function render(){
       curve.getPoint(currPoint, camera.position);
       camera.lookAt(scene.position);
     }
-
 }
 
   renderer.render( scene, camera );
