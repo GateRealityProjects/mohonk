@@ -19,6 +19,7 @@ var camera,
 var current_season = 0;
 var objects = [];
 var animating = false;
+intro = false;
 
 var modelPlacementMode = false;
 var globalModel;
@@ -296,17 +297,34 @@ function startIntro(){
   //Fade in Season dropdown
   document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
   document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
+
 }
 //
 function hide() {
    let elem = document.getElementById('tutorialScreen');
    elem.parentNode.removeChild(elem);
+   endIntro();
 };
 
 function endIntro(){
+  animating = true;
+  intro = true;
+  let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 2400).easing(TWEEN.Easing.Quadratic.Out);
+  let introTween2 = new TWEEN.Tween(camera.position).to({x:-34.7, y:27.2, z:40.6},2400).easing(TWEEN.Easing.Quadratic.Out);
+  let introTween3 = new TWEEN.Tween(camera.position).to({x:17.4, y:13.9, z:21.2},2400).easing(TWEEN.Easing.Quadratic.Out);
+  let introTween4 = new TWEEN.Tween(camera.position).to({x:21.7, y:17.1, z:-25.7}, 2400).easing(TWEEN.Easing.Quadratic.Out);
 
+  introTween1.chain(introTween2);
+  introTween2.chain(introTween3);
+  introTween3.chain(introTween4);
+  introTween1.start();
 
+  setTimeout(() => {
+    intro = false;
+    animating = false
+  },9000);
 };
+
 
 
 
@@ -470,51 +488,35 @@ const leaf = new Particle(2000, 0xff7300);
 
 
 function render(){
+
   if (intro) {
-    endIntro();
-  }
-  TWEEN.update();
-  if (winterSnow) {
-    // leaf.removeParticleSystem();
-    snow.update();
-  } else if (fallFog) {
-    snow.removeParticleSystem();
-    // leaf.update();
-    scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
-  } else  {
-    leaf.removeParticleSystem();
-    snow.removeParticleSystem();
-    // leaf.removeParticleSystem();
-    scene.fog = false;
-  }
-  if (!animating) {
-    controls.update();
-    controls.dispose();
-    // curve.getPoint(currPoint, camera.position);
-    // camera.lookAt(scene.position);
-  }
-  // // NOTE: excepting requestAnimationFrame and renderer
-  // // NOTE: everything below this line to be removed fro production
-  if (!animating && !modelPlacementMode) {
-    curve.getPoint(currPoint, camera.position);
-    camera.lookAt(scene.position);
-  } //else {
-    // if (globalModel) {
-    //   globalModel.position.copy(controls.target);
-    //   globalModel.position.y = camera.position.y - 2;
-    //   controls.update();
-    // }
-    //
-    // if (modelPlacementMode) {
-    //   document.getElementById("modelX").innerHTML = controls.target.x;
-    //   document.getElementById("modelY").innerHTML = camera.position.y - 2;
-    //   document.getElementById("modelZ").innerHTML = controls.target.z;
-    //
-    //   document.getElementById("cameraX").innerHTML = camera.position.x;
-    //   document.getElementById("cameraY").innerHTML = camera.position.y;
-    //   document.getElementById("cameraZ").innerHTML = camera.position.z;
-    // }
-  // }
+    TWEEN.update();
+    camera.lookAt(new THREE.Vector3(0,0,0))
+  } else {
+
+    TWEEN.update();
+    if (winterSnow) {
+      // leaf.removeParticleSystem();
+      snow.update();
+    } else if (fallFog) {
+      snow.removeParticleSystem();
+      // leaf.update();
+      scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
+    } else  {
+      // leaf.removeParticleSystem();
+      snow.removeParticleSystem();
+      // leaf.removeParticleSystem();
+      scene.fog = false;
+    }
+    if (!animating) {
+      controls.update();
+      controls.dispose();
+      curve.getPoint(currPoint, camera.position);
+      camera.lookAt(scene.position);
+    }
+
+}
+
   renderer.render( scene, camera );
   requestAnimationFrame( render );
 }
