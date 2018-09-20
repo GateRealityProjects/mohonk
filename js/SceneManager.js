@@ -288,6 +288,8 @@ async function testGlb(object) {
 
 function startIntro(){
   // //Transition between 3 different Icons
+  if (document.getElementById('click')) {
+
   document.getElementById("click").style.animation = "fadeInOut 2s";
   document.getElementById("zoom").style.animation = "fadeInOut 2s 2s";
   document.getElementById("rotate").style.animation = "fadeInOut 2s 4s";
@@ -297,13 +299,17 @@ function startIntro(){
   //Fade in Season dropdown
   document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
   document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
+  setTimeout(() => {
+    endIntro()
+  }, 9000)
+}
+
 
 }
 //
 function hide() {
    let elem = document.getElementById('tutorialScreen');
    elem.parentNode.removeChild(elem);
-   endIntro();
 };
 
 function endIntro(){
