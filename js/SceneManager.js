@@ -308,6 +308,7 @@ function hide() {
 };
 
 function endIntro(){
+
   animating = true;
   intro = true;
   let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 2400).easing(TWEEN.Easing.Quadratic.Out);
@@ -324,6 +325,7 @@ function endIntro(){
     intro = false;
     animating = false
   },9000);
+
 };
 
 
