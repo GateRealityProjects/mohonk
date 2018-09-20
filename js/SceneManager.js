@@ -125,7 +125,7 @@ async function init(){
     if (modelPlacementMode) {
       document.getElementById('modelPlacementscreen').hidden = false;
     }
-    // startIntro();
+    startIntro();
     console.log( 'Loading Complete!');
     trigger_animations(scene,objects,animating);
   };
@@ -286,8 +286,6 @@ async function testGlb(object) {
 }
 
 function startIntro(){
-
-  // controls.autoRotate = true; //upgrade to custom camera animation
   // //Transition between 3 different Icons
   document.getElementById("click").style.animation = "fadeInOut 2s";
   document.getElementById("zoom").style.animation = "fadeInOut 2s 2s";
@@ -299,26 +297,15 @@ function startIntro(){
   document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
   document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
 }
-
-function hide(element) {
-  //remove tutorial screen
+//
+function hide() {
+   let elem = document.getElementById('tutorialScreen');
+   elem.parentNode.removeChild(elem);
 };
 
 function endIntro(){
-  intro = true;
-  camera = new THREE.PerspectiveCamera
-  new TWEEN.Tween(camera.position).to({
-    x:-12.2,
-    y: 10.8,
-    z: -17.3
-  }, 2000).start();
 
-  new TWEEN.Tween( controls.target).to( {
-    x: 0,
-    y: 0,
-    z: 0}, 2400)
-    .easing( TWEEN.Easing.Cubic.Out).onUpdate(function(){controls.update()}).start();
-    intro = false;
+
 };
 
 
@@ -412,11 +399,13 @@ function removeListeners() {
 
 // snow
 class Particle {
-  constructor() {
-  this.particleCount = 2000;
+  constructor(particleCount, color) {
+  this.particleCount = particleCount;
   this.pMaterial = new THREE.PointsMaterial({
-    color: 0xffffff,
-    size: 1
+    color: color,
+    size: 1,
+    blending: THREE.AdditiveBlending,
+    transparent: true,
   });
   this.particles = new THREE.Geometry;
   }
@@ -431,7 +420,6 @@ class Particle {
   }
 
   renderParticles() {
-    this.pMaterial.color.set(0xffffff);
     for (let i = 0; i < this.particleCount; i++) {
         let pX = Math.random()*1000 - 500;
         let pY = Math.random()* window.innerHeight;
@@ -444,7 +432,8 @@ class Particle {
     this.particleSystem = new THREE.Points(this.particles, this.pMaterial);
     this.particleSystem.position.y = 200;
     scene.add(this.particleSystem);
-  };
+  }
+
 
   simulateSnow(){
     let pCount = this.particleCount;
@@ -458,7 +447,16 @@ class Particle {
       flake.y += this.particle.velocity.y;
     }
     this.particles.verticesNeedUpdate = true;
-  };
+  }
+
+  removeParticleSystem() {
+   let pointLocation = scene.children
+   for (let i = 0; i < pointLocation.length; i++) {
+       if (pointLocation[i].type === "Points") {
+       scene.remove(pointLocation[i]);
+     }
+   }
+ }
 
   update() {
     this.renderParticles();
@@ -466,18 +464,27 @@ class Particle {
   }
 };
 
-const particle = new Particle();
+
+const snow = new Particle(2000, 0xffffff);
+const leaf = new Particle(2000, 0xff7300);
 
 
 function render(){
+  if (intro) {
+    endIntro();
+  }
   TWEEN.update();
   if (winterSnow) {
-    particle.update();
+    // leaf.removeParticleSystem();
+    snow.update();
   } else if (fallFog) {
-    particle.removeParticleSystem();
+    snow.removeParticleSystem();
+    // leaf.update();
     scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
   } else  {
-    particle.removeParticleSystem();
+    leaf.removeParticleSystem();
+    snow.removeParticleSystem();
+    // leaf.removeParticleSystem();
     scene.fog = false;
   }
   if (!animating) {

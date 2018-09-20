@@ -155,6 +155,7 @@
 
 /* Nav Stuff*/
 #backButtonButton{
+  background: rgba(165, 204, 198, 0.69);
   pointer-events:all;
   font-family: GothamLight;
   font-size: 16pt;

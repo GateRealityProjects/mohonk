@@ -28,7 +28,6 @@ function trigger_animations(scene,objects,animating){
         modalDescription.innerHTML = node.description;
 
         // jquery for loading backgrounds
-        // console.log(node.photo);
         $('#modalFullscreen').css('background', 'url('+ node.photo +')');
         $('#modalFullscreen').css('background-size', 'cover');
         var video = document.getElementById("mainVideo")
@@ -48,7 +47,6 @@ function trigger_animations(scene,objects,animating){
   let cpy = JSON.parse(JSON.stringify(obj));
 
   if (!object.animating) {
-    console.log(object);
     object.animating = true;
     new TWEEN.Tween( object.scale).to( {
       x: object.scale.x * 1.5,
