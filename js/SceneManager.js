@@ -304,8 +304,10 @@ function hide() {
 };
 
 function endIntro(){
-
-
+  new TWEEN.Tween(camera.position).to({ x: -12.2, y: 17.1, z: -17.3 }, 2000).easing(TWEEN.Easing.Linear.Out).start();
+  new TWEEN.Tween(camera.position).to({ x: -34.7, y: 27.2, z: 40.6 }, 2000).easing(TWEEN.Easing.Linear.Out).start();
+  new TWEEN.Tween(camera.position).to({ x: 17.4, y: 13.9, z: 21.2 }, 2000).easing(TWEEN.Easing.Linear.Out).start();
+  new TWEEN.Tween(camera.position).to({ x: 21.7, y: 17.1, z: -25.7 }, 2000).easing(TWEEN.Easing.Linear.Out).start();
 };
 
 
