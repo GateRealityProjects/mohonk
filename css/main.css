@@ -66,6 +66,7 @@
   /* opacity: .6; */
 }
 .tutorialText{
+  top: 5vh;
   bottom: 50vh;
   font-family: GothamBold;
   font-size: 5vh;
@@ -75,8 +76,10 @@
   position: fixed;
 }
 #tutorialOne{
+  margin-top: 20%;
 }
 #tutorialTwo{
+  margin-top: 20%;
   opacity: 0;
 }
 

@@ -14,12 +14,14 @@ var camera,
     winterSnow,
     fallFog,
     intro,
+    interrupted,
     composer;
 
 var current_season = 0;
 var objects = [];
 var animating = false;
 intro = false;
+interrupted = false;
 
 var modelPlacementMode = false;
 var globalModel;
@@ -295,9 +297,15 @@ function startIntro(){
     //Fade in Season dropdown
     document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
     document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
-    setTimeout(() => {
+    document.addEventListener('click', () => {
+      interrupted = true;
+    })
+
+    if (!interrupted) {
+      setTimeout(() => {
       endIntro()
-    }, 9000)
+      }, 9000)
+    }
   }
 };
 
@@ -308,7 +316,6 @@ function hide() {
 };
 
 function endIntro(){
-
   animating = true;
   intro = true;
   let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 2400).easing(TWEEN.Easing.Quadratic.Out);
@@ -318,14 +325,11 @@ function endIntro(){
 
   introTween1.chain(introTween2);
   introTween2.chain(introTween3);
-  introTween3.chain(introTween4);
-  introTween1.start();
-
-  setTimeout(() => {
+  introTween3.chain(introTween4).onComplete(() => {
     intro = false;
-    animating = false
-  },9000);
-
+    animating = false;
+  });
+  introTween1.start();
 };
 
 
