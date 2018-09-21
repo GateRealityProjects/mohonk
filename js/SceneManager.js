@@ -299,13 +299,17 @@ function startIntro(){
     document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
     document.addEventListener('click', () => {
       interrupted = true;
+      console.log('interrrupted');
     })
 
-    if (!interrupted) {
-      setTimeout(() => {
-      endIntro()
-      }, 9000)
-    }
+    setTimeout(() => {
+      if (!interrupted) {
+        endIntro()
+      } else {
+        document.removeEventListener('click', () => {})
+        interrupted = false;
+      }
+    }, 9000)
   }
 };
 
