@@ -428,25 +428,25 @@ function removeListeners() {
 
 // make snow particles
 class Particle {
-  constructor(particleCount, color, boolean) {
+  constructor(particleCount, color, size, boolean) {
     this.color = color
+    this.size = size
   this.particleCount = particleCount;
     if (boolean) {
-      // let randomColor = colors[Math.floor(Math.random() * colors.length)];
-      let texture = new THREE.TextureLoader().load( '../assets/img/leaf.png' );
+      this.texture = new THREE.TextureLoader().load( '../assets/img/leaf.png' );
       this.pMaterial = new THREE.PointsMaterial({
-        map: texture,
+        map: this.texture,
         color: this.color,
-        size: 5,
+        size: this.size,
         side: THREE.DoubleSide,
         transparent: true
       });
-
     } else {
-      let texture = new THREE.TextureLoader().load( '../assets/img/snowFlake.png' );
+      this.texture = new THREE.TextureLoader().load( '../assets/img/snowFlake.png' );
       this.pMaterial = new THREE.PointsMaterial({
+        map: this.texture,
         color: this.color,
-        size: 1,
+        size: this.size,
         blending: THREE.AdditiveBlending,
         transparent: true
       });
@@ -509,8 +509,6 @@ class Particle {
   }
 };
 
-
-
 const createSun = () => {
   let geometry = new THREE.SphereGeometry( 3, 8, 8);
   let material = new THREE.MeshToonMaterial( {color: 0xe1ec16, reflectivity: 1});
@@ -519,12 +517,9 @@ const createSun = () => {
   return sphere;
 };
 
-const snow = new Particle(2000, 0xffffff, false);
-const leaf = new Particle(350, 0xe38e1c, true );
-// 0xe38e1c
+const snow = new Particle(2000, 0xffffff, 2, false);
+const leaf = new Particle(250, 0xe38e1c, 5, true );
 const sun = createSun();
-
-
 
 
 function render(){
