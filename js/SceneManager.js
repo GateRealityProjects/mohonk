@@ -517,10 +517,16 @@ const createSun = () => {
   return sphere;
 };
 
+const winterLight = () => {
+  let light = new THREE.PointLight( 0xffffff, 0.8, 100 );
+  light.position.set( 0, 50, 0 );
+  return light;
+}
+
 const snow = new Particle(2000, 0xffffff, 2, false);
 const leaf = new Particle(250, 0xe38e1c, 5, true );
 const sun = createSun();
-
+const snowLight = winterLight();
 
 function render(){
 
@@ -531,6 +537,7 @@ function render(){
 
     TWEEN.update();
     if (winterSnow) {
+      // scene.add( snowLight );
       scene.remove( sun );
       snow.update();
     } else if (fallFog) {
