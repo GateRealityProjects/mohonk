@@ -432,21 +432,20 @@ class Particle {
     this.color = color
   this.particleCount = particleCount;
     if (boolean) {
-      // let colors = [0xfa5f1d, 0xd2ab03, 0xa14b04];
       // let randomColor = colors[Math.floor(Math.random() * colors.length)];
       let texture = new THREE.TextureLoader().load( '../assets/img/leaf.png' );
       this.pMaterial = new THREE.PointsMaterial({
         map: texture,
-        color: color,
-        size: 3,
-        blending: THREE.AdditiveBlending,
-        side: THREE.DoubleSide
+        color: this.color,
+        size: 5,
+        side: THREE.DoubleSide,
+        transparent: true
       });
 
     } else {
       let texture = new THREE.TextureLoader().load( '../assets/img/snowFlake.png' );
       this.pMaterial = new THREE.PointsMaterial({
-        color: color,
+        color: this.color,
         size: 1,
         blending: THREE.AdditiveBlending,
         transparent: true
@@ -468,7 +467,7 @@ class Particle {
     for (let i = 0; i < this.particleCount; i++) {
         let pX = Math.random()*1000 - 500;
         let pY = Math.random()* window.innerHeight;
-        let pZ = Math.random()*1000 - 700;
+        let pZ = Math.random()* 1000 - 700;
         this.particle = new THREE.Vector3(pX, pY, pZ);
         this.particle.velocity = {};
         this.particle.velocity.y = -0.1;
@@ -506,6 +505,7 @@ class Particle {
   update() {
     this.renderParticles();
     this.simulateSnow();
+    this.particles.colorsNeedUpdate = true;
   }
 };
 
@@ -520,7 +520,8 @@ const createSun = () => {
 };
 
 const snow = new Particle(2000, 0xffffff, false);
-const leaf = new Particle(200, 0xfa5f1d, true );
+const leaf = new Particle(350, 0xe38e1c, true );
+// 0xe38e1c
 const sun = createSun();
 
 
@@ -541,7 +542,6 @@ function render(){
       scene.remove( sun );
       snow.removeParticleSystem();
       leaf.update()
-      scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
     } else if (summerSun)  {
       snow.removeParticleSystem();
       scene.add( sun );
