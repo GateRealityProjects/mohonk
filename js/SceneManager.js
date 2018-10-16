@@ -315,8 +315,10 @@ function startIntro(){
 
 
 function hide() {
+  setTimeout(() => {
    let elem = document.getElementById('tutorialScreen');
    elem.parentNode.removeChild(elem);
+ }, 2000)
 };
 
 function endIntro(){
