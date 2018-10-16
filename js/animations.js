@@ -44,6 +44,7 @@ function trigger_animations(scene,objects,animating){
     z:object.scale.z
   }
 
+
   let cpy = JSON.parse(JSON.stringify(obj));
 
   if (!object.animating) {
@@ -127,6 +128,7 @@ function resetCamera() {
       animating = false;
     }, 1000);
 }
+
 
 
 

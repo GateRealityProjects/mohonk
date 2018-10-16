@@ -138,5 +138,61 @@
     "season":"2",
     "photo":"assets/img/mohonk.jpg",
     "video":""
+  },
+  "cloud1":{
+    "name":"cloud",
+    "description":"clouds",
+    "path":"assets/models/Cloud/Cloud.gltf",
+    "position":{
+      "x":"-10.42",
+      "y":"12.73",
+      "z":"12.13"
+    },
+    "scale":{
+      "x":".5",
+      "y":".5",
+      "z":".5"
+    },
+    "rotation":{
+      "x":0,
+      "y":10.5,
+      "z":0
+    },
+    "cameraPosition":{
+      "x":1.75,
+      "y":0.71,
+      "z":2.23
+    },
+    "season":"0",
+    "photo":"assets/img/mohonk.jpg",
+    "video":""
+  },
+  "cloud2":{
+    "name":"cloud",
+    "description":"clouds",
+    "path":"assets/models/Cloud/Cloud.gltf",
+    "position":{
+      "x":"1.926",
+      "y":"12.73",
+      "z":"-6.06"
+    },
+    "scale":{
+      "x":".5",
+      "y":".5",
+      "z":".5"
+    },
+    "rotation":{
+      "x":0,
+      "y":10.5,
+      "z":0
+    },
+    "cameraPosition":{
+      "x":1.75,
+      "y":0.71,
+      "z":2.23
+    },
+    "season":"0",
+    "photo":"assets/img/mohonk.jpg",
+    "video":""
   }
 }

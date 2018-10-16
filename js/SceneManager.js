@@ -13,6 +13,7 @@ var camera,
     opening,
     winterSnow,
     fallFog,
+    summerSun,
     intro,
     interrupted,
     composer;
@@ -158,6 +159,7 @@ async function seasonChanger(season){
       current_season = 1;
        winterSnow = false
        fallFog = false;
+       summerSun = false;
       refresh();
       loadGlb(terrains.springTerrain,false);
       for (var key in spring){
@@ -166,6 +168,7 @@ async function seasonChanger(season){
     } else if(season === 2) { //SUMMER
        winterSnow = false
        fallFog = false;
+       summerSun = true;
       current_season = 2;
       refresh();
       loadGlb(terrains.summerTerrain,false);
@@ -176,6 +179,7 @@ async function seasonChanger(season){
       current_season = 3;
        winterSnow = false;
        fallFog = true;
+       summerSun = false
       refresh();
       loadGlb(terrains.fallTerrain,false);
       for (var key in fall){
@@ -185,6 +189,7 @@ async function seasonChanger(season){
       current_season = 4;
        winterSnow = true
        fallFog = true;
+       summerSun = false;
       refresh();
       loadGlb(terrains.winterTerrain,false);
       for (var key in winter){
@@ -315,10 +320,8 @@ function startIntro(){
 
 
 function hide() {
-  setTimeout(() => {
    let elem = document.getElementById('tutorialScreen');
    elem.parentNode.removeChild(elem);
- }, 3000)
 };
 
 function endIntro(){
@@ -426,6 +429,7 @@ function removeListeners() {
 // make snow particles
 class Particle {
   constructor(particleCount, color) {
+  this.texture = THREE.ImageUtils.loadTexture('./assets/img/leaf.png'),
   this.particleCount = particleCount;
   this.pMaterial = new THREE.PointsMaterial({
     color: color,
@@ -490,8 +494,26 @@ class Particle {
   }
 };
 
+const leaves = () => {
+  let texture = new THREE.TextureLoader().load( '../assets/img/ginko.png' )
+  var geometry = new THREE.CircleBufferGeometry( 0.3, 10, 0, 1.2);
+  let material = new THREE.MeshBasicMaterial( { map: texture } );
+  let leaf = new THREE.Mesh( geometry, material );
+  leaf.position.set(20, 10, 0);
+  return leaf;
+};
+
+const createSun = () => {
+let geometry = new THREE.SphereGeometry( 3, 8, 8);
+let material = new THREE.MeshToonMaterial( {color: 0xe1ec16, reflectivity: 1});
+let sphere = new THREE.Mesh( geometry, material );
+sphere.position.set(30, 15, 0)
+return sphere;
+};
 
 const snow = new Particle(2000, 0xffffff);
+const sun = createSun();
+const leaf = leaves();
 
 
 function render(){
@@ -503,11 +525,18 @@ function render(){
 
     TWEEN.update();
     if (winterSnow) {
+      scene.remove( sun );
       snow.update();
     } else if (fallFog) {
+      scene.remove( sun );
       snow.removeParticleSystem();
+      scene.add(leaf);
       scene.fog = new THREE.Fog('lightgrey', 0.000025, 200);
-    } else  {
+    } else if (summerSun)  {
+      snow.removeParticleSystem();
+      scene.add( sun );
+    } else {
+      scene.remove( sun );
       snow.removeParticleSystem();
       scene.fog = false;
     }
