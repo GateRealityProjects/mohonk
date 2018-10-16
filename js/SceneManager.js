@@ -318,7 +318,7 @@ function hide() {
   setTimeout(() => {
    let elem = document.getElementById('tutorialScreen');
    elem.parentNode.removeChild(elem);
- }, 2000)
+ }, 3000)
 };
 
 function endIntro(){

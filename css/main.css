@@ -156,18 +156,27 @@
   color: #014631;
 }
 
+
+.butto-parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
 /* Nav Stuff*/
 #backButtonButton{
   background: rgba(165, 204, 198, 0.69);
   pointer-events:all;
   font-family: GothamLight;
-  font-size: 16pt;
+  font-size: 12pt;
   color: #014631;
   border: 0px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15x;
+  padding-right: 15px;
   padding-top: 17px;
   padding-bottom: 17px;
+  margin: 20px;
 }
 #backButtonButton:hover, #backButtonButton:visited, #backButtonButton:link, #backButtonButton:active
 {
@@ -205,7 +214,7 @@
 }
 #expandIcon{
   color: #014631;
-  padding-right: 10px;
+  padding-right: 20px;
   width: 2em;
   vertical-align: middle;
 }
