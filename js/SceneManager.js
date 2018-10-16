@@ -526,7 +526,7 @@ const winterLight = () => {
 const snow = new Particle(2000, 0xffffff, 2, false);
 const leaf = new Particle(250, 0xe38e1c, 5, true );
 const sun = createSun();
-const snowLight = winterLight();
+// const snowLight = winterLight();
 
 function render(){
 
@@ -537,9 +537,10 @@ function render(){
 
     TWEEN.update();
     if (winterSnow) {
-      // scene.add( snowLight );
       scene.remove( sun );
+      // leaf.removeParticleSystem();
       snow.update();
+      // scene.add( snowLight );
     } else if (fallFog) {
       scene.remove( sun );
       snow.removeParticleSystem();
