@@ -329,7 +329,8 @@ function endIntro(){
 
   introTween1.chain(introTween2);
   introTween2.chain(introTween3);
-  introTween3.chain(introTween4).onComplete(() => {
+  introTween3.chain(introTween4);
+  introTween4.chain().onComplete(() => {
     intro = false;
     animating = false;
   });
