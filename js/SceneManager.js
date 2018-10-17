@@ -375,10 +375,15 @@ function update() {
 //Camera Rotation Path and event listeners
  const curve = new THREE.CatmullRomCurve3([
    new THREE.Vector3(21.7, 17.1, -25.7),
-   new THREE.Vector3(-12.2, 10.8, -17.3),
-   new THREE.Vector3(-34.7, 27.2, 40.6),
-   new THREE.Vector3(17.4, 13.9, 21.2)
-])
+   new THREE.Vector3(29.05, 6.58, -7.56),
+   new THREE.Vector3(18.43, 6.88, 5.31),
+   new THREE.Vector3(-4.92, 8.43, 30.84),
+   new THREE.Vector3(-30.20, 6.65, 34.4),
+   new THREE.Vector3(-29.09, 1.76, 9.75 ),
+   new THREE.Vector3(-24.86, 2.48, 1.46),
+   new THREE.Vector3(-11.66, 5.54, -13.10)
+ ])
+
 curve.closed = true;
 
 curve.getPoint(0, camera.position);
