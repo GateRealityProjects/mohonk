@@ -445,6 +445,7 @@ class Particle {
     } else {
       // this.texture = new THREE.TextureLoader().load( '../assets/img/snowFlake.png' );
       this.pMaterial = new THREE.PointsMaterial({
+        map: this.texture,
         size: this.size,
         blending: THREE.AdditiveBlending,
         transparent: true
