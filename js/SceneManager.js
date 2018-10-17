@@ -26,6 +26,7 @@ interrupted = false;
 
 var modelPlacementMode = false;
 var globalModel;
+let removedParticles = false;
 
 
 init();
@@ -160,6 +161,7 @@ async function seasonChanger(season){
        winterSnow = false
        fallFog = false;
        summerSun = false;
+       removedParticles = false;
       refresh();
       loadGlb(terrains.springTerrain,false);
       for (var key in spring){
@@ -168,6 +170,7 @@ async function seasonChanger(season){
     } else if(season === 2) { //SUMMER
        winterSnow = false
        fallFog = false;
+       removedParticles = false;
        summerSun = true;
       current_season = 2;
       refresh();
@@ -178,8 +181,9 @@ async function seasonChanger(season){
     } else if (season === 3) { //FALL
       current_season = 3;
        winterSnow = false;
-       fallFog = true;
        summerSun = false
+       removedParticles = false;
+       fallFog = true;
       refresh();
       loadGlb(terrains.fallTerrain,false);
       for (var key in fall){
@@ -189,6 +193,7 @@ async function seasonChanger(season){
       current_season = 4;
        winterSnow = true
        fallFog = true;
+       removedParticles = false;
        summerSun = false;
       refresh();
       loadGlb(terrains.winterTerrain,false);
@@ -460,14 +465,6 @@ class Particle {
   this.particles = new THREE.Geometry;
 }
 
-   removeParticleSystem() {
-    let pointLocation = scene.children
-    for (let i = 0; i < pointLocation.length; i++) {
-        if (pointLocation[i].type === "Points") {
-        scene.remove(pointLocation[i]);
-      }
-    }
-  }
 
   renderParticles() {
     for (let i = 0; i < this.particleCount; i++) {
@@ -500,12 +497,13 @@ class Particle {
   }
 
   removeParticleSystem() {
-   let pointLocation = scene.children
-   for (let i = 0; i < pointLocation.length; i++) {
-       if (pointLocation[i].type === "Points") {
-       scene.remove(pointLocation[i]);
+    let points = scene.children
+    for (let i = 0; i < points.length; i++) {
+      if (points[i].type === "Points") {
+       scene.remove(points[i]);
      }
    }
+   removedParticles = true;
  }
 
   update() {
@@ -537,12 +535,17 @@ function render(){
 
     TWEEN.update();
     if (winterSnow) {
-      scene.remove( sun );
-      leaf.removeParticleSystem();
-      snow.update();
+      if (!removedParticles) {
+        leaf.removeParticleSystem();
+      }
+        scene.remove( sun );
+        snow.update();
     } else if (fallFog) {
-      scene.remove( sun );
-      snow.removeParticleSystem();
+        if (removedParticles) {
+        snow.removeParticleSystem();
+      }
+        scene.remove( sun );
+        removedParticles = true;
       leaf.update()
     } else if (summerSun)  {
       snow.removeParticleSystem();
