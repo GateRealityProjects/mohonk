@@ -32,8 +32,8 @@
     "description":"Ride in a horse drawn carriage",
     "path":"assets/models/carriage/CarriageRides.gltf",
     "position":{
-      "x":"5.37",
-      "y":"-0.4",
+      "x":"6.5",
+      "y":"-0.1",
       "z":"-2.07"
     },
     "scale":{
@@ -42,14 +42,14 @@
       "z":".001"
     },
     "rotation":{
-      "x":0.1,
+      "x":-0.1,
       "y":-0.7,
-      "z":0.1
+      "z":0
     },
     "cameraPosition":{
-      "x":3.783,
-      "y":1.400,
-      "z":-5.188
+      "x":2.783,
+      "y":2.400,
+      "z":-7.188
     },
     "season":"3",
     "photo":"assets/img/mohonk.jpg",
@@ -60,9 +60,9 @@
     "description":"Ride horses!",
     "path":"assets/models/horse/HorseRiding.gltf",
     "position":{
-      "x":"10.514",
-      "y":"-0.713",
-      "z":"-11.071"
+      "x":"13.514",
+      "y":"0.55",
+      "z":"-8.071"
     },
     "scale":{
       "x":".002",
