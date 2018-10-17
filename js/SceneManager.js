@@ -448,10 +448,11 @@ class Particle {
         transparent: true
       });
     } else {
-      // this.texture = new THREE.TextureLoader().load( '../assets/img/snowFlake.png' );
+      this.texture = new THREE.TextureLoader().load( '../assets/img/snowFlake.png' );
       this.pMaterial = new THREE.PointsMaterial({
         map: this.texture,
         size: this.size,
+        color: this.color,
         blending: THREE.AdditiveBlending,
         transparent: true
       });
