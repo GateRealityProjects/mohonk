@@ -428,9 +428,10 @@ function removeListeners() {
 
 // make snow particles
 class Particle {
-  constructor(particleCount, color, size, boolean) {
-    this.color = color
-    this.size = size
+  constructor(particleCount, color, size, name, boolean) {
+    this.color = color;
+    this.size = size;
+    this.name = name;
   this.particleCount = particleCount;
     if (boolean) {
       this.texture = new THREE.TextureLoader().load( '../assets/img/leaf.png' );
@@ -442,10 +443,8 @@ class Particle {
         transparent: true
       });
     } else {
-      this.texture = new THREE.TextureLoader().load( '../assets/img/snowFlake.png' );
+      // this.texture = new THREE.TextureLoader().load( '../assets/img/snowFlake.png' );
       this.pMaterial = new THREE.PointsMaterial({
-        map: this.texture,
-        color: this.color,
         size: this.size,
         blending: THREE.AdditiveBlending,
         transparent: true
@@ -517,16 +516,10 @@ const createSun = () => {
   return sphere;
 };
 
-const winterLight = () => {
-  let light = new THREE.PointLight( 0xffffff, 0.8, 100 );
-  light.position.set( 0, 50, 0 );
-  return light;
-}
 
-const snow = new Particle(2000, 0xffffff, 2, false);
-const leaf = new Particle(250, 0xe38e1c, 5, true );
+const snow = new Particle(2000, 0xffffff, 2, "snow", false);
+const leaf = new Particle(250, 0xe38e1c, 5, "leaf", true );
 const sun = createSun();
-// const snowLight = winterLight();
 
 function render(){
 
@@ -538,9 +531,8 @@ function render(){
     TWEEN.update();
     if (winterSnow) {
       scene.remove( sun );
-      // leaf.removeParticleSystem();
+      leaf.removeParticleSystem();
       snow.update();
-      // scene.add( snowLight );
     } else if (fallFog) {
       scene.remove( sun );
       snow.removeParticleSystem();
