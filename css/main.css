@@ -175,13 +175,7 @@
     }
 }
 
-/* Nav Stuff*/
-/* .container-fluid {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-} */
+
 @media only screen and (min-width: 601px) {
   #backButtonButton{
     background: rgba(165, 204, 198, 0.69);
@@ -259,7 +253,6 @@
 }
 #topbarLogo{
   height: 20vh;
-  width: 100px;
 }
 
 /* Modal stuff*/
