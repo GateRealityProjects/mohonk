@@ -156,27 +156,48 @@
   color: #014631;
 }
 
-
-.butto-parent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+@media only screen and (max-width: 600px) {
+    #backButtonButton {
+      background: rgba(165, 204, 198, 0.69);
+      pointer-events:all;
+      font-family: GothamLight;
+      font-size: 8pt;
+      color: #014631;
+      border: 0px;
+      padding-left: 5x;
+      padding-right: 5px;
+      padding-top: 15px;
+      padding-bottom: 16px;
+      margin-left: 1px;
+      margin-right: 5px;
+      margin-top: 0;
+      border: 3px solid #014631;
+    }
 }
 
 /* Nav Stuff*/
-#backButtonButton{
-  background: rgba(165, 204, 198, 0.69);
-  pointer-events:all;
-  font-family: GothamLight;
-  font-size: 12pt;
-  color: #014631;
-  border: 0px;
-  padding-left: 15x;
-  padding-right: 15px;
-  padding-top: 17px;
-  padding-bottom: 17px;
-  margin: 20px;
+/* .container-fluid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+} */
+@media only screen and (min-width: 601px) {
+  #backButtonButton{
+    background: rgba(165, 204, 198, 0.69);
+    pointer-events:all;
+    font-family: GothamLight;
+    font-size: 12pt;
+    color: #014631;
+    border: 0px;
+    padding-left: 15x;
+    padding-right: 15px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 0;
+  }
 }
 #backButtonButton:hover, #backButtonButton:visited, #backButtonButton:link, #backButtonButton:active
 {
@@ -238,6 +259,7 @@
 }
 #topbarLogo{
   height: 20vh;
+  width: 100px;
 }
 
 /* Modal stuff*/
