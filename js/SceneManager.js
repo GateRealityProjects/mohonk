@@ -335,7 +335,7 @@ function endIntro(){
   let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 2400).easing(TWEEN.Easing.Quadratic.Out);
   let introTween2 = new TWEEN.Tween(camera.position).to({x:-34.7, y:27.2, z:40.6},2400).easing(TWEEN.Easing.Quadratic.Out);
   let introTween3 = new TWEEN.Tween(camera.position).to({x:17.4, y:13.9, z:21.2},2400).easing(TWEEN.Easing.Quadratic.Out);
-  let introTween4 = new TWEEN.Tween(camera.position).to({x:21.7, y:17.1, z:-25.7}, 2400).easing(TWEEN.Easing.Quadratic.Out);
+  let introTween4 = new TWEEN.Tween(camera.position).to({x:26.83, y:7.48, z:-12.98}, 2400).easing(TWEEN.Easing.Quadratic.Out);
 
   introTween1.chain(introTween2);
   introTween2.chain(introTween3);
@@ -378,15 +378,15 @@ function update() {
   }
 
 //Camera Rotation Path and event listeners
- const curve = new THREE.CatmullRomCurve3([
-   new THREE.Vector3(21.7, 17.1, -25.7),
-   new THREE.Vector3(29.05, 6.58, -7.56),
-   new THREE.Vector3(18.43, 6.88, 5.31),
-   new THREE.Vector3(-4.92, 8.43, 30.84),
-   new THREE.Vector3(-30.20, 6.65, 34.4),
-   new THREE.Vector3(-29.09, 1.76, 9.75 ),
-   new THREE.Vector3(-24.86, 2.48, 1.46),
-   new THREE.Vector3(-11.66, 5.54, -13.10)
+const curve = new THREE.CatmullRomCurve3([
+  new THREE.Vector3(21.7, 7.1, -25.7),
+  new THREE.Vector3(29.05, 6.58, -3.56),
+  new THREE.Vector3(18.43, 6.88, 5.31),
+  new THREE.Vector3(-4.92, 8.43, 30.84),
+  new THREE.Vector3(-19.20, 6.65, 34.4),
+  new THREE.Vector3(-29.09, 1.76, 9.75 ),
+  new THREE.Vector3(-24.86, 2.48, 1.46),
+  new THREE.Vector3(-11.66, 5.54, -13.10)
  ])
 
 curve.closed = true;
@@ -535,15 +535,15 @@ function render(){
 
     TWEEN.update();
     if (winterSnow) {
-      if (!removedParticles) {
+      // if (!removedParticles) {
         leaf.removeParticleSystem();
-      }
+      // }
         scene.remove( sun );
         snow.update();
     } else if (fallFog) {
-        if (removedParticles) {
+        // if (removedParticles) {
         snow.removeParticleSystem();
-      }
+      // }
         scene.remove( sun );
         removedParticles = true;
       leaf.update()
