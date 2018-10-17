@@ -26,7 +26,6 @@ interrupted = false;
 
 var modelPlacementMode = false;
 var globalModel;
-let removedParticles = false;
 
 
 init();
@@ -161,7 +160,6 @@ async function seasonChanger(season){
        winterSnow = false
        fallFog = false;
        summerSun = false;
-       removedParticles = false;
       refresh();
       loadGlb(terrains.springTerrain,false);
       for (var key in spring){
@@ -170,7 +168,6 @@ async function seasonChanger(season){
     } else if(season === 2) { //SUMMER
        winterSnow = false
        fallFog = false;
-       removedParticles = false;
        summerSun = true;
       current_season = 2;
       refresh();
@@ -182,7 +179,6 @@ async function seasonChanger(season){
       current_season = 3;
        winterSnow = false;
        summerSun = false
-       removedParticles = false;
        fallFog = true;
       refresh();
       loadGlb(terrains.fallTerrain,false);
@@ -379,10 +375,10 @@ function update() {
 
 //Camera Rotation Path and event listeners
 const curve = new THREE.CatmullRomCurve3([
-  new THREE.Vector3(21.7, 7.1, -25.7),
+  new THREE.Vector3(26.83, 7.48, -12.98),
   new THREE.Vector3(29.05, 6.58, -3.56),
   new THREE.Vector3(18.43, 6.88, 5.31),
-  new THREE.Vector3(-4.92, 8.43, 30.84),
+  new THREE.Vector3(-8.92, 8.43, 30.84),
   new THREE.Vector3(-19.20, 6.65, 34.4),
   new THREE.Vector3(-29.09, 1.76, 9.75 ),
   new THREE.Vector3(-24.86, 2.48, 1.46),
@@ -503,7 +499,6 @@ class Particle {
        scene.remove(points[i]);
      }
    }
-   removedParticles = true;
  }
 
   update() {
@@ -517,7 +512,7 @@ const createSun = () => {
   let geometry = new THREE.SphereGeometry( 3, 8, 8);
   let material = new THREE.MeshToonMaterial( {color: 0xe1ec16, reflectivity: 1});
   let sphere = new THREE.Mesh( geometry, material );
-  sphere.position.set(30, 15, 0)
+  sphere.position.set(30, 15, 0);
   return sphere;
 };
 
@@ -530,23 +525,18 @@ function render(){
 
   if (intro) {
     TWEEN.update();
-    camera.lookAt(new THREE.Vector3(0,0,0))
+    camera.lookAt(new THREE.Vector3(0,0,0));
   } else {
 
     TWEEN.update();
     if (winterSnow) {
-      // if (!removedParticles) {
         leaf.removeParticleSystem();
-      // }
         scene.remove( sun );
         snow.update();
     } else if (fallFog) {
-        // if (removedParticles) {
         snow.removeParticleSystem();
-      // }
         scene.remove( sun );
-        removedParticles = true;
-      leaf.update()
+      leaf.update();
     } else if (summerSun)  {
       snow.removeParticleSystem();
       scene.add( sun );
