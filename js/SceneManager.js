@@ -440,7 +440,7 @@ class Particle {
     this.name = name;
   this.particleCount = particleCount;
     if (boolean) {
-      this.texture = new THREE.TextureLoader().load( '../assets/img/leaf.png' );
+      this.texture = new THREE.TextureLoader().load( 'assets/img/leaf.png' );
       this.pMaterial = new THREE.PointsMaterial({
         map: this.texture,
         color: this.color,
@@ -449,7 +449,7 @@ class Particle {
         transparent: true
       });
     } else {
-      this.texture = new THREE.TextureLoader().load( '../assets/img/snowFlake.png' );
+      this.texture = new THREE.TextureLoader().load( 'assets/img/snowFlake.png' );
       this.pMaterial = new THREE.PointsMaterial({
         map: this.texture,
         size: this.size,
