@@ -154,7 +154,6 @@
                   <div id="modalTitleRow" class="row justify-content-center text-center">
                     <div class="col-12">
                       <i id="modalPlayButton"  class="material-icons md-24" data-toggle="modal" data-target="#videoModal">
-
                       </i>
                     </div>
                     <div class="col-12">
@@ -180,7 +179,8 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
 
         <div class="videoModalContent modal-content" data-toggle="modal" data-target="#videoModal">
-          <video id="mainVideo" controls onclick="this.paused? this.play() : this.pause()"></video>
+          <!-- <video id="mainVideo" controls onclick="this.paused? this.play() : this.pause()"></video> -->
+          <iframe id="mainVideo" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
       </div>
     </div>
