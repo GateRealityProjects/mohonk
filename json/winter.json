@@ -60,9 +60,9 @@
     "description":"Go Snowshoeing!",
     "path":"assets/models/snowShoe/SnowShoes_R2.gltf",
     "position":{
-      "x":"14",
-      "y":"1",
-      "z":"-5"
+      "x":"14.12",
+      "y":"0.8",
+      "z":"-7.05"
     },
     "scale":{
       "x":"0.07",
@@ -70,9 +70,9 @@
       "z":"0.07"
     },
     "rotation":{
-      "x":-2,
-      "y":-5,
-      "z":10
+      "x":-0.1,
+      "y":0,
+      "z":0.2
     },
     "cameraPosition":{
       "x":10.56,
