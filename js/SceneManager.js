@@ -522,13 +522,12 @@ const leaf = new Particle(250, 0xe38e1c, 5, "leaf", true );
 const sun = createSun();
 
 
-function render(){
 
+function render(){
   if (intro) {
     TWEEN.update();
     camera.lookAt(new THREE.Vector3(0,0,0));
   } else {
-
     TWEEN.update();
     if (winterSnow) {
         leaf.removeParticleSystem();
