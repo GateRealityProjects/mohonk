@@ -521,8 +521,6 @@ const snow = new Particle(2000, 0xffffff, 2, "snow", false);
 const leaf = new Particle(250, 0xe38e1c, 5, "leaf", true );
 const sun = createSun();
 
-var axesHelper = new THREE.AxesHelper( 40 );
-scene.add( axesHelper );
 
 function render(){
 
