@@ -508,6 +508,16 @@ class Particle {
   }
 };
 
+const setVideo = () => {
+
+  let video = document.getElementById('vimeo');
+  let source = object.video
+  console.log(object.video);
+  video.setAttribute('src', `${source}`);
+  console.log("DIDVID");
+
+}
+
 const createSun = () => {
   let geometry = new THREE.SphereGeometry( 3, 8, 8);
   let material = new THREE.MeshToonMaterial( {color: 0xe1ec16, reflectivity: 1});
