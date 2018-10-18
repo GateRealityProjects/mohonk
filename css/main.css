@@ -270,8 +270,14 @@
   color: #014631;
   border: 0px;
   margin-left: 10vh;
-  margin-top: 10vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
+
+iframe {
+  margin: 10%;
+}
+
 #modalTitleRow{
   position: absolute;
   width: 100%;
