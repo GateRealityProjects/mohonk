@@ -293,7 +293,7 @@ async function testGlb(object) {
 
 //intro sequence
 function startIntro(){
-  // if (document.getElementById('click')) {
+  if (document.getElementById('click')) {
     document.getElementById("click").style.animation = "fadeInOut 2s";
     document.getElementById("zoom").style.animation = "fadeInOut 2s 2s";
     document.getElementById("rotate").style.animation = "fadeInOut 2s 4s";
@@ -303,13 +303,12 @@ function startIntro(){
     //Fade in Season dropdown
     document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
     document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 10s forwards";
-    document.addEventListener('click', () => {
+    // document.addEventListener('click', () => {
 
       // comment in context for skipping tutorial with click
       // interrupted = true;
 
-      console.log('interrrupted');
-    })
+    // })
 
     setTimeout(() => {
       if (!interrupted) {
@@ -319,13 +318,16 @@ function startIntro(){
         interrupted = false;
       }
     }, 9000)
-  // }
+  }
 };
 
-// comment in context for skipping tutorial with click
+// NOTE:  to exit tutorial with click: remove hide function call inside the
+// endIntro function, and add the code below to the end of line 47 in index.html
+// inside the div tag of id tutorialScreen
+// onclick="hide()"
 function hide() {
-   // let elem = document.getElementById('tutorialScreen');
-   // elem.parentNode.removeChild(elem);
+   let elem = document.getElementById('tutorialScreen');
+   elem.parentNode.removeChild(elem);
 };
 
 function endIntro(){
@@ -344,6 +346,7 @@ function endIntro(){
     animating = false;
   });
   introTween1.start();
+  hide();
 };
 
 
@@ -441,9 +444,10 @@ class Particle {
     this.color = color;
     this.size = size;
     this.name = name;
-  this.particleCount = particleCount;
+    this.particleCount = particleCount;
+    const leavesTypes = ["leaf.png", "leaf_yellow.png"]
     if (boolean) {
-      this.texture = new THREE.TextureLoader().load( 'assets/img/leaf.png' );
+      this.texture = new THREE.TextureLoader().load( 'assets/img/leaf1.png' );
       this.pMaterial = new THREE.PointsMaterial({
         map: this.texture,
         color: this.color,
