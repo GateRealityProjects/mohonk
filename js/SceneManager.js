@@ -303,9 +303,10 @@ function startIntro(){
     //Fade in Season dropdown
     document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
     document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 10s forwards";
+
+    // comment in context for skipping tutorial with click
     // document.addEventListener('click', () => {
 
-      // comment in context for skipping tutorial with click
       // interrupted = true;
 
     // })
@@ -540,14 +541,14 @@ function render(){
   } else {
     TWEEN.update();
     if (winterSnow) {
-      if (leaf.removed === true) {
+      if (leaf.removed) {
         snow.removeParticleSystem();
         leaf.removeParticleSystem();
       }
         scene.remove( sun );
         snow.update();
     } else if (fallFog) {
-      if (snow.removed === true) {
+      if (snow.removed) {
         leaf.removeParticleSystem();
         snow.removeParticleSystem();
       }
@@ -568,7 +569,6 @@ function render(){
       camera.lookAt(scene.position);
     }
 }
-
   renderer.render( scene, camera );
   requestAnimationFrame( render );
 }
