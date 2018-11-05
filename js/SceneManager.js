@@ -50,7 +50,7 @@ async function init(){
   renderer.setSize( window.innerWidth, window.innerHeight );
   document.body.appendChild( renderer.domElement );
 
-  //Load correct season by current month
+  //Load correct season by current month (loads not current but upcoming season)
   function seasonActualizer() {
     let date = new Date
     let month = (date.getMonth() + 1) % 12;
@@ -293,7 +293,7 @@ async function testGlb(object) {
 
 //intro sequence
 function startIntro(){
-  if (document.getElementById('click')) {
+  // if (document.getElementById('click')) {
     document.getElementById("click").style.animation = "fadeInOut 2s";
     document.getElementById("zoom").style.animation = "fadeInOut 2s 2s";
     document.getElementById("rotate").style.animation = "fadeInOut 2s 4s";
@@ -302,27 +302,30 @@ function startIntro(){
     document.getElementById("tutorialTwo").style.animation = "fadeIn 1s 6s forwards";
     //Fade in Season dropdown
     document.getElementById("topbar").style.animation = "fadeIn 1s 7s forwards";
-    document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 8s forwards";
+    document.getElementById("tutorialScreen").style.animation = "fadeOut 1s 10s forwards";
     document.addEventListener('click', () => {
-      interrupted = true;
+
+      // comment in context for skipping tutorial with click
+      // interrupted = true;
+
       console.log('interrrupted');
     })
 
     setTimeout(() => {
       if (!interrupted) {
-        endIntro()
+        endIntro();
       } else {
         document.removeEventListener('click', () => {})
         interrupted = false;
       }
     }, 9000)
-  }
+  // }
 };
 
-
+// comment in context for skipping tutorial with click
 function hide() {
-   let elem = document.getElementById('tutorialScreen');
-   elem.parentNode.removeChild(elem);
+   // let elem = document.getElementById('tutorialScreen');
+   // elem.parentNode.removeChild(elem);
 };
 
 function endIntro(){
