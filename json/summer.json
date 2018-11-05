@@ -365,9 +365,9 @@
     "description":"Stay Over",
     "path":"assets/models/summerHouse/SummerHouse.gltf",
     "position":{
-      "x":"-2.702",
-      "y":"0.646",
-      "z":"8.925"
+      "x":"11.849",
+      "y":"1.5",
+      "z":"1.771"
     },
     "scale":{
       "x":".003",
@@ -380,9 +380,9 @@
       "z":0
     },
     "cameraPosition":{
-      "x":-4.031,
-      "y":1.898,
-      "z":6.087
+      "x":11.003,
+      "y":2.5977,
+      "z":-2.873
     },
     "season":"3",
     "photo":"assets/img/mohonk.jpg",

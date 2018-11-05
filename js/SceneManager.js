@@ -148,8 +148,6 @@ async function seasonChanger(season){
     if (modelPlacementMode) {
       await testGlb(winter.ski);
     }
-
-
     for (var key in allSeasons){
       loadGlb(allSeasons[key], true);
     }
@@ -361,7 +359,6 @@ function onWindowResize(){
 
 
 function update() {
-
   if (globalModel) {
     globalModel.position.copy(controls.target);
     globalModel.position.y = camera.position.y - 2;
@@ -376,7 +373,6 @@ function update() {
     document.getElementById("cameraX").innerHTML = camera.position.x;
     document.getElementById("cameraY").innerHTML = camera.position.y;
     document.getElementById("cameraZ").innerHTML = camera.position.z;
-
     camera.position.set( 0, 5, 9);
   }
 
@@ -439,7 +435,7 @@ function removeListeners() {
 }
 
 
-// make snow particles
+// make snow  and leaf particles
 class Particle {
   constructor(particleCount, color, size, name, boolean) {
     this.color = color;
@@ -514,7 +510,6 @@ class Particle {
   update() {
     this.renderParticles();
     this.simulateSnow();
-    // this.particles.colorsNeedUpdate = true;
   }
 };
 

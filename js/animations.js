@@ -73,9 +73,9 @@ function trigger_animations(scene,objects,animating){
 
 
 function resetTarget() {
-    controls.target.x =0;
-    controls.target.y =0;
-    controls.target.z =0;
+    controls.target.x = 0;
+    controls.target.y = 0;
+    controls.target.z = 0;
 };
 
 
@@ -102,7 +102,9 @@ function moveCamera(object){
     x: object.position.x,
     y: object.position.y,
     z: object.position.z}, 2400)
-    .easing( TWEEN.Easing.Cubic.Out).onUpdate(function(){controls.update()}).start();
+    .easing( TWEEN.Easing.Cubic.Out).onUpdate( () => {
+      controls.update()
+    }).start();
 }
 
 
