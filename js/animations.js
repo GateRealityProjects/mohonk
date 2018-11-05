@@ -94,7 +94,6 @@ function moveCamera(object){
     y: object.cameraPosition.y,
     z: object.cameraPosition.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).start();
-
     if (controls.target !== 0) {
       resetTarget();
     }
@@ -104,7 +103,7 @@ function moveCamera(object){
     y: object.position.y,
     z: object.position.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).onUpdate( () => {
-      controls.update()
+      controls.update();
     }).start();
 }
 
@@ -134,8 +133,3 @@ function resetCamera() {
       animating = false;
     }, 1000);
 }
-
-
-
-
-// "transfer test"

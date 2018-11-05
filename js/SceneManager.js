@@ -541,14 +541,12 @@ function render(){
       leafYellow.removeParticleSystem();
       leafRed.removeParticleSystem();
       scene.remove( sun );
-
       snow.update();
     } else if (fallFog) {
       leafYellow.removeParticleSystem();
       leafRed.removeParticleSystem();
       snow.removeParticleSystem();
       scene.remove( sun );
-
       leafYellow.update();
       leafRed.update();
     } else if (summerSun)  {
@@ -559,17 +557,17 @@ function render(){
       snow.removeParticleSystem();
       scene.fog = false;
     }
+
     if (!animating) {
       controls.update();
       controls.dispose();
       curve.getPoint(currPoint, camera.position);
       camera.lookAt(scene.position);
     }
-}
-  renderer.render( scene, camera );
-  requestAnimationFrame( render );
-}
-
+  }
+    renderer.render( scene, camera );
+    requestAnimationFrame( render );
+  };
 
 render();
 };
