@@ -176,25 +176,27 @@
     }
 
     #modalPlayButton{
-      object-fit: contain;
       color: grey;
-      margin-top: 200px;
+      margin-top: 40px;
       margin-left: 0;
       opacity: 88%;
       font-size: 40px;
     }
 
     #video {
-      object-fit: scale-down;
       color: grey;
-      margin-top: 200px;
+      margin-top: 15px;
       margin-left: 0;
       opacity: 88%;
-      font-size: 40px;
+      font-size: 10px;
     }
 
+    #modalTitleRow {
+      min-height: 100%;
+    }
+
+
     #exitButton {
-      position: absolute;
       z-index: 5;
       margin: 10px;
     }
@@ -202,6 +204,28 @@
 
 
 @media only screen and (min-width: 601px) {
+
+  #modalPlayButton {
+    width: 640;
+    height: 360;
+  }
+
+  #video {
+    width: 640;
+    height: 360;
+    min-width: 100%;
+    color: grey;
+    margin-top: 4px;
+    margin-left: 0;
+    opacity: 88%;
+    font-size: 40px;
+  }
+
+  #mainVideo {
+    width: 640px;
+    height: 360px;
+  }
+
   #backButtonButton{
     background: rgba(165, 204, 198, 0.69);
     pointer-events:all;
@@ -217,7 +241,9 @@
     margin-right: 10px;
     margin-top: 0;
   }
+
 }
+
 #backButtonButton:hover, #backButtonButton:visited, #backButtonButton:link, #backButtonButton:active
 {
   color: #212522;
