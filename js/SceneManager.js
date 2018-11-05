@@ -537,7 +537,7 @@ function render(){
   } else {
     TWEEN.update();
     if (winterSnow) {
-      // snow.removeParticleSystem();
+      snow.removeParticleSystem();
       leafYellow.removeParticleSystem();
       leafRed.removeParticleSystem();
       scene.remove( sun );

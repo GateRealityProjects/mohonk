@@ -40,6 +40,7 @@ function trigger_animations(scene,objects,animating){
   });
 }
 
+
   function bounce(object){
     let obj = {
     x:object.scale.x,
