@@ -445,9 +445,9 @@ class Particle {
     this.size = size;
     this.name = name;
     this.particleCount = particleCount;
-    const leavesTypes = ["leaf.png", "leaf_yellow.png"]
+    this.removed = false;
     if (boolean) {
-      this.texture = new THREE.TextureLoader().load( 'assets/img/leaf1.png' );
+      this.texture = new THREE.TextureLoader().load( `assets/img/leaf7.png` );
       this.pMaterial = new THREE.PointsMaterial({
         map: this.texture,
         color: this.color,
@@ -476,7 +476,7 @@ class Particle {
         let pZ = Math.random()* 1000 - 700;
         this.particle = new THREE.Vector3(pX, pY, pZ);
         this.particle.velocity = {};
-        this.particle.velocity.y = -0.1;
+        this.particle.velocity.y = -0.5;
         this.particles.vertices.push(this.particle);
     }
     this.particleSystem = new THREE.Points(this.particles, this.pMaterial);
@@ -491,7 +491,7 @@ class Particle {
       let flake = this.particles.vertices[pCount];
       if (flake < -300) {
         flake.y = 200;
-        this.particle.velocity.y = -1;
+        this.particle.velocity.y = -2;
       }
       this.particle.velocity.y -= Math.random() * .005;
       flake.y += this.particle.velocity.y;
@@ -503,17 +503,20 @@ class Particle {
     let points = scene.children
     for (let i = 0; i < points.length; i++) {
       if (points[i].type === "Points") {
-       scene.remove(points[i]);
+       points.splice(i,1);
+
      }
    }
+   this.removed = true;
  }
 
   update() {
     this.renderParticles();
     this.simulateSnow();
-    this.particles.colorsNeedUpdate = true;
+    // this.particles.colorsNeedUpdate = true;
   }
 };
+
 
 const createSun = () => {
   let geometry = new THREE.SphereGeometry( 3, 8, 8);
@@ -525,7 +528,7 @@ const createSun = () => {
 
 
 const snow = new Particle(2000, 0xffffff, 2, "snow", false);
-const leaf = new Particle(250, 0xe38e1c, 5, "leaf", true );
+const leaf = new Particle(150, 0xe38e1c, 5, "leaf", true );
 const sun = createSun();
 
 
@@ -537,13 +540,19 @@ function render(){
   } else {
     TWEEN.update();
     if (winterSnow) {
+      if (leaf.removed === true) {
+        snow.removeParticleSystem();
         leaf.removeParticleSystem();
+      }
         scene.remove( sun );
         snow.update();
     } else if (fallFog) {
+      if (snow.removed === true) {
+        leaf.removeParticleSystem();
         snow.removeParticleSystem();
+      }
         scene.remove( sun );
-      leaf.update();
+        leaf.update();
     } else if (summerSun)  {
       snow.removeParticleSystem();
       scene.add( sun );
