@@ -537,18 +537,20 @@ function render(){
   } else {
     TWEEN.update();
     if (winterSnow) {
-        snow.removeParticleSystem();
-        leafYellow.removeParticleSystem();
-        leafRed.removeParticleSystem();
-        scene.remove( sun );
-        snow.update();
+      // snow.removeParticleSystem();
+      leafYellow.removeParticleSystem();
+      leafRed.removeParticleSystem();
+      scene.remove( sun );
+
+      snow.update();
     } else if (fallFog) {
-        leafYellow.removeParticleSystem();
-        leafRed.removeParticleSystem();
-        snow.removeParticleSystem();
-        scene.remove( sun );
-        leafYellow.update();
-        leafRed.update();
+      leafYellow.removeParticleSystem();
+      leafRed.removeParticleSystem();
+      snow.removeParticleSystem();
+      scene.remove( sun );
+
+      leafYellow.update();
+      leafRed.update();
     } else if (summerSun)  {
       snow.removeParticleSystem();
       scene.add( sun );

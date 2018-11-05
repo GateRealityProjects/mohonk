@@ -7,7 +7,7 @@ function trigger_animations(scene,objects,animating){
     if ( node.selectable && !nodeOffswitch.includes(node.name) ) {
       setInterval( () => {
         bounce(node)
-      },5000)
+      }, 15000)
       node.on('mouseover', (ev) => {
         bounce(node);
       });
