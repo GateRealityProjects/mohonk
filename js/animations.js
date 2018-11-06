@@ -94,6 +94,7 @@ function moveCamera(object){
     y: object.cameraPosition.y,
     z: object.cameraPosition.z}, 2400)
     .easing( TWEEN.Easing.Cubic.Out).start();
+
     if (controls.target !== 0) {
       resetTarget();
     }
@@ -114,11 +115,10 @@ function resetCamera() {
     y: prevPos.y,
     z: prevPos.z}, 1000)
     .easing( TWEEN.Easing.Cubic.Out).start();
-
   new TWEEN.Tween( controls.target).to( {
     x: 0,
     y: 0,
-    z: 0}, 1000)
+    z: 0}, 2000)
     .easing( TWEEN.Easing.Cubic.Out).onUpdate(function(){controls.update()}).start();
     var titleBox = document.getElementById("objectTitleBox");
     titleBox.hidden = true;
