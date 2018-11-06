@@ -390,8 +390,8 @@ const curve = new THREE.CatmullRomCurve3([
 
 curve.closed = true;
 
-curve.getPoint(0, camera.position);
-camera.lookAt(scene.position);
+// curve.getPoint(0, camera.position);
+// camera.lookAt(scene.position);
 
 let mouseX;
 let mouseXOnMouseDown = 0;
@@ -404,8 +404,8 @@ let targetRotation = 0;
 document.addEventListener('mousedown', onDocumentMouseDown, true);
 
 function onDocumentMouseDown(event) {
-  event.preventDefault();
-  event.stopPropagation();
+  // event.preventDefault();
+  // event.stopPropagation();
   window.addEventListener('touchmove', onDocumentTouchMove, true)
   window.addEventListener('mousemove', onDocumentMouseMove, true);
   window.addEventListener('mouseup', removeListeners, true);
@@ -416,15 +416,15 @@ function onDocumentMouseDown(event) {
 
 function onDocumentTouchMove( event ) {
   if ( event.touches.length == 1 ) {
-    event.preventDefault();
+    // event.preventDefault();
     mouseX = event.touches[0].clientX - windowHalfX;
     targetRotation = rotateOnMouseDown + ( mouseX - mouseXOnMouseDown ) * 0.05;
     currPoint = (targetRotation - rotateOnMouseDown) * 0.05;
   }
 }
 function onDocumentMouseMove(event) {
-  event.preventDefault();
-  event.stopPropagation();
+  // event.preventDefault();
+  // event.stopPropagation();
   let deltaMouseX = event.clientX - mouseXOnMouseDown;
   currPoint = THREE.Math.euclideanModulo(currPointOnMouseDown + deltaMouseX * 0.0005, 1);
 }
@@ -531,6 +531,7 @@ const sun = createSun();
 
 
 function render(){
+  requestAnimationFrame( render );
   if (intro) {
     TWEEN.update();
     camera.lookAt(new THREE.Vector3(0,0,0));
@@ -560,13 +561,12 @@ function render(){
 
     if (!animating) {
       controls.update();
-      controls.dispose();
+      // controls.dispose();
       curve.getPoint(currPoint, camera.position);
       camera.lookAt(scene.position);
     }
   }
     renderer.render( scene, camera );
-    requestAnimationFrame( render );
   };
 
 render();

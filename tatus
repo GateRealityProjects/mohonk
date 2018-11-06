@@ -1,0 +1,703 @@
+[33mcommit 5108415fcbd1315d9d57fbfdeaa26c6ae72df42f[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 16:58:20 2018 -0500
+
+    nov 05 final commit end of day
+
+[33mcommit df895b84b294350bb5486bd05f3abadaea1cd846[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 16:11:55 2018 -0500
+
+    Set video size responsively
+
+[33mcommit d4ecb53ffb31ebc869e2ea50dcfa4ee836111ff7[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 15:27:15 2018 -0500
+
+    Fix modal back button
+
+[33mcommit e49b634b65086ba337018834e572f35367430bcc[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 14:09:36 2018 -0500
+
+    Change interval for autoBounce
+
+[33mcommit de57caea5b21391dfea98af58d752070da9b0f5e[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 13:47:35 2018 -0500
+
+    Speed up and alternate leaf colors
+
+[33mcommit e8711dd0041292b66f91e3cc6a117cf7189958df[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 13:15:43 2018 -0500
+
+    Minor changes
+
+[33mcommit fe274197cea00daa25114405ee6aeae573df9b6a[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 12:04:25 2018 -0500
+
+    5 second interval bouncing
+
+[33mcommit bf8f177b085474cce3bf8af2314f7a5d0e96dbbd[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 11:33:12 2018 -0500
+
+    Minimize big(O) of particlesystem
+
+[33mcommit a31011b3b57a89058dfe0e127284502a28bdad34[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 10:09:36 2018 -0500
+
+    Fix tutorial screen seasoon change bug and instructions to reenable hiding instructions
+
+[33mcommit 155165b68e2f7a3861e889ed025582fcc1176b91[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 09:35:09 2018 -0500
+
+    Disable instruction disabling
+
+[33mcommit 974a3d1a2297fc86f0392bc87ce9cd382b90c9fd[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Nov 5 09:13:21 2018 -0500
+
+    White loading screen
+
+[33mcommit 0ddf31f58cedc698dfce29e2a89d2d537a34a46e[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 13:05:16 2018 -0400
+
+    thu oct 18 1:05
+
+[33mcommit e9f8af0f8acac3d72605fdfbf91847bd4f7c7214[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 12:25:26 2018 -0400
+
+    final css touches
+
+[33mcommit 473d9f8696e837e5a919c6abbd3011ae0016a21d[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 12:19:08 2018 -0400
+
+    change asset path
+
+[33mcommit 53fee2c245596e3c46dda18f138ef1faf65fa266[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 12:17:23 2018 -0400
+
+    intro css fix
+
+[33mcommit 9766f54d9d46677ba672f44842a9c2114b1e4d7a[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 12:05:47 2018 -0400
+
+    snowshoe placed
+
+[33mcommit 7bba2632e2ad09533d19f3affcae3b90c75fd9d3[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 11:44:43 2018 -0400
+
+    minor changes
+
+[33mcommit 2adb519d31a278ca20a23f999cf725d2418e221a[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 11:33:05 2018 -0400
+
+    snowshoe
+
+[33mcommit 95fe827d7858dcfd0d155542559b2a74bb44079d[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 11:07:17 2018 -0400
+
+    Embeded videos
+
+[33mcommit 73b0034824cea8b98c787a39b3fc920ad16803c4[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 10:49:47 2018 -0400
+
+    vt 7
+
+[33mcommit dab8da24a76cfffe6e1457370698fb70bd75f7ed[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 10:38:32 2018 -0400
+
+    vt6
+
+[33mcommit 9d24e6ecc1e6bad180d9a3d55f56d5681104ecc9[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 10:33:12 2018 -0400
+
+    vt 5
+
+[33mcommit d61fe05f578ca53a021219fcee3c510fc34c313a[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 10:22:32 2018 -0400
+
+    yt vid
+
+[33mcommit 8802cab1f8b6962db0cb963bf0d30da9dd3c733d[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 10:21:13 2018 -0400
+
+    minor change vid test
+
+[33mcommit c6e3033d39629a3fd0966fb90be359d476dd50fd[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Oct 18 09:50:01 2018 -0400
+
+    video test 3
+
+[33mcommit bd91c2858437776b1f00f7c1528887622d5fc6a2[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 16:59:57 2018 -0400
+
+    test3
+
+[33mcommit f534804be69a3b9fc123546f7df8eb0b1fe001d4[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 16:53:42 2018 -0400
+
+    test vimeo carriage2
+
+[33mcommit 1648efcec97ab74d181301d72e1d22c78e33ecfd[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 16:50:57 2018 -0400
+
+    test vimeo carriage
+
+[33mcommit 0445a42068bc3c0dfa80ee92330976b1ebb89331[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 16:48:38 2018 -0400
+
+    Fix summer map fatal error
+
+[33mcommit cc10ddd042a5ca9bb1ed4c6811361bb5fb81a38a[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 16:19:34 2018 -0400
+
+    summerError fixed vectors
+
+[33mcommit a93569f3db5db37b60212c529270e5fc50720853[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 15:43:53 2018 -0400
+
+    Fix snow and leaf lag issue
+
+[33mcommit b59d103175154d44ed473e03aaf741ee15aa1f52[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 14:31:39 2018 -0400
+
+    Fix logo sizing
+
+[33mcommit 287e1a3d5be3f0d0403a46cc034d26d1fb951fc9[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 14:27:05 2018 -0400
+
+    Fix button alignment for mobile and computer
+
+[33mcommit b0f9a3a5a7d95893179448488f4902a679b490b7[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 13:43:32 2018 -0400
+
+    fix climber modek=l
+
+[33mcommit 5644fab3b9a6b6a3a8947d4be8c97602b72ca6a7[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 12:32:51 2018 -0400
+
+    relocate and resize carriage
+
+[33mcommit a94abaa2c2f62cc8e97aa20e3ab746a613efeff3[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 12:15:54 2018 -0400
+
+    resize summer house
+
+[33mcommit 3fd4c302613b0bc521f76fe8471904cb5272c5e9[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 12:12:57 2018 -0400
+
+    Resize barn
+
+[33mcommit 37f1975e286616bc9da8b441af30ffb6bf350d40[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 12:08:24 2018 -0400
+
+    Fix carriage model size
+
+[33mcommit 3183fae3ffc00d81352acdd8f80d453bd132ae29[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 12:01:34 2018 -0400
+
+    restore snowflakes
+
+[33mcommit 5cc93879b8eab32a68a4c38f9ae197123255a748[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 11:52:14 2018 -0400
+
+    Model resizing
+
+[33mcommit fa3b187c71cf00e5cfd0041afe39ddd324803bd2[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 10:54:43 2018 -0400
+
+    minor changes
+
+[33mcommit 5f50979938330601f6b5b16181a6eb947f307ae7[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Oct 17 09:57:46 2018 -0400
+
+    Snow leaf separation
+
+[33mcommit 0534e8f9a3b5fe22c331253787c0710491a64d38[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Oct 16 16:57:40 2018 -0400
+
+    Extra end of day commit
+
+[33mcommit e56ff707cebadd4b520c7768ba04eff610965e2f[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Oct 16 16:52:37 2018 -0400
+
+    Final touches for the day
+
+[33mcommit e292026782a68eeedcabcaeea2039b99e9d88fce[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Oct 16 16:29:05 2018 -0400
+
+    Add snowflakes
+
+[33mcommit 9c37aed524e14a1db45864b0c61ad2da1dba1d98[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Oct 16 16:06:04 2018 -0400
+
+    Leafs color and falling complete
+
+[33mcommit 4f5eb822e690aaa67ab4a418b115351305b58cf6[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Oct 16 15:31:12 2018 -0400
+
+    falling leaves
+
+[33mcommit bb3e5f12fb1c7ae7ee39fffc839a9595a3014a4e[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Oct 16 13:50:56 2018 -0400
+
+    Add static leaves
+
+[33mcommit facad7f14e9ecb5c31d7dc8f84f90e4319bcda6c[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Oct 16 09:49:41 2018 -0400
+
+    fix CSS
+
+[33mcommit 9831bbf9801de68b836dc274998bc42f49597cd8[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Oct 16 09:34:32 2018 -0400
+
+    Change season dropdown'
+
+[33mcommit 5f8281086aa04ce66b0c4936392815a0c63170b8[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Oct 16 09:16:22 2018 -0400
+
+    Fix intro camera pan
+
+[33mcommit bcb0555a593ae5a0524d0060fedb37a182c34a79[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 21 14:17:41 2018 -0400
+
+    Fix intro interruption bug
+
+[33mcommit cf03b4922fff84b7419f8ec2bf48e38df509a630[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 21 14:03:43 2018 -0400
+
+    Fix css for mobile intro
+
+[33mcommit 9b88cc0bb1aa3cc3fce1d5f0d887dfbb3ca4e199[m[33m ([m[1;32mtmp[m[33m)[m
+Merge: 71b00ea 6bee813
+Author: Saul <saulack@gmail.com>
+Date:   Thu Sep 20 16:47:26 2018 -0400
+
+    Merge branch 'master' into tmp
+
+[33mcommit 71b00ea0153664fd46ea23bd7b744dc1b4c37f73[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Sep 20 16:21:43 2018 -0400
+
+    Replace Model laod next season
+
+[33mcommit cc0ae11a2d9a19453c30a3d1790a308d31a8b258[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Sep 20 15:07:05 2018 -0400
+
+    Fix season transition animation bug
+
+[33mcommit 18cbd97a655517bdd3bd8374292f10e0c12223dc[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Sep 20 14:31:56 2018 -0400
+
+    Add intro animation
+
+[33mcommit 6bee813453a02a74689e7ae24d44f98491477f58[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Sep 20 12:11:33 2018 -0400
+
+    Test
+
+[33mcommit 946e7373cf3772cde99014bf6b9de5dd9109cdc0[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Sep 20 11:50:37 2018 -0400
+
+    enable instructions and hide after view
+
+[33mcommit 98081dd877ccfc481075da7e90774d8c149cfa34[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 16:54:43 2018 -0400
+
+    Fix zoom out zoom in bug
+
+[33mcommit 1923492f0c417106dff841f0d2b0ca36f95125b2[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 15:59:49 2018 -0400
+
+    multiple model cam return animation
+
+[33mcommit e4be89f485c12928509ffa58d236664de80ae853[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 15:24:02 2018 -0400
+
+    Zoom out transition effect
+
+[33mcommit 314e67e3cc82bacb2ae4990d29dce893d3d5b893[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 13:11:01 2018 -0400
+
+    Return to sme position after leaving model view
+
+[33mcommit 6ad96454bbab64619b011a339e87c12fd7296f9b[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 12:57:12 2018 -0400
+
+    typo
+
+[33mcommit a9cef5cb16df2e058aa2683cb897710fa9149fa0[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 12:20:50 2018 -0400
+
+    minor changes
+
+[33mcommit 7518b1641e9671ea0170b1fd3667f74e4e7a950b[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 12:05:35 2018 -0400
+
+    Fix snow removal in non-winter seasons
+
+[33mcommit d91013880d8b098207c919f83de17247c7f9ddf5[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 11:05:50 2018 -0400
+
+    Make snow ES6
+
+[33mcommit 2a186326e7419a99ad143a9fb17c25a54e658f0d[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 10:19:06 2018 -0400
+
+    Fix touch capability
+
+[33mcommit 66c4ac6817740c68992491b31014fce733e22a6f[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 19 09:47:26 2018 -0400
+
+    Fix mouse click camera reset bug
+
+[33mcommit 1e2a682110186f9d3b56e97bf6120a882f1a58f5[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 18 17:03:01 2018 -0400
+
+    End of day Commit
+
+[33mcommit fd4613cc65e298ea6a4897cce16c8d688d49d351[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 18 15:28:06 2018 -0400
+
+    Minor changes
+
+[33mcommit 891f4d3f40513a6d76d922a460ca799642dde354[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 18 11:48:24 2018 -0400
+
+    minor changes
+
+[33mcommit af46628876cc27b672033d2872ede488fb021577[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 18 09:28:25 2018 -0400
+
+    Fix touchStart bug
+
+[33mcommit 73fd76356a989d911d80d09e0343b46254dd3b8b[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 17 16:53:46 2018 -0400
+
+    Minor Changes
+
+[33mcommit a53e992302f70831980b5e4b8b3e39dccaf037f8[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 17 15:32:42 2018 -0400
+
+    reset camera on season change
+
+[33mcommit ba04f834cf5ed3ef893798e8edfaa5d1e663e455[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 17 15:19:18 2018 -0400
+
+    Item buttons resized
+
+[33mcommit be4c99583552df4d43402c5920a12d444d27a350[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 17 14:52:58 2018 -0400
+
+    Model updates
+
+[33mcommit 7842ee60df65f4ec9f875c11bfd29e503c67dbfe[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 17 12:39:34 2018 -0400
+
+    Fix snow in summer  bug
+
+[33mcommit 5b3c7c5066cf8ac0d61a6ae5a8206da1ac152d5b[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 17 12:07:02 2018 -0400
+
+    Accomodate CSS for mobile
+
+[33mcommit cb56b119915a7c4f6e39b2e139f189eeafdcc30d[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 17 11:20:17 2018 -0400
+
+    Fix catmul touch bug1
+
+[33mcommit 768c61a8d893769f7d798deaeca1be367832d6c2[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 17 10:45:36 2018 -0400
+
+    Add catmulCurve touch
+
+[33mcommit 721088e8bf2e2d628f49c5261eed46b0405c6630[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 17:04:09 2018 -0400
+
+    Snow bug
+
+[33mcommit d09644663be8123a1368b29500117bf53232cd00[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 16:28:28 2018 -0400
+
+    Remove event listeners during closeup
+
+[33mcommit 01a54bda0ceeecbf18ff57121d8c28c72877b099[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 16:23:30 2018 -0400
+
+    Fix human model bugs
+
+[33mcommit c14d5af53be545b8f25d5a18d2a050559bc83caa[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 15:18:43 2018 -0400
+
+    Test
+
+[33mcommit 1cff1831278597109101645ff2ff6fe0ce3d9d0a[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 14:46:44 2018 -0400
+
+    Human models
+
+[33mcommit 741c1ee7aa12374580c53d536c16e37a4ac34962[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 14:23:27 2018 -0400
+
+    Add people models
+
+[33mcommit 3de4b838c4312a6e450e8ff667a709774958bd6f[m
+Merge: fe4b2fd a4fd29e
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 12:22:37 2018 -0400
+
+    Merge branch 'master' of https://github.com/saulack/mohaunk
+
+[33mcommit fe4b2fd37ae0fd7ce81a316fa101eaef02b6cf9c[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 12:13:10 2018 -0400
+
+    Attributions
+
+[33mcommit 0c573bbfa82faaa2c81e28ed89f75a5b98e65453[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 12:07:39 2018 -0400
+
+    Add Clouds
+
+[33mcommit a4fd29e960f10f822bedd9b0a751f732080cb5f9[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 14 09:56:35 2018 -0400
+
+    Commit before adding webpack
+
+[33mcommit 0c175b1a494c543dc9db5b8a290b15d41820d17f[m
+Author: GateReality <43078078+GateReality@users.noreply.github.com>
+Date:   Thu Sep 13 16:56:27 2018 -0400
+
+    syntactical changes
+
+[33mcommit 615500c4a46146dfbc620135d4957abd7390116b[m
+Author: GateReality <43078078+GateReality@users.noreply.github.com>
+Date:   Thu Sep 13 16:09:58 2018 -0400
+
+    Snow added
+
+[33mcommit 59501c0c70ee0d158aaa45e10ec50499c7bfce77[m
+Author: GateReality <43078078+GateReality@users.noreply.github.com>
+Date:   Thu Sep 13 13:25:38 2018 -0400
+
+    minor changes
+
+[33mcommit 75d98dcba1c27bca3d166dad2663be86f1e6313a[m
+Author: GateReality <43078078+GateReality@users.noreply.github.com>
+Date:   Thu Sep 13 13:16:50 2018 -0400
+
+    add 3 season models to 3 seasons
+
+[33mcommit cf430b45c0f2abb43974798f4efeae42cf9f94c6[m
+Author: GateReality <43078078+GateReality@users.noreply.github.com>
+Date:   Thu Sep 13 12:33:07 2018 -0400
+
+    Season actualizer
+
+[33mcommit 1fa4b9c4b22be6bf35a54c8211ecf47425c06234[m
+Author: Saul <saulack@gmail.com>
+Date:   Thu Sep 13 09:40:24 2018 -0400
+
+    Switching computers
+
+[33mcommit a7f65acc1b7cc4bffcd63fe81f50f7225ecd29ee[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 12 16:57:59 2018 -0400
+
+    Change carriage size
+
+[33mcommit ba98262f278f4b875bf06ba1a17243115cff1a2d[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 12 16:40:53 2018 -0400
+
+    Temp fix garden activation bug
+
+[33mcommit 84e2dc9a25acdbc8ed8d39cd6124e546e434b715[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 12 13:12:46 2018 -0400
+
+    Add node off array and disable nodes
+
+[33mcommit 607231b67163d4f838436489864af8cd872d67da[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 12 12:14:22 2018 -0400
+
+    Fix Skytop Tower camera position
+
+[33mcommit 54bb0af7a1ff61bb96bd283cd3d5b6dd828241cd[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 12 12:10:33 2018 -0400
+
+    fix item focus change
+
+[33mcommit a411813239ebc3827e39ad6344ba7f474c6c2caf[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 12 11:57:09 2018 -0400
+
+    Model Revisions
+
+[33mcommit a8a62a8ceca4a65b5b8f2b8b0248a976cb71be69[m
+Author: Saul <saulack@gmail.com>
+Date:   Wed Sep 12 11:02:52 2018 -0400
+
+    fix model locations
+
+[33mcommit 287faa148015ad4f712f78a191917dc8ee34ef26[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 11 16:41:23 2018 -0400
+
+    Garden position and minor changes
+
+[33mcommit eeb9ac029b7379ec37150dc57ec72a7e79aa4c79[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 11 16:24:22 2018 -0400
+
+    Set views and models in correct position
+
+[33mcommit 0687bf2def751e8562122d6ce9b2b5fbb9986035[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 11 15:41:52 2018 -0400
+
+    Model
+
+[33mcommit ff235ef026c8c6321801583f4217dd3e2b4e32bd[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 11 13:35:36 2018 -0400
+
+    Replace Models
+
+[33mcommit 66f0e680b87e27df72094028d103e69856d33a17[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 11 10:53:44 2018 -0400
+
+    Replace terrain
+
+[33mcommit 00a8fd5d3923d84f03f652660804902394e36a50[m
+Author: Saul <saulack@gmail.com>
+Date:   Tue Sep 11 09:26:20 2018 -0400
+
+    add favicon
+
+[33mcommit 93e67442491f98bbc91df1473e405543a28db613[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 10 16:44:47 2018 -0400
+
+    Transfer Test
+
+[33mcommit e5c17200ca8d5e95988b13cd40a371c73a8c37d4[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 10 16:30:57 2018 -0400
+
+    Repo transfer
+
+[33mcommit 0995dcab165c21ef88daa9e3c170860443d55367[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 10 13:45:13 2018 -0400
+
+    Fall and summer camara zoom locations
+
+[33mcommit c2604a1d30e00ca55b41a66c941f04dedcde0591[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 10 13:25:09 2018 -0400
+
+    Input zoom points for nodesin summer and spring maps
+
+[33mcommit 2070b201fcf7c0da5b39664b4b9ee62de13c7ef4[m
+Author: Saul <saulack@gmail.com>
+Date:   Mon Sep 10 11:52:48 2018 -0400
+
+    Fix midel placement x axis bug
+
+[33mcommit 9d86024bff05dd6d345541ab3669ddbd691536eb[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 7 16:56:07 2018 -0400
+
+    fix animation zoom sequence
+
+[33mcommit 4b83ad99fa1e2f066bc2a0ca2d854db351d828fd[m
+Author: Saul <saulack@gmail.com>
+Date:   Fri Sep 7 14:10:23 2018 -0400
+
+    commit
