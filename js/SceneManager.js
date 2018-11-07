@@ -390,8 +390,8 @@ const curve = new THREE.CatmullRomCurve3([
 
 curve.closed = true;
 
-// curve.getPoint(0, camera.position);
-// camera.lookAt(scene.position);
+curve.getPoint(0, camera.position);
+camera.lookAt(scene.position);
 
 let mouseX;
 let mouseXOnMouseDown = 0;
@@ -560,7 +560,7 @@ function render(){
     }
 
     if (!animating) {
-      controls.update();
+      // controls.update();
       // controls.dispose();
       curve.getPoint(currPoint, camera.position);
       camera.lookAt(scene.position);

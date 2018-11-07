@@ -1,6 +1,7 @@
 var count = 0;
 let prevPos;
 let nodeOffswitch;
+let currNode;
 function trigger_animations(scene,objects,animating){
   scene.traverse((node) => {
     nodeOffswitch = ["Rock climbing", "cloud"];
@@ -12,6 +13,7 @@ function trigger_animations(scene,objects,animating){
         bounce(node);
       });
       node.on('click', (ev) => {
+        currNode = node;
         animating = true;
         moveCamera(node);
         var titleBox = document.getElementById("objectTitleBox");
@@ -110,16 +112,22 @@ function moveCamera(object){
 
 
 function resetCamera() {
+  moveCamera(currNode);
   new TWEEN.Tween( camera.position ).to( {
     x: prevPos.x,
     y: prevPos.y,
-    z: prevPos.z}, 1000)
-    .easing( TWEEN.Easing.Cubic.Out).start();
+    z: prevPos.z}, 2100)
+    .easing( TWEEN.Easing.Cubic.Out).onComplete(() => {
+      animating = false;
+      controls.update();
+    }).start();
   new TWEEN.Tween( controls.target).to( {
     x: 0,
     y: 0,
-    z: 0}, 2000)
-    .easing( TWEEN.Easing.Cubic.Out).onUpdate(function(){controls.update()}).start();
+    z: 0}, 2100)
+    .easing( TWEEN.Easing.Cubic.Out).onUpdate(() => {
+      controls.update();
+    }).start();
     var titleBox = document.getElementById("objectTitleBox");
     titleBox.hidden = true;
     var backButton = document.getElementById("backButton");
@@ -129,7 +137,4 @@ function resetCamera() {
     var more = document.getElementById("more");
     more.innerHTML = "";
 
-    setTimeout(() => {
-      animating = false;
-    }, 1000);
 }
