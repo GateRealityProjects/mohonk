@@ -112,14 +112,13 @@ function moveCamera(object){
 
 
 function resetCamera() {
-  moveCamera(currNode);
   new TWEEN.Tween( camera.position ).to( {
     x: prevPos.x,
     y: prevPos.y,
     z: prevPos.z}, 2100)
     .easing( TWEEN.Easing.Cubic.Out).onComplete(() => {
-      animating = false;
       controls.update();
+      animating = false;
     }).start();
   new TWEEN.Tween( controls.target).to( {
     x: 0,
