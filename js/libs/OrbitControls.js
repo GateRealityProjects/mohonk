@@ -38,8 +38,8 @@ THREE.OrbitControls = function ( object, domElement ) {
 	// Range is 0 to Math.PI radians.
 
 
-		this.minPolarAngle = 1.3 // radians // NOTE: was at 1.1 changed for modelPlacementMode
-		this.maxPolarAngle = 1.6 // radians 1.2 NOTE: also at 1.1
+		this.minPolarAngle = 1.1 // radians // NOTE: was at 1.1 changed for modelPlacementMode
+		this.maxPolarAngle = 1.5 // radians 1.2 NOTE: also at 1.1
 
 
 	// How far you can orbit horizontally, upper and lower limits.
