@@ -529,7 +529,6 @@ const leafRed = new Particle(75, 0xe38e1c, 5, "leaf", true, 'leaf.png' );
 const sun = createSun();
 
 
-
 function render(){
   requestAnimationFrame( render );
   if (intro) {
@@ -559,12 +558,15 @@ function render(){
       scene.fog = false;
     }
 
-    // if (!animating) {
-      // controls.update();
-      // controls.dispose();
+    if (!animating) {
       // curve.getPoint(currPoint, camera.position);
       // camera.lookAt(scene.position);
-    // }
+      // controls.dispose();
+      controls.update();
+    } else {
+      // controls.update();
+
+    }
   }
     renderer.render( scene, camera );
   };
