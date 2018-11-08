@@ -112,6 +112,14 @@ function moveCamera(object){
 
 
 function resetCamera() {
+  if (controls.target !== 0) {
+    new TWEEN.Tween( controls.target).to( scene.position, 2100)
+      .easing( TWEEN.Easing.Cubic.Out).onUpdate(() => {
+          controls.update();
+        }).start();
+    // resetTarget();
+  }
+
   new TWEEN.Tween( camera.position ).to( {
     x: prevPos.x,
     y: prevPos.y,
@@ -120,13 +128,9 @@ function resetCamera() {
       controls.update();
       animating = false;
     }).start();
-  new TWEEN.Tween( controls.target).to( {
-    x: 0,
-    y: 0,
-    z: 0}, 2100)
-    .easing( TWEEN.Easing.Cubic.Out).onUpdate(() => {
-      controls.update();
-    }).start();
+
+
+
     var titleBox = document.getElementById("objectTitleBox");
     titleBox.hidden = true;
     var backButton = document.getElementById("backButton");

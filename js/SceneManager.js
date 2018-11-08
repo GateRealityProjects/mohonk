@@ -559,12 +559,12 @@ function render(){
       scene.fog = false;
     }
 
-    if (!animating) {
+    // if (!animating) {
       // controls.update();
       // controls.dispose();
-      curve.getPoint(currPoint, camera.position);
-      camera.lookAt(scene.position);
-    }
+      // curve.getPoint(currPoint, camera.position);
+      // camera.lookAt(scene.position);
+    // }
   }
     renderer.render( scene, camera );
   };
