@@ -562,7 +562,11 @@ function render(){
       // curve.getPoint(currPoint, camera.position);
       // camera.lookAt(scene.position);
       // controls.dispose();
+      controls.maxDistance = 30;
+      controls.minDistance = 30;
       controls.update();
+      controls.minDistance = 14;
+      controls.minDistance = 14;
     } else {
       // controls.update();
 
