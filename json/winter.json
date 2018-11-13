@@ -47,9 +47,9 @@
       "z": 0
     },
     "cameraPosition": {
-      "x": -13.186,
-      "y": 0.690,
-      "z": 3.578
+      "x": -17,
+      "y": 1.17,
+      "z": 0.02
     },
     "season": "2",
     "photo": "assets/img/Skiing.jpg",
@@ -57,7 +57,7 @@
   },
   "snowShoe": {
     "name": "Snowshoeing",
-    "description": "Snowshoes allow you to explore places you can’t reach by skis for unbelievable views. Our Ski Shop provides snowshoes, maps, and advice on trail conditions.",
+    "description": "Snowshoes allow you to explore places you canï¿½t reach by skis for unbelievable views. Our Ski Shop provides snowshoes, maps, and advice on trail conditions.",
     "path": "assets/models/snowShoe/SnowShoes_R2.gltf",
     "position": {
       "x": "14.12",
@@ -75,9 +75,9 @@
       "z": 0.2
     },
     "cameraPosition": {
-      "x": 10.56,
-      "y": 1.03,
-      "z": -9.38
+      "x": 19.47,
+      "y": 2.35,
+      "z": -8.62
     },
     "season": "2",
     "photo": "assets/img/SnowShoeing.jpg",

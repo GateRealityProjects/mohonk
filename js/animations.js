@@ -129,8 +129,6 @@ function resetCamera() {
       animating = false;
     }).start();
 
-
-
     var titleBox = document.getElementById("objectTitleBox");
     titleBox.hidden = true;
     var backButton = document.getElementById("backButton");
