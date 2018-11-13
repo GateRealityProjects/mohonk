@@ -283,10 +283,10 @@
   "garden": {
     "name": "The Garden",
     "description": "Explore the spectacular gardens at Mohonk on your own, or join one of our master gardeners for a tour through our Victorian Show Garden. Each year, the Garden showcases a different theme and incorporates more than 300 species of flowers and plants.",
-    "path": "assets/models/garden/garden.gltf",
+    "path": "assets/models/garden/AlanGarden_v5.gltf",
     "position": {
       "x": "8.8960",
-      "y": "0.2",
+      "y": "0",
       "z": "1.4226"
     },
     "scale": {
@@ -295,8 +295,8 @@
       "z": ".001"
     },
     "rotation": {
-      "x": -0.05,
-      "y": 0,
+      "x": 0,
+      "y": -3,
       "z": 0
     },
     "cameraPosition": {

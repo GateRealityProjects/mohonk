@@ -1,0 +1,1032 @@
+{
+    "accessors": [
+        {
+            "bufferView": 16,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1744,
+            "max": [
+                2160.159912109375,
+                1489.43994140625,
+                1401.719970703125
+            ],
+            "min": [
+                -2155.0,
+                4.5474699852075806e-13,
+                -1185.8599853515625
+            ],
+            "name": "accessor_buffer_Mesh753 Garden1 Component_1_1 Model_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 6,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 16236,
+            "max": [
+                21953
+            ],
+            "min": [
+                1
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_3",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 21954,
+            "max": [
+                277.8370056152344,
+                206.68499755859375
+            ],
+            "min": [
+                -279.1189880371094,
+                -271.48675537109375
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_TEXCOORD_0_0",
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 9,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 696,
+            "max": [
+                21931
+            ],
+            "min": [
+                59
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_6",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 7,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 1233,
+            "max": [
+                21943
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_4",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 15,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 4344,
+            "max": [
+                1079
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Mesh752 Fence4 Garden1 Component_1_1 Model_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 17,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1744,
+            "max": [
+                0.973138689994812,
+                0.9496614336967468,
+                0.9423982501029968
+            ],
+            "min": [
+                -0.9733954071998596,
+                -0.9416636228561401,
+                -0.9375269412994385
+            ],
+            "name": "accessor_buffer_Mesh753 Garden1 Component_1_1 Model_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 18,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1744,
+            "max": [
+                2493.419921875,
+                247.38800048828125
+            ],
+            "min": [
+                -2461.18994140625,
+                -1852.5400390625
+            ],
+            "name": "accessor_buffer_Mesh753 Garden1 Component_1_1 Model_TEXCOORD_0_0",
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 8,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 387,
+            "max": [
+                21817
+            ],
+            "min": [
+                74
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_5",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 21,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 1056,
+            "max": [
+                1740
+            ],
+            "min": [
+                3
+            ],
+            "name": "accessor_buffer_Mesh753 Garden1 Component_1_1 Model_2",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 4,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 1434,
+            "max": [
+                21947
+            ],
+            "min": [
+                14
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_1",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 19,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 876,
+            "max": [
+                1743
+            ],
+            "min": [
+                0
+            ],
+            "name": "accessor_buffer_Mesh753 Garden1 Component_1_1 Model_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 12,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1080,
+            "max": [
+                2126.580078125,
+                1727.260009765625,
+                1308.31005859375
+            ],
+            "min": [
+                -2191.679931640625,
+                234.6959991455078,
+                -1252.550048828125
+            ],
+            "name": "accessor_buffer_Mesh752 Fence4 Garden1 Component_1_1 Model_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 3,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 552,
+            "max": [
+                21948
+            ],
+            "min": [
+                122
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_0",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 10,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 1602,
+            "max": [
+                21936
+            ],
+            "min": [
+                7
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_7",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 11,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 1386,
+            "max": [
+                21918
+            ],
+            "min": [
+                5
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_8",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 13,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1080,
+            "max": [
+                0.9990423321723938,
+                0.9936190843582153,
+                0.9988882541656494
+            ],
+            "min": [
+                -0.996734082698822,
+                -0.9466096758842468,
+                -0.994769811630249
+            ],
+            "name": "accessor_buffer_Mesh752 Fence4 Garden1 Component_1_1 Model_NORMAL_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 21954,
+            "max": [
+                1945.26708984375,
+                1554.814208984375,
+                1193.7373046875
+            ],
+            "min": [
+                -1996.8765869140625,
+                310.1208190917969,
+                -1090.64697265625
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_POSITION_0",
+            "type": "VEC3"
+        },
+        {
+            "bufferView": 22,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 66,
+            "max": [
+                1730
+            ],
+            "min": [
+                15
+            ],
+            "name": "accessor_buffer_Mesh753 Garden1 Component_1_1 Model_3",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 5,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 360,
+            "max": [
+                21858
+            ],
+            "min": [
+                96
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_2",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 14,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 1080,
+            "max": [
+                0.0,
+                1.0000000000001137
+            ],
+            "min": [
+                -901.3779907226562,
+                -165.4770050048828
+            ],
+            "name": "accessor_buffer_Mesh752 Fence4 Garden1 Component_1_1 Model_TEXCOORD_0_0",
+            "type": "VEC2"
+        },
+        {
+            "bufferView": 20,
+            "byteOffset": 0,
+            "componentType": 5123,
+            "count": 294,
+            "max": [
+                1742
+            ],
+            "min": [
+                29
+            ],
+            "name": "accessor_buffer_Mesh753 Garden1 Component_1_1 Model_1",
+            "type": "SCALAR"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 0,
+            "componentType": 5126,
+            "count": 21954,
+            "max": [
+                0.9996635317802429,
+                0.9999659061431885,
+                0.9999476671218872
+            ],
+            "min": [
+                -0.9998539686203003,
+                -0.9999102354049683,
+                -0.9999423623085022
+            ],
+            "name": "accessor_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_NORMAL_0",
+            "type": "VEC3"
+        }
+    ],
+    "asset": {
+        "copyright": "",
+        "generator": "blendergltf v1.1.0",
+        "version": "2.0"
+    },
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 263448,
+            "byteOffset": 0,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 263448,
+            "byteOffset": 263448,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 175632,
+            "byteOffset": 526896,
+            "byteStride": 8,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_TEXCOORD_0_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1108,
+            "byteOffset": 702528,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2872,
+            "byteOffset": 703636,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_1",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 724,
+            "byteOffset": 706508,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_2",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 32476,
+            "byteOffset": 707232,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_3",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2468,
+            "byteOffset": 739708,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_4",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 776,
+            "byteOffset": 742176,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_5",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1396,
+            "byteOffset": 742952,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_6",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 3208,
+            "byteOffset": 744348,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_7",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2776,
+            "byteOffset": 747556,
+            "name": "bufferView_buffer_Mesh1014 Group58 Garden2 Component_1_1 Model_8",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 12960,
+            "byteOffset": 750332,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Mesh752 Fence4 Garden1 Component_1_1 Model_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 12960,
+            "byteOffset": 763292,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Mesh752 Fence4 Garden1 Component_1_1 Model_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8640,
+            "byteOffset": 776252,
+            "byteStride": 8,
+            "name": "bufferView_buffer_Mesh752 Fence4 Garden1 Component_1_1 Model_TEXCOORD_0_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 8692,
+            "byteOffset": 784892,
+            "name": "bufferView_buffer_Mesh752 Fence4 Garden1 Component_1_1 Model_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20928,
+            "byteOffset": 793584,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Mesh753 Garden1 Component_1_1 Model_POSITION_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 20928,
+            "byteOffset": 814512,
+            "byteStride": 12,
+            "name": "bufferView_buffer_Mesh753 Garden1 Component_1_1 Model_NORMAL_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 13952,
+            "byteOffset": 835440,
+            "byteStride": 8,
+            "name": "bufferView_buffer_Mesh753 Garden1 Component_1_1 Model_TEXCOORD_0_0",
+            "target": 34962
+        },
+        {
+            "buffer": 0,
+            "byteLength": 1756,
+            "byteOffset": 849392,
+            "name": "bufferView_buffer_Mesh753 Garden1 Component_1_1 Model_0",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 592,
+            "byteOffset": 851148,
+            "name": "bufferView_buffer_Mesh753 Garden1 Component_1_1 Model_1",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 2116,
+            "byteOffset": 851740,
+            "name": "bufferView_buffer_Mesh753 Garden1 Component_1_1 Model_2",
+            "target": 34963
+        },
+        {
+            "buffer": 0,
+            "byteLength": 136,
+            "byteOffset": 853856,
+            "name": "bufferView_buffer_Mesh753 Garden1 Component_1_1 Model_3",
+            "target": 34963
+        }
+    ],
+    "buffers": [
+        {
+            "byteLength": 853992,
+            "name": "buffer_AlanGarden_v5",
+            "uri": "buffer_AlanGarden_v5.bin"
+        }
+    ],
+    "materials": [
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_31",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.49803900718688965,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_32",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.749019980430603,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_33",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.2980389893054962,
+                    0.6000000238418579,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_34",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.800000011920929,
+                    0.19607800245285034,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_46",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.4000000059604645,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_47",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.6000000238418579,
+                    0.19607800245285034,
+                    1.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_48",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.6000000238418579,
+                    1.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_49",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    1.0,
+                    0.6000000238418579,
+                    0.800000011920929,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_50",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.800000011920929,
+                    0.0,
+                    0.3921569883823395,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_51",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.06274499744176865,
+                    0.49803900718688965,
+                    0.00392200006172061,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "_9",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.20000000298023224,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        },
+        {
+            "doubleSided": true,
+            "emissiveFactor": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "name": "Color_C08",
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.4000000059604645,
+                    0.20000000298023224,
+                    0.0,
+                    1.0
+                ],
+                "metallicFactor": 0.0,
+                "roughnessFactor": 1.0
+            }
+        }
+    ],
+    "meshes": [
+        {
+            "name": "Mesh1014 Group58 Garden2 Component_1_1 Model",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 17,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 13,
+                    "material": 4,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 17,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 10,
+                    "material": 7,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 17,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 19,
+                    "material": 0,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 17,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 1,
+                    "material": 10,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 17,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 4,
+                    "material": 8,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 17,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 8,
+                    "material": 3,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 17,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 3,
+                    "material": 1,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 17,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 14,
+                    "material": 5,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 22,
+                        "POSITION": 17,
+                        "TEXCOORD_0": 2
+                    },
+                    "indices": 15,
+                    "material": 6,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "Mesh752 Fence4 Garden1 Component_1_1 Model",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 16,
+                        "POSITION": 12,
+                        "TEXCOORD_0": 20
+                    },
+                    "indices": 5,
+                    "material": 11,
+                    "mode": 4
+                }
+            ]
+        },
+        {
+            "name": "Mesh753 Garden1 Component_1_1 Model",
+            "primitives": [
+                {
+                    "attributes": {
+                        "NORMAL": 6,
+                        "POSITION": 0,
+                        "TEXCOORD_0": 7
+                    },
+                    "indices": 11,
+                    "material": 11,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 6,
+                        "POSITION": 0,
+                        "TEXCOORD_0": 7
+                    },
+                    "indices": 21,
+                    "material": 2,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 6,
+                        "POSITION": 0,
+                        "TEXCOORD_0": 7
+                    },
+                    "indices": 9,
+                    "material": 9,
+                    "mode": 4
+                },
+                {
+                    "attributes": {
+                        "NORMAL": 6,
+                        "POSITION": 0,
+                        "TEXCOORD_0": 7
+                    },
+                    "indices": 18,
+                    "material": 10,
+                    "mode": 4
+                }
+            ]
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 1,
+            "name": "Fence",
+            "rotation": [
+                0.7071068286895752,
+                0.0,
+                0.0,
+                0.7071067094802856
+            ],
+            "scale": [
+                1.000000238418579,
+                1.000000238418579,
+                1.000000238418579
+            ],
+            "translation": [
+                -319.0497741699219,
+                -185.90814208984375,
+                159.05789184570312
+            ]
+        },
+        {
+            "mesh": 0,
+            "name": "Flowers",
+            "rotation": [
+                0.7071068286895752,
+                0.0,
+                0.0,
+                0.7071067094802856
+            ],
+            "scale": [
+                1.000000238418579,
+                1.000000238418579,
+                1.000000238418579
+            ],
+            "translation": [
+                -319.0497741699219,
+                -185.90814208984375,
+                159.05789184570312
+            ]
+        },
+        {
+            "mesh": 2,
+            "name": "Ground",
+            "rotation": [
+                0.7071068286895752,
+                0.0,
+                0.0,
+                0.7071067094802856
+            ],
+            "scale": [
+                1.000000238418579,
+                1.000000238418579,
+                1.000000238418579
+            ],
+            "translation": [
+                -319.0497741699219,
+                -185.90814208984375,
+                159.05789184570312
+            ]
+        },
+        {
+            "children": [
+                2,
+                1,
+                0
+            ],
+            "matrix": [
+                -1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                1.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                1.0
+            ],
+            "name": "Scene_root"
+        }
+    ],
+    "scene": 0,
+    "scenes": [
+        {
+            "extras": {
+                "background_color": [
+                    0.05087608844041824,
+                    0.05087608844041824,
+                    0.05087608844041824
+                ],
+                "frames_per_second": 24
+            },
+            "name": "Scene",
+            "nodes": [
+                3
+            ]
+        }
+    ]
+}
