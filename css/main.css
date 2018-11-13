@@ -205,26 +205,7 @@
 
 @media only screen and (min-width: 601px) {
 
-  #modalPlayButton {
-    width: 640;
-    height: 360;
-  }
 
-  #video {
-    width: 640;
-    height: 360;
-    min-width: 100%;
-    color: grey;
-    margin-top: 4px;
-    margin-left: 0;
-    opacity: 88%;
-    font-size: 40px;
-  }
-
-  #mainVideo {
-    width: 640px;
-    height: 360px;
-  }
 
   #backButtonButton{
     background: rgba(165, 204, 198, 0.69);
