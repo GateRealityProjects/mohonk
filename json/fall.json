@@ -173,7 +173,7 @@
     "path": "assets/models/garden/AlanGarden_v5.gltf",
     "position": {
       "x": "8.8960",
-      "y": "-0.1",
+      "y": "0",
       "z": "1.4226"
     },
     "scale": {
@@ -182,8 +182,8 @@
       "z": ".001"
     },
     "rotation": {
-      "x": -0.05,
-      "y": 0,
+      "x": 0,
+      "y": -3,
       "z": 0
     },
     "cameraPosition": {

@@ -4,7 +4,7 @@ let nodeOffswitch;
 let currNode;
 function trigger_animations(scene, objects, animating){
   scene.traverse((node) => {
-    nodeOffswitch = ["cloud"];
+    nodeOffswitch = ["Rock climbing", "cloud"];
     if ( node.selectable && !nodeOffswitch.includes(node.name) ) {
       setInterval( () => {
         bounce(node)
