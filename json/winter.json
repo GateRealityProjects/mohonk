@@ -1,198 +1,226 @@
 {
-  "iceSkating":{
-    "name":"Ice Skating",
-    "description":"Winter Ice Skating in the Pavilion!",
-    "path":"assets/models/iceSkating/IceSkating.gltf",
-    "position":{
-      "x":"2.302",
-      "y":"2.27",
-      "z":"10.66"
+  "iceSkating": {
+    "name": "Ice Skating",
+    "description": "Glide across the ice on our award-winning skating rink, perched high above the lake in our outdoor Pavilion. In between skating sessions, warm up with a hot chocolate in front of our 39-foot-tall stone fireplace.",
+    "path": "assets/models/iceSkating/IceSkating.gltf",
+    "position": {
+      "x": "2.302",
+      "y": "2.27",
+      "z": "10.66"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-0.27,
-      "y":3.41,
-      "z":8.97
+    "cameraPosition": {
+      "x": -0.27,
+      "y": 3.41,
+      "z": 8.97
     },
-    "season":"2",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "2",
+    "photo": "assets/img/IceSkating.jpg",
+    "video": "https://player.vimeo.com/video/294826465"
   },
-  "ski":{
-    "name":"Cross Country Skiing",
-    "description":"Ski Cross Country!",
-    "path":"assets/models/ski/Ski.gltf",
-    "position":{
-      "x":"-15.038",
-      "y":"-0.441",
-      "z":"1.036"
+  "ski": {
+    "name": "Cross-Country Skiing",
+    "description": "Explore more than 30 miles of groomed trails with sweeping views of the Catskills and Shawangunks. Our Ski Shop provides maps and tips on which trails are best suited to your skill level. Ski alongside the lake, head for Sky Top Tower, or choose one of the many other trails throughout the property.",
+    "path": "assets/models/ski/Ski.gltf",
+    "position": {
+      "x": "-15.038",
+      "y": "-0.441",
+      "z": "1.036"
     },
-    "scale":{
-      "x":"2",
-      "y":"2",
-      "z":"2"
+    "scale": {
+      "x": "2",
+      "y": "2",
+      "z": "2"
     },
-    "rotation":{
-      "x":0,
-      "y":-2,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": -2,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-13.186,
-      "y":0.690,
-      "z":3.578
+    "cameraPosition": {
+      "x": -13.186,
+      "y": 0.690,
+      "z": 3.578
     },
-    "season":"2",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "2",
+    "photo": "assets/img/Skiing.jpg",
+    "video": "https://player.vimeo.com/video/294826488"
   },
-  "snowShoe":{
-    "name":"Snowshoeing",
-    "description":"Go Snowshoeing!",
-    "path":"assets/models/snowShoe/SnowShoes_R2.gltf",
-    "position":{
-      "x":"14.12",
-      "y":"0.8",
-      "z":"-7.05"
+  "snowShoe": {
+    "name": "Snowshoeing",
+    "description": "Snowshoes allow you to explore places you can’t reach by skis for unbelievable views. Our Ski Shop provides snowshoes, maps, and advice on trail conditions.",
+    "path": "assets/models/snowShoe/SnowShoes_R2.gltf",
+    "position": {
+      "x": "14.12",
+      "y": "0.8",
+      "z": "-7.05"
     },
-    "scale":{
-      "x":"0.07",
-      "y":"0.07",
-      "z":"0.07"
+    "scale": {
+      "x": "0.07",
+      "y": "0.07",
+      "z": "0.07"
     },
-    "rotation":{
-      "x":-0.1,
-      "y":0,
-      "z":0.2
+    "rotation": {
+      "x": -0.1,
+      "y": 0,
+      "z": 0.2
     },
-    "cameraPosition":{
-      "x":10.56,
-      "y":1.03,
-      "z":-9.38
+    "cameraPosition": {
+      "x": 10.56,
+      "y": 1.03,
+      "z": -9.38
     },
-    "season":"2",
-    "photo":"assets/img/mohonk.jpg",
-    "video":"https://player.vimeo.com/video/294826545"
+    "season": "2",
+    "photo": "assets/img/SnowShoeing.jpg",
+    "video": "https://player.vimeo.com/video/294826512"
   },
-  "hotChocolate":{
-    "name":"Hot Chocolate on the Porch",
-    "description":"Have some hot chocolate on the porch!",
-    "path":"assets/models/porch/Porch_HotChoco.gltf",
-    "position":{
-      "x":"-1.25",
-      "y":"-0.15",
-      "z":"0.52"
+  "hiking": {
+    "name": "Hiking",
+    "description": "Mohonk Mountain House offers over 85 miles of hiking trails, ranging from beginner to advanced levels of difficulty. From carriage roads to rock scrambles, we have some of the best and most diverse hiking trails in New York!",
+    "path": "assets/models/Hiking/Walking.gltf",
+    "position": {
+      "x": "-5.9",
+      "y": "-0.09",
+      "z": "27.09"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": "3",
+      "y": "3",
+      "z": "3"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":0.23,
-      "y":0.72,
-      "z":1.76
+    "cameraPosition": {
+      "x": -14.44,
+      "y": 4,
+      "z": 31.61
     },
-    "season":"2",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Hiking.jpg",
+    "video": "https://player.vimeo.com/video/294826545"
   },
-  "forestBathing":{
-    "name":"Forest Bathing",
-    "description":"Go for a stroll in a winter wonderland",
-    "path":"assets/models/forest/ForestBathing_Winter.gltf",
-    "position":{
-      "x":"1.563",
-      "y":"-2.02",
-      "z":"-18.59"
+  "hotChocolate": {
+    "name": "Hot Chocolate on the Porch",
+    "description": "Stop by our Gift Shop to get a delicious mug of hot chocolate with whipped cream on top, and then head outside to our Parlor Porch to enjoy breathtaking views of Lake Mohonk and Sky Top Tower.",
+    "path": "assets/models/porch/Porch_HotChoco.gltf",
+    "position": {
+      "x": "-1.25",
+      "y": "-0.15",
+      "z": "0.52"
     },
-    "scale":{
-      "x":".002",
-      "y":".002",
-      "z":".002"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":-0.5,
-      "z":-0.1
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-0.878,
-      "y":-0.285,
-      "z":-23.26
+    "cameraPosition": {
+      "x": 0.23,
+      "y": 0.72,
+      "z": 1.76
     },
-    "season":"2",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "2",
+    "photo": "assets/img/HotChocolate.jpg",
+    "video": "https://player.vimeo.com/video/294826528"
   },
-  "cloud1":{
-    "name":"cloud",
-    "description":"clouds",
-    "path":"assets/models/Cloud/Cloud.gltf",
-    "position":{
-      "x":"-10.42",
-      "y":"12.73",
-      "z":"12.13"
+  "forestBathing": {
+    "name": "Forest Bathing",
+    "description": "Explore a dynamic range of mindfulness and wellness programs throughout your stay that can reduce stress and enhance well-being. Join us for meditation, forest bathing, yoga, and fitness programs, all in a beautiful natural setting.",
+    "path": "assets/models/forest/ForestBathing_Winter.gltf",
+    "position": {
+      "x": "1.563",
+      "y": "-2.02",
+      "z": "-18.59"
     },
-    "scale":{
-      "x":".5",
-      "y":".5",
-      "z":".5"
+    "scale": {
+      "x": ".002",
+      "y": ".002",
+      "z": ".002"
     },
-    "rotation":{
-      "x":0,
-      "y":10.5,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": -0.5,
+      "z": -0.1
     },
-    "cameraPosition":{
-      "x":1.75,
-      "y":0.71,
-      "z":2.23
+    "cameraPosition": {
+      "x": -0.878,
+      "y": -0.285,
+      "z": -23.26
     },
-    "season":"0",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "2",
+    "photo": "assets/img/ForestBathing.jpg",
+    "video": "https://player.vimeo.com/video/294826013"
   },
-  "cloud2":{
-    "name":"cloud",
-    "description":"clouds",
-    "path":"assets/models/Cloud/Cloud.gltf",
-    "position":{
-      "x":"1.926",
-      "y":"12.73",
-      "z":"-6.06"
+  "cloud1": {
+    "name": "cloud",
+    "description": "clouds",
+    "path": "assets/models/Cloud/Cloud.gltf",
+    "position": {
+      "x": "-10.42",
+      "y": "12.73",
+      "z": "12.13"
     },
-    "scale":{
-      "x":".5",
-      "y":".5",
-      "z":".5"
+    "scale": {
+      "x": ".5",
+      "y": ".5",
+      "z": ".5"
     },
-    "rotation":{
-      "x":0,
-      "y":10.5,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 10.5,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":1.75,
-      "y":0.71,
-      "z":2.23
+    "cameraPosition": {
+      "x": 1.75,
+      "y": 0.71,
+      "z": 2.23
     },
-    "season":"0",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "0",
+    "photo": "assets/img/mohonk.jpg",
+    "video": ""
+  },
+  "cloud2": {
+    "name": "cloud",
+    "description": "clouds",
+    "path": "assets/models/Cloud/Cloud.gltf",
+    "position": {
+      "x": "1.926",
+      "y": "12.73",
+      "z": "-6.06"
+    },
+    "scale": {
+      "x": ".5",
+      "y": ".5",
+      "z": ".5"
+    },
+    "rotation": {
+      "x": 0,
+      "y": 10.5,
+      "z": 0
+    },
+    "cameraPosition": {
+      "x": 1.75,
+      "y": 0.71,
+      "z": 2.23
+    },
+    "season": "0",
+    "photo": "assets/img/mohonk.jpg",
+    "video": ""
   }
 }

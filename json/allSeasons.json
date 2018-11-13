@@ -1,254 +1,254 @@
 {
-  "tower":{
-    "name":"Sky Top Tower",
-    "description":"A tower in the sky!",
-    "path":"assets/models/tower/Tower.glb",
-    "position":{
-      "x":"-3.2",
-      "y":"3.3",
-      "z":"20.3"
+  "tower": {
+    "name": "Sky Top Tower",
+    "description": "If you only take one hike while you're here, you have to visit the iconic Sky Top Tower that can be seen from several miles away. Once you arrive, take the steps all the way up the tower-you'll feel on top of the world!",
+    "path": "assets/models/tower/Tower.glb",
+    "position": {
+      "x": "-3.2",
+      "y": "3.3",
+      "z": "20.3"
     },
-    "scale":{
-      "x":".07",
-      "y":".09",
-      "z":".07"
+    "scale": {
+      "x": ".07",
+      "y": ".09",
+      "z": ".07"
     },
-    "rotation":{
-      "x":0,
-      "y":90,
-      "z":0.08
+    "rotation": {
+      "x": 0,
+      "y": 90,
+      "z": 0.08
     },
-    "cameraPosition":{
-      "x":-10.987,
-      "y":13.013,
-      "z":26.518
+    "cameraPosition": {
+      "x": -10.987,
+      "y": 13.013,
+      "z": 26.518
     },
-    "season":"0",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "0",
+    "photo": "assets/img/SkyTopTower.jpg",
+    "video": "https://player.vimeo.com/video/294825919"
   },
-  "spa":{
-    "name":"Spa",
-    "description":"The Spa",
-    "path":"assets/models/spa/Spa_tilted.gltf",
-    "position":{
-      "x":"-7.552",
-      "y":0,
-      "z":"2"
+  "spa": {
+    "name": "Spa",
+    "description": "Named the Number One Resort Spa in the United States by Condé Nast Traveler, complete your wellness getaway with a nature-inspired treatment. Relax inside our 16 treatment rooms, solarium, verandas, outdoor heated mineral pool, eucalyptus steam rooms, and dry rock saunas.",
+    "path": "assets/models/spa/Spa_tilted.gltf",
+    "position": {
+      "x": "-7.552",
+      "y": 0,
+      "z": "2"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0.43,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0.43,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-10.81,
-      "y":2.47,
-      "z":4.24
+    "cameraPosition": {
+      "x": -10.81,
+      "y": 2.47,
+      "z": 4.24
     },
-    "season":"",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "",
+    "photo": "assets/img/Spa.jpg",
+    "video": "https://player.vimeo.com/video/294825950"
   },
-  "diningRoom":{
-    "name":"The Dining Room",
-    "description":"The Dining Room",
-    "path":"assets/models/diningRoom/DinningRoom.gltf",
-    "position":{
-      "x":"3.609",
-      "y":"-0.655",
-      "z":"-5.747"
+  "diningRoom": {
+    "name": "Main Dining Room",
+    "description": "Settle into old world elegance as you enjoy artfully prepared cuisine from our award-winning culinary team. Our historic Main Dining Room features panoramic views of the Catskill Mountains, dramatic cathedral ceilings, and original woodwork from 1893.",
+    "path": "assets/models/diningRoom/DinningRoom.gltf",
+    "position": {
+      "x": "3.609",
+      "y": "-0.655",
+      "z": "-5.747"
     },
-    "scale":{
-      "x":".001",
-      "y":".0009",
-      "z":".0009"
+    "scale": {
+      "x": ".001",
+      "y": ".0009",
+      "z": ".0009"
     },
-    "rotation":{
-      "x":0,
-      "y":6.3,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 6.3,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":0.04,
-      "y":-0.14,
-      "z":-8.84
+    "cameraPosition": {
+      "x": 0.04,
+      "y": -0.14,
+      "z": -8.84
     },
-    "season":"0",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "0",
+    "photo": "assets/img/DiningRoom.jpg",
+    "video": "https://player.vimeo.com/video/294825965"
   },
-  "carriageLounge":{
-    "name":"The Carriage Lounge",
-    "description":"The Carriage Lounge",
-    "path":"assets/models/CarriageLounge/CarriageLounge.gltf",
-    "position":{
-      "x":"2.726",
-      "y":"-0.649",
-      "z":"-4.2671"
+  "carriageLounge": {
+    "name": "Carriage Lounge",
+    "description": "Enjoy good food, good company, and a timeless feel in our fireside bar and lounge featuring handcrafted cocktails, hyper-local draft beer, and more than 20 varieties of New York spirits.",
+    "path": "assets/models/CarriageLounge/CarriageLounge.gltf",
+    "position": {
+      "x": "2.726",
+      "y": "-0.649",
+      "z": "-4.2671"
     },
-    "scale":{
-      "x":".0009",
-      "y":".0009",
-      "z":".0009"
+    "scale": {
+      "x": ".0009",
+      "y": ".0009",
+      "z": ".0009"
     },
-    "rotation":{
-      "x":0,
-      "y":6.3,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 6.3,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":0.04,
-      "y":-0.14,
-      "z":-8.84
+    "cameraPosition": {
+      "x": 0.04,
+      "y": -0.14,
+      "z": -8.84
     },
-    "season":"0",
-    "photo": "assets/img/mohonk.jpg",
-    "video":""
+    "season": "0",
+    "photo": "assets/img/CarriageLounge.jpg",
+    "video": "https://player.vimeo.com/video/294825975"
   },
-  "giftShop":{
-    "name":"Gift Shop",
-    "description":"Gift Shop",
-    "path":"assets/models/GiftShop/GiftShop.gltf",
-    "position":{
-      "x":1.826,
-      "y":-0.308,
-      "z":-3.612
+  "giftShop": {
+    "name": "The Gift Shop",
+    "description": "Our Gift Shop offers unique products that nourish the body, mind, and spirit. Discover soothing bath products, gourmet goodies, and classic Mohonk apparel. We also showcase handmade gifts, jewelry, and artwork made by local artisans in the Hudson Valley.",
+    "path": "assets/models/GiftShop/GiftShop.gltf",
+    "position": {
+      "x": 1.826,
+      "y": -0.308,
+      "z": -3.612
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-0.607,
-      "y":1.040,
-      "z":-6.281
+    "cameraPosition": {
+      "x": -0.607,
+      "y": 1.040,
+      "z": -6.281
     },
-    "season":"0",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "0",
+    "photo": "assets/img/GiftShop.jpg",
+    "video": "https://player.vimeo.com/video/294826097"
   },
-  "greenhouse":{
-    "name":"THE GREENHOUSE",
-    "description":"Just a short walk from the Mountain House, the Greenhouse provides visitors with a year-round glimpse at where our award-winning gardens get their start. Visit the Greenhouse to meet Mohonk Mountain House horticulturists and gardeners.",
-    "path":"assets/models/greenhouse/Greenhouse_.gltf",
-    "position":{
-      "x":"20.4162",
-      "y":"1",
-      "z":"-8.234"
+  "greenhouse": {
+    "name": "Greenhouse",
+    "description": "Just a short walk from the Mountain House, the Greenhouse provides visitors with a year-round glimpse at where our award-winning gardens get their start. Visit the Greenhouse to meet Mohonk Mountain House horticulturists and gardeners.",
+    "path": "assets/models/greenhouse/Greenhouse_.gltf",
+    "position": {
+      "x": "20.4162",
+      "y": "1",
+      "z": "-8.234"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":-11.65,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": -11.65,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":18.17,
-      "y":2.61,
-      "z":-11.20
+    "cameraPosition": {
+      "x": 18.17,
+      "y": 2.61,
+      "z": -11.20
     },
-    "season":"0",
-    "photo":"assets/img/TheGreenHouse.jpg",
-    "video":"https://s3.amazonaws.com/mohonk-videos/Greenhouse.mp4"
+    "season": "0",
+    "photo": "assets/img/Greenhouse.jpg",
+    "video": "https://player.vimeo.com/video/294825997"
   },
-  "indoorPool":{
-    "name":"Indoor Pool",
-    "description":"An Indoor Pool",
-    "path":"assets/models/indoorPool/IndoorPool.gltf",
-    "position":{
-      "x":"-7.284",
-      "y":"-0.1335",
-      "z":"1.02735"
+  "indoorPool": {
+    "name": "Indoor Pool",
+    "description": "Featuring panoramic views of the Catskill Mountains, our indoor swimming pool offers an oasis of tranquility among nature. Stretch out in our lounge chairs or take a dip in our 60-foot-long heated pool featuring underwater music.",
+    "path": "assets/models/indoorPool/IndoorPool.gltf",
+    "position": {
+      "x": "-7.284",
+      "y": "-0.1335",
+      "z": "1.02735"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-9.15,
-      "y":0.58,
-      "z":-1.92
+    "cameraPosition": {
+      "x": -9.15,
+      "y": 0.58,
+      "z": -1.92
     },
-    "season":"0",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "0",
+    "photo": "assets/img/Pool.jpg",
+    "video": "https://player.vimeo.com/video/294826034"
   },
-  "barn":{
-    "name":"Barn Museum",
-    "description":"The Barn",
-    "path":"assets/models/barn/Barn_Positioned.gltf",
-    "position":{
-      "x":"8.204",
-      "y":"-2",
-      "z":"-13.145"
+  "barn": {
+    "name": "Barn Museum",
+    "description": "The Mohonk Barn Museum is a step back in time to the founding of Mohonk Mountain House, also featuring live demonstrations on classic blacksmithing and rustic carpentry techniques. With most artifacts dating back to the 1800s, the museum showcases items such as Victorian-era carriages, antique farm and kitchen equipment, and a 1929 Model A Ford Station Wagon.",
+    "path": "assets/models/barn/Barn_Positioned.gltf",
+    "position": {
+      "x": "8.204",
+      "y": "-2",
+      "z": "-13.145"
     },
-    "scale":{
-      "x":".003",
-      "y":".003",
-      "z":".002"
+    "scale": {
+      "x": ".003",
+      "y": ".003",
+      "z": ".002"
     },
-    "rotation":{
-      "x":-0.1,
-      "y":0,
-      "z":0.05
+    "rotation": {
+      "x": -0.1,
+      "y": 0,
+      "z": 0.05
     },
-    "cameraPosition":{
-      "x":8.40,
-      "y":1.5,
-      "z":-8.17
+    "cameraPosition": {
+      "x": 8.40,
+      "y": 1.5,
+      "z": -8.17
     },
-    "season":"0",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "0",
+    "photo": "assets/img/BarnMuseum.jpg",
+    "video": "https://player.vimeo.com/video/294826044"
   },
-  "kidsClub":{
-    "name":"Kids Club",
-    "description":"The Kids Club",
-    "path":"assets/models/kidsClub/KidsClub.gltf",
-    "position":{
-      "x":"3.6",
-      "y":"0.483",
-      "z":"3.053"
+  "kidsClub": {
+    "name": "Kids' Club",
+    "description": "Applauded as one of the Best Hotel Kids' Programs in the U.S. by Travel + Leisure magazine, our Kids' Club is a complimentary drop-off program available to overnight guests for kids age 2 to 12. Your kids will get artsy and active in a supportive and fun environment that lets kids be kids while exploring and learning about the wonders of nature.",
+    "path": "assets/models/kidsClub/KidsClub.gltf",
+    "position": {
+      "x": "3.6",
+      "y": "0.483",
+      "z": "3.053"
     },
-    "scale":{
-      "x":".009",
-      "y":".009",
-      "z":".009"
+    "scale": {
+      "x": ".009",
+      "y": ".009",
+      "z": ".009"
     },
-    "rotation":{
-      "x":0,
-      "y":10.5,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 10.5,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-1.75,
-      "y":0.71,
-      "z":2.23
+    "cameraPosition": {
+      "x": -1.75,
+      "y": 0.71,
+      "z": 2.23
     },
-    "season":"0",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "0",
+    "photo": "assets/img/KidsClub.jpg",
+    "video": "https://player.vimeo.com/video/294826058"
   }
 }

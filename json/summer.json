@@ -1,531 +1,506 @@
 {
-  "rowboat":{
-    "name":"Rowboating",
-    "description":"Rowboats!",
-    "path":"assets/models/rowboat/Rowboat.gltf",
-    "position":{
-      "x":"-12.47",
-      "y":"0.28",
-      "z":"12.34"
+  "rowboat": {
+    "name": "Rowboating",
+    "description": "Enjoy peaceful moments in nature during a leisurely row around beautiful Lake Mohonk. Our classic wooden row boats are uniquely designed for Mohonk Mountain House.",
+    "path": "assets/models/rowboat/Rowboat.gltf",
+    "position": {
+      "x": "-12.47",
+      "y": "0.28",
+      "z": "12.34"
     },
-    "scale":{
-      "x":"1.5",
-      "y":"1.5",
-      "z":"1.5"
+    "scale": {
+      "x": "1.5",
+      "y": "1.5",
+      "z": "1.5"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-14.83,
-      "y":1.76,
-      "z":15
+    "cameraPosition": {
+      "x": -14.83,
+      "y": 1.76,
+      "z": 15
     },
-    "season":"1",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "1",
+    "photo": "assets/img/Rowboat.jpg",
+    "video": "https://player.vimeo.com/video/294826350"
   },
-  "granary":{
-    "name":"Granary",
-    "description":"The Granary",
-    "path":"assets/models/granary/Granary.gltf",
-    "position":{
-      "x":"-12",
-      "y":"0.19",
-      "z":"6.55"
+  "granary": {
+    "name": "Granary",
+    "description": "Enjoy a casual outdoor dining experience with stunning views of Lake Mohonk and Sky Top Tower! Checkered tablecloths and wooden picnic tables create the perfect atmosphere for a relaxed lunch or an evening cookout.",
+    "path": "assets/models/granary/Granary.gltf",
+    "position": {
+      "x": "-12",
+      "y": "0.19",
+      "z": "6.55"
     },
-    "scale":{
-      "x":".0015",
-      "y":".0015",
-      "z":".0015"
+    "scale": {
+      "x": ".0015",
+      "y": ".0015",
+      "z": ".0015"
     },
-    "rotation":{
-      "x":0.03,
-      "y":-10.1,
-      "z":0.01
+    "rotation": {
+      "x": 0.03,
+      "y": -10.1,
+      "z": 0.01
     },
-    "cameraPosition":{
-      "x":-13.344,
-      "y":1.105,
-      "z":4.861
+    "cameraPosition": {
+      "x": -13.344,
+      "y": 1.105,
+      "z": 4.861
     },
-    "season":"1",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "1",
+    "photo": "assets/img/Granary.jpg",
+    "video": "https://player.vimeo.com/video/294826376"
   },
-  "beach":{
-    "name":"Swimming Beach",
-    "description":"Beach Swimming!",
-    "path":"assets/models/beach/Beach.gltf",
-    "position":{
-      "x":"-7.46",
-      "y":"0.17",
-      "z":"6.17"
+  "beach": {
+    "name": "Swimming Beach",
+    "description": "Cool off from the heat with a refreshing dip in our glacial mountain lake, or sun yourself on our sandy beach and take in the peaceful views.",
+    "path": "assets/models/beach/Beach.gltf",
+    "position": {
+      "x": "-7.46",
+      "y": "0.17",
+      "z": "6.17"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-5.5,
-      "y":1.08,
-      "z":6.2
+    "cameraPosition": {
+      "x": -5.5,
+      "y": 1.08,
+      "z": 6.2
     },
-    "season":"1",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "1",
+    "photo": "assets/img/Beach.jpg",
+    "video": "https://player.vimeo.com/video/294826408"
   },
-  "paddleBoard":{
-    "name":"Paddle Boarding",
-    "description":"Paddle Boarding!",
-    "path":"assets/models/paddleBoard/Paddle.gltf",
-    "position":{
-      "x":"-8.46",
-      "y":"0.17",
-      "z":"9.9"
+  "paddleBoard": {
+    "name": "Paddleboarding",
+    "description": "There are so many ways to glide across Lake Mohonk! You have your choice of boats—canoes, rowboats, kayaks, paddleboats, and stand-up paddleboards. Our stand-up paddleboards will test your balance and agility and offer an entirely new way to experience our lake!",
+    "path": "assets/models/paddleBoard/Paddle.gltf",
+    "position": {
+      "x": "-8.46",
+      "y": "0.17",
+      "z": "9.9"
     },
-    "scale":{
-      "x":"1.5",
-      "y":"1.5",
-      "z":"1.5"
+    "scale": {
+      "x": "1.5",
+      "y": "1.5",
+      "z": "1.5"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-10.6,
-      "y":1.95,
-      "z":11.7
-    }
+    "cameraPosition": {
+      "x": -10.6,
+      "y": 1.95,
+      "z": 11.7
+    },
+    "season": "1",
+    "photo": "assets/img/PaddleBoard.jpg",
+    "video": "https://player.vimeo.com/video/294826441"
   },
-  "forestBathing":{
-    "name":"Forest Bathing",
-    "description":"Go for a stroll in a winter wonderland",
-    "path":"assets/models/forest/ForestBathing.gltf",
-    "position":{
-      "x":"1.563",
-      "y":"-2.02",
-      "z":"-18.59"
+  "forestBathing": {
+    "name": "Forest Bathing",
+    "description": "Explore a dynamic range of mindfulness and wellness programs throughout your stay that can reduce stress and enhance well-being. Join us for meditation, forest bathing, yoga, and fitness programs, all in a beautiful natural setting.",
+    "path": "assets/models/forest/ForestBathing.gltf",
+    "position": {
+      "x": "1.563",
+      "y": "-2.02",
+      "z": "-18.59"
     },
-    "scale":{
-      "x":".002",
-      "y":".002",
-      "z":".002"
+    "scale": {
+      "x": ".002",
+      "y": ".002",
+      "z": ".002"
     },
-    "rotation":{
-      "x":0,
-      "y":-0.5,
-      "z":-0.1
+    "rotation": {
+      "x": 0,
+      "y": -0.5,
+      "z": -0.1
     },
-    "cameraPosition":{
-      "x":-0.878,
-      "y":-0.285,
-      "z":-23.26
+    "cameraPosition": {
+      "x": -0.878,
+      "y": -0.285,
+      "z": -23.26
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/ForestBathing.jpg",
+    "video": "https://player.vimeo.com/video/294826013"
   },
-  "carriage":{
-    "name":"Carriage Rides",
-    "description":"Ride in a horse drawn carriage",
-    "path":"assets/models/carriage/CarriageRides.gltf",
-    "position":{
-      "x":"6.5",
-      "y":"-0.1",
-      "z":"-2.07"
+  "carriage": {
+    "name": "Carriage Rides",
+    "description": "There’s no better way to tour Mohonk’s grounds than in an old-fashioned mule-drawn carriage. During Mohonk’s early years, horses were the sole means of transportation for guests, baggage, and freight. Visitors arrived in their own horse-drawn buggies or were picked up at train stations by Mohonk carriages.",
+    "path": "assets/models/carriage/CarriageRides.gltf",
+    "position": {
+      "x": "6.5",
+      "y": "-0.1",
+      "z": "-2.07"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":-0.1,
-      "y":-0.7,
-      "z":0
+    "rotation": {
+      "x": -0.1,
+      "y": -0.7,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":3.783,
-      "y":1.400,
-      "z":-5.188
+    "cameraPosition": {
+      "x": 3.783,
+      "y": 1.400,
+      "z": -5.188
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/CarriageRides.jpg",
+    "video": "https://player.vimeo.com/video/294826115"
   },
-  "horses":{
-    "name":"Horseback Riding",
-    "description":"Ride horses!",
-    "path":"assets/models/horse/HorseRiding.gltf",
-    "position":{
-      "x":"13.514",
-      "y":"0.55",
-      "z":"-8.071"
+  "horses": {
+    "name": "Horseback Riding",
+    "description": "Embark on a trail ride over our scenic carriage roads at Mohonk Mountain House. Led by experienced trail guides, we’ll take you through some of the most beautiful parts of our property on horseback.",
+    "path": "assets/models/horse/HorseRiding.gltf",
+    "position": {
+      "x": "13.514",
+      "y": "0.55",
+      "z": "-8.071"
     },
-    "scale":{
-      "x":".002",
-      "y":".002",
-      "z":".002"
+    "scale": {
+      "x": ".002",
+      "y": ".002",
+      "z": ".002"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":10.538,
-      "y":1.043,
-      "z":-7.493
+    "cameraPosition": {
+      "x": 10.538,
+      "y": 1.043,
+      "z": -7.493
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/HorsebackRiding.jpg",
+    "video": "https://player.vimeo.com/video/294826133"
   },
-  "bike":{
-    "name":"Bike Riding",
-    "description":"Ride Bikes",
-    "path":"assets/models/bike/Bike.gltf",
-    "position":{
-      "x":"-14.15",
-      "y":"0.27",
-      "z":"6.55"
+  "bike": {
+    "name": "Biking",
+    "description": "Experience the rugged, scenic beauty of the Hudson Valley on a mountain bike. Explore over 40 miles of wooded trails and dramatic overlooks.",
+    "path": "assets/models/bike/Bike.gltf",
+    "position": {
+      "x": "-14.15",
+      "y": "0.27",
+      "z": "6.55"
     },
-    "scale":{
-      "x":".04",
-      "y":".04",
-      "z":".04"
+    "scale": {
+      "x": ".04",
+      "y": ".04",
+      "z": ".04"
     },
-    "rotation":{
-      "x":"6.2",
-      "y":0,
-      "z":0.1
+    "rotation": {
+      "x": "6.2",
+      "y": 0,
+      "z": 0.1
     },
-    "cameraPosition":{
-      "x":-17.2,
-      "y":1.59,
-      "z":6.04
+    "cameraPosition": {
+      "x": -17.2,
+      "y": 1.59,
+      "z": 6.04
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Bike.jpg",
+    "video": "https://player.vimeo.com/video/294826148"
   },
-  "fire":{
-    "name":"CampFire",
-    "description":"Sit by the campfire",
-    "path":"assets/models/Campfire/Fire.gltf",
-    "position":{
-      "x":"-5.44",
-      "y":"0.55",
-      "z":"12.3"
+  "fire": {
+    "name": "CampFire",
+    "description": "Take a seat by the campfire and make everlasting memories during your stay at Mohonk!",
+    "path": "assets/models/Campfire/Fire.gltf",
+    "position": {
+      "x": "-5.44",
+      "y": "0.55",
+      "z": "12.3"
     },
-    "scale":{
-      "x":".0002",
-      "y":".0002",
-      "z":".0002"
+    "scale": {
+      "x": ".0002",
+      "y": ".0002",
+      "z": ".0002"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-7.73,
-      "y":1.56,
-      "z":10.10
+    "cameraPosition": {
+      "x": -7.73,
+      "y": 1.56,
+      "z": 10.10
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Campfire.jpg",
+    "video": "https://player.vimeo.com/video/294826225"
   },
-  "garden":{
-    "name":"The Garden",
-    "description":"A Beautiful Garden",
-    "path":"assets/models/garden/Garden.gltf",
-    "position":{
-      "x":"11.849",
-      "y":"0.694",
-      "z":"1.771"
+  "garden": {
+    "name": "The Garden",
+    "description": "Explore the spectacular gardens at Mohonk on your own, or join one of our master gardeners for a tour through our Victorian Show Garden. Each year, the Garden showcases a different theme and incorporates more than 300 species of flowers and plants.",
+    "path": "assets/models/garden/Garden.gltf",
+    "position": {
+      "x": "11.849",
+      "y": "0.694",
+      "z": "1.771"
     },
-    "scale":{
-      "x":"8.8523",
-      "y":"-0.0413",
-      "z":"0.9830"
+    "scale": {
+      "x": "8.8523",
+      "y": "-0.0413",
+      "z": "0.9830"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":11.003,
-      "y":2.1977,
-      "z":-1.873
+    "cameraPosition": {
+      "x": 11.003,
+      "y": 2.1977,
+      "z": -1.873
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Garden.jpg",
+    "video": "https://player.vimeo.com/video/294826250"
   },
-  "climbing":{
-    "name":"Rock climbing",
-    "description":"Rock Climbing Adventures!",
-    "path":"assets/models/rockClimbing/Climbing.gltf",
-    "position":{
-      "x":"-4.9",
-      "y":"-1.09",
-      "z":"22.09"
+  "climbing": {
+    "name": "Rock climbing",
+    "description": "Mohonk offers some of the best rock climbing in the Northeast! Take in breathtaking views of the Hudson Valley as you scale the heights of the Shawangunk Ridge. Climbers must be escorted by an authorized guide from Alpine Endeavors.",
+    "path": "assets/models/rockClimbing/Climbing.gltf",
+    "position": {
+      "x": "-4.9",
+      "y": "-1.09",
+      "z": "22.09"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-14.44,
-      "y":4,
-      "z":31.61
+    "cameraPosition": {
+      "x": -14.44,
+      "y": 4,
+      "z": 31.61
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/RockClimbing.jpg",
+    "video": "https://player.vimeo.com/video/294826205"
   },
-  "tennisRed":{
-    "name":"Tennis",
-    "description":"Play Tennis",
-    "path":"assets/models/tennis/RedTennisCourt.gltf",
-    "position":{
-      "x":"-15.4",
-      "y":"-0.52",
-      "z":"-0.204"
+  "tennisRed": {
+    "name": "Tennis",
+    "description": "The resort features four beautifully groomed Har-Tru courts and two red clay soft courts, and was named one of the Top World Tennis Resorts by Tennis Resorts Online! Overnight guests can enjoy complimentary court time or book a private lesson with our Head Tennis Pro. ",
+    "path": "assets/models/tennis/RedTennisCourt.gltf",
+    "position": {
+      "x": "-15.4",
+      "y": "-0.52",
+      "z": "-0.204"
     },
-    "scale":{
-      "x":".01",
-      "y":".01",
-      "z":".01"
+    "scale": {
+      "x": ".01",
+      "y": ".01",
+      "z": ".01"
     },
-    "rotation":{
-      "x":-0.1,
-      "y":0,
-      "z":0.07
+    "rotation": {
+      "x": -0.1,
+      "y": 0,
+      "z": 0.07
     },
-    "cameraPosition":{
-      "x":-22.38,
-      "y":3.07,
-      "z":-1.92
+    "cameraPosition": {
+      "x": -22.38,
+      "y": 3.07,
+      "z": -1.92
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Tennis.jpg",
+    "video": "https://player.vimeo.com/video/294826299"
   },
-  "archery":{
-    "name":"Archery and Tomahawk Throwing",
-    "description":"Shoot Targets",
-    "path":"assets/models/archery/BowTarget.gltf",
-    "position":{
-      "x":"-21.06",
-      "y":"0.01",
-      "z":"9.35"
+  "archery": {
+    "name": "Archery and Tomahawk Throwing",
+    "description": "Learn and master the art of balance, aim, and power with archery & tomahawk throwing. Quiet your mind and focus your aim in a tranquil, natural setting.",
+    "path": "assets/models/archery/BowTarget.gltf",
+    "position": {
+      "x": "-21.06",
+      "y": "0.01",
+      "z": "9.35"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":-23.50,
-      "y":1.30,
-      "z":7.43
+    "cameraPosition": {
+      "x": -23.50,
+      "y": 1.30,
+      "z": 7.43
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Archery.jpg",
+    "video": "https://player.vimeo.com/video/294826274"
   },
-  "summerHouse":{
-    "name":"Summer House",
-    "description":"Stay Over",
-    "path":"assets/models/summerHouse/SummerHouse.gltf",
-    "position":{
-      "x":"11.849",
-      "y":"1.5",
-      "z":"1.771"
+  "summerHouse": {
+    "name": "Summer House",
+    "description": "Summerhouses are our iconic gazebos scattered all across Mohonk’s property. Intentionally designed for rest and relaxation along the trails, each one offers you a unique and scenic view.",
+    "path": "assets/models/summerHouse/SummerHouse.gltf",
+    "position": {
+      "x": "11.849",
+      "y": "1.5",
+      "z": "1.771"
     },
-    "scale":{
-      "x":".003",
-      "y":".003",
-      "z":".003"
+    "scale": {
+      "x": ".003",
+      "y": ".003",
+      "z": ".003"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":11.003,
-      "y":2.5977,
-      "z":-2.873
+    "cameraPosition": {
+      "x": 11.003,
+      "y": 2.5977,
+      "z": -2.873
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Summerhouse.jpg",
+    "video": "https://player.vimeo.com/video/294826077"
   },
-  "garden":{
-    "name":"The Garden",
-    "description":"A Beautiful Garden",
-    "path":"assets/models/garden/garden.gltf",
-    "position":{
-      "x":"7.8960",
-      "y":"-0.1336",
-      "z":"1.4226"
+  "garden2": {
+    "name": "The Garden",
+    "description": "Explore the spectacular gardens at Mohonk on your own, or join one of our master gardeners for a tour through our Victorian Show Garden. Each year, the Garden showcases a different theme and incorporates more than 300 species of flowers and plants.",
+    "path": "assets/models/garden/garden.gltf",
+    "position": {
+      "x": "7.8960",
+      "y": "-0.1336",
+      "z": "1.4226"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": -0.05,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":11.003,
-      "y":2.1977,
-      "z":-1.873
+    "cameraPosition": {
+      "x": 11.003,
+      "y": 2.1977,
+      "z": -1.873
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Garden.jpg",
+    "video": "https://player.vimeo.com/video/294826250"
   },
-  "garden2":{
-    "name":"The Garden",
-    "description":"A Beautiful Garden",
-    "path":"assets/models/garden/garden.gltf",
-    "position":{
-      "x":"7.8960",
-      "y":"-0.1336",
-      "z":"1.4226"
+  "golf": {
+    "name": "Golfing",
+    "description": "Surrounded by lush greenery and rolling hills, our golf course offers incredible views of the Hudson Valley region for golfers of all levels. Named one of the “Top 10 Environmentally Friendly Courses in the United States” by Links magazine and a “Dream Eighteen” destination by The Poughkeepsie Journal for its challenging first hole, the golf course at Mohonk Mountain House is a must-play!",
+    "path": "assets/models/golf/Golf.gltf",
+    "position": {
+      "x": "22.5239",
+      "y": "-1.6401",
+      "z": "-21.4919"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":-0.05,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":11.003,
-      "y":2.1977,
-      "z":-1.873
+    "cameraPosition": {
+      "x": 35.735,
+      "y": 8.1890,
+      "z": -11.981
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Golf.jpg",
+    "video": "https://player.vimeo.com/video/294826172"
   },
-  "golf":{
-    "name":"Golfing",
-    "description":"Go golfing!",
-    "path":"assets/models/golf/Golf.gltf",
-    "position":{
-      "x":"22.5239",
-      "y":"-1.6401",
-      "z":"-21.4919"
+  "hiking": {
+    "name": "Hiking",
+    "description": "Mohonk Mountain House offers over 85 miles of hiking trails, ranging from beginner to advanced levels of difficulty. From carriage roads to rock scrambles, we have some of the best and most diverse hiking trails in New York!",
+    "path": "assets/models/Hiking/Walking.gltf",
+    "position": {
+      "x": "-5.9",
+      "y": "-0.09",
+      "z": "27.09"
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": "3",
+      "y": "3",
+      "z": "3"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":35.735,
-      "y":8.1890,
-      "z":-11.981
+    "cameraPosition": {
+      "x": -14.44,
+      "y": 4,
+      "z": 31.61
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/Hiking.jpg",
+    "video": "https://player.vimeo.com/video/294826545"
   },
-  "hiking":{
-    "name":"Hiking",
-    "description":"Go golfing!",
-    "path":"assets/models/Hiking/Walking.gltf",
-    "position":{
-      "x":"-5.9",
-      "y":"-0.09",
-      "z":"27.09"
+  "climber": {
+    "name": "Rock Climbing",
+    "description": "Mohonk offers some of the best rock climbing in the Northeast! Take in breathtaking views of the Hudson Valley as you scale the heights of the Shawangunk Ridge. Climbers must be escorted by an authorized guide from Alpine Endeavors.",
+    "path": "assets/models/rockClimbing/Climbing_man.gltf",
+    "position": {
+      "x": "-11.2",
+      "y": "0.5",
+      "z": "19"
     },
-    "scale":{
-      "x":"3",
-      "y":"3",
-      "z":"3"
+    "scale": {
+      "x": "2.5",
+      "y": "2.5",
+      "z": "2.5"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": -1.8,
+      "y": 2.2,
+      "z": 1.6
     },
-    "cameraPosition":{
-      "x":-14.44,
-      "y":4,
-      "z":31.61
+    "cameraPosition": {
+      "x": -14.44,
+      "y": 4,
+      "z": 25.61
     },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
-  },
-  "climber":{
-    "name":"Rock Climbing",
-    "description":"Go golfing!",
-    "path":"assets/models/rockClimbing/Climbing_man.gltf",
-    "position":{
-      "x":"-11.2",
-      "y":"0.5",
-      "z":"19"
-    },
-    "scale":{
-      "x":"2.5",
-      "y":"2.5",
-      "z":"2.5"
-    },
-    "rotation":{
-      "x":-1.8,
-      "y":2.2,
-      "z":1.6
-    },
-    "cameraPosition":{
-      "x":-14.44,
-      "y":4,
-      "z":25.61
-    },
-    "season":"3",
-    "photo":"assets/img/mohonk.jpg",
-    "video":""
+    "season": "3",
+    "photo": "assets/img/RockClimbing.jpg",
+    "video": "https://player.vimeo.com/video/294826205"
   }
 }

@@ -326,16 +326,18 @@ function startIntro(){
 // onclick="hide()"
 function hide() {
    let elem = document.getElementById('tutorialScreen');
-   elem.parentNode.removeChild(elem);
+    elem.parentNode.removeChild(elem);
+    
 };
 
 function endIntro(){
   animating = true;
-  intro = true;
-  let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 2400).easing(TWEEN.Easing.Quadratic.Out);
-  let introTween2 = new TWEEN.Tween(camera.position).to({x:-34.7, y:27.2, z:40.6},2400).easing(TWEEN.Easing.Quadratic.Out);
-  let introTween3 = new TWEEN.Tween(camera.position).to({x:17.4, y:13.9, z:21.2},2400).easing(TWEEN.Easing.Quadratic.Out);
-  let introTween4 = new TWEEN.Tween(camera.position).to({x:26.83, y:7.48, z:-12.98}, 2400).easing(TWEEN.Easing.Quadratic.Out);
+    intro = true;
+    
+  let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 1500);
+  let introTween2 = new TWEEN.Tween(camera.position).to({x:-34.7, y:27.2, z:40.6},1500);
+  let introTween3 = new TWEEN.Tween(camera.position).to({x:17.4, y:13.9, z:21.2},1500);
+  let introTween4 = new TWEEN.Tween(camera.position).to({x:26.83, y:7.48, z:-12.98}, 1500);
 
   introTween1.chain(introTween2);
   introTween2.chain(introTween3);
@@ -344,8 +346,8 @@ function endIntro(){
     intro = false;
     animating = false;
   });
-  introTween1.start();
-  hide();
+    introTween1.start();
+      hide();
 };
 
 
@@ -436,6 +438,7 @@ function removeListeners() {
 
 
 // make snow  and leaf particles
+    /*
 class Particle {
   constructor(particleCount, color, size, name, boolean, leafType) {
     this.color = color;
@@ -481,7 +484,7 @@ class Particle {
     scene.add(this.particleSystem);
   }
 
-
+/*
   simulateSnow(){
     let pCount = this.particleCount;
     while (pCount--) {
@@ -511,7 +514,7 @@ class Particle {
     this.renderParticles();
     this.simulateSnow();
   }
-};
+};*/
 
 
 const createSun = () => {
@@ -522,10 +525,11 @@ const createSun = () => {
   return sphere;
 };
 
-
+/*
 const snow = new Particle(2000, 0xffffff, 2, "snow", false);
 const leafYellow = new Particle(50, 0xe38e1c, 5, "leaf", true, 'leaf7.png' );
 const leafRed = new Particle(75, 0xe38e1c, 5, "leaf", true, 'leaf.png' );
+*/
 const sun = createSun();
 
 
@@ -537,38 +541,31 @@ function render(){
   } else {
     TWEEN.update();
     if (winterSnow) {
-      snow.removeParticleSystem();
-      leafYellow.removeParticleSystem();
-      leafRed.removeParticleSystem();
+      //snow.removeParticleSystem();
+      //leafYellow.removeParticleSystem();
+      //leafRed.removeParticleSystem();
       scene.remove( sun );
-      snow.update();
+      //snow.update();
     } else if (fallFog) {
-      leafYellow.removeParticleSystem();
-      leafRed.removeParticleSystem();
-      snow.removeParticleSystem();
+      //leafYellow.removeParticleSystem();
+      //leafRed.removeParticleSystem();
+      //snow.removeParticleSystem();
       scene.remove( sun );
-      leafYellow.update();
-      leafRed.update();
+      //leafYellow.update();
+      //leafRed.update();
     } else if (summerSun)  {
-      snow.removeParticleSystem();
+      //snow.removeParticleSystem();
       scene.add( sun );
     } else {
       scene.remove( sun );
-      snow.removeParticleSystem();
-      scene.fog = false;
+      //snow.removeParticleSystem();
+      //scene.fog = false;
     }
 
     if (!animating) {
-      // curve.getPoint(currPoint, camera.position);
-      // camera.lookAt(scene.position);
-      // controls.dispose();
-      controls.maxDistance = 30;
-      controls.minDistance = 30;
       controls.update();
-      controls.minDistance = 14;
-      controls.minDistance = 14;
     } else {
-      // controls.update();
+       controls.update();
 
     }
   }
