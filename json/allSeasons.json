@@ -29,7 +29,7 @@
   },
   "spa": {
     "name": "Spa",
-    "description": "Named the Number One Resort Spa in the United States by Condé Nast Traveler, complete your wellness getaway with a nature-inspired treatment. Relax inside our 16 treatment rooms, solarium, verandas, outdoor heated mineral pool, eucalyptus steam rooms, and dry rock saunas.",
+    "description": "Named the Number One Resort Spa in the United States by Condï¿½ Nast Traveler, complete your wellness getaway with a nature-inspired treatment. Relax inside our 16 treatment rooms, solarium, verandas, outdoor heated mineral pool, eucalyptus steam rooms, and dry rock saunas.",
     "path": "assets/models/spa/Spa_tilted.gltf",
     "position": {
       "x": "-7.552",
@@ -211,12 +211,12 @@
     },
     "rotation": {
       "x": -0.1,
-      "y": 0,
+      "y": -0.5,
       "z": 0.05
     },
     "cameraPosition": {
-      "x": 8.40,
-      "y": 1.5,
+      "x": 20.40,
+      "y": 3,
       "z": -8.17
     },
     "season": "0",

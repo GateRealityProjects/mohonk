@@ -57,7 +57,7 @@
   },
   "carriage": {
     "name": "Carriage Rides",
-    "description": "There’s no better way to tour Mohonk’s grounds than in an old-fashioned mule-drawn carriage. During Mohonk’s early years, horses were the sole means of transportation for guests, baggage, and freight. Visitors arrived in their own horse-drawn buggies or were picked up at train stations by Mohonk carriages.",
+    "description": "Thereï¿½s no better wayï¿½to tour Mohonkï¿½s grounds than in an old-fashioned mule-drawn carriage. During Mohonkï¿½s early years, horses were the sole means of transportation for guests, baggage, and freight. Visitors arrived in their own horse-drawn buggies or were picked up at train stations by Mohonk carriages.",
     "path": "assets/models/carriage/CarriageRides.gltf",
     "position": {
       "x": "6.5",
@@ -85,7 +85,7 @@
   },
   "horses": {
     "name": "Horseback Riding",
-    "description": "Embark on a trail ride over our scenic carriage roads at Mohonk Mountain House. Led by experienced trail guides, we’ll take you through some of the most beautiful parts of our property on horseback.",
+    "description": "Embark on a trail ride over our scenic carriage roads at Mohonk Mountain House. Led by experienced trail guides, weï¿½ll take you through some of the most beautiful parts of our property on horseback.",
     "path": "assets/models/horse/HorseRiding.gltf",
     "position": {
       "x": "13.514",
@@ -141,7 +141,7 @@
   },
   "golf": {
     "name": "Golfing",
-    "description": "Surrounded by lush greenery and rolling hills, our golf course offers incredible views of the Hudson Valley region for golfers of all levels. Named one of the “Top 10 Environmentally Friendly Courses in the United States” by Links magazine and a “Dream Eighteen” destination by The Poughkeepsie Journal for its challenging first hole, the golf course at Mohonk Mountain House is a must-play!",
+    "description": "Surrounded by lush greenery and rolling hills, our golf course offers incredible views of the Hudson Valley region for golfers of all levels. Named one of the ï¿½Top 10 Environmentally Friendly Courses in the United Statesï¿½ byï¿½Linksï¿½magazine and a ï¿½Dream Eighteenï¿½ destination byï¿½The Poughkeepsie Journalï¿½for its challenging first hole, the golf course at Mohonk Mountain House is a must-play!",
     "path": "assets/models/golf/Golf.gltf",
     "position": {
       "x": "22.5239",
