@@ -114,16 +114,16 @@
   "hotChocolate": {
     "name": "Hot Chocolate on the Porch",
     "description": "Stop by our Gift Shop to get a delicious mug of hot chocolate with whipped cream on top, and then head outside to our Parlor Porch to enjoy breathtaking views of Lake Mohonk and Sky Top Tower.",
-    "path": "assets/models/porch/Porch_HotChoco.gltf",
+    "path": "assets/models/porch/porch.gltf",
     "position": {
       "x": "-1.25",
       "y": "-0.15",
       "z": "0.52"
     },
     "scale": {
-      "x": ".001",
-      "y": ".001",
-      "z": ".001"
+      "x": ".0009",
+      "y": ".0009",
+      "z": ".0009"
     },
     "rotation": {
       "x": 0,

@@ -474,5 +474,33 @@
     "season": "3",
     "photo": "assets/img/RockClimbing.jpg",
     "video": "https://player.vimeo.com/video/294826205"
+  },
+  "labryinth": {
+    "name": "labryinth",
+    "description": "labryinth info lorem ipsum",
+    "path": "assets/models/labryinth/Labryinth.gltf",
+    "position": {
+      "x": "-4.4",
+      "y": "1.4",
+      "z": "14"
+    },
+    "scale": {
+      "x": "0.001",
+      "y": "0.001",
+      "z": "0.001"
+    },
+    "rotation": {
+      "x": 0,
+      "y": 0.1,
+      "z": 0
+    },
+    "cameraPosition": {
+      "x": -8.0953,
+      "y": 3.036,
+      "z": 9.40621
+    },
+    "season": "3",
+    "photo": "",
+    "video": ""
   }
 }
