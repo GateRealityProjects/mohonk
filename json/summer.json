@@ -85,7 +85,7 @@
   },
   "paddleBoard": {
     "name": "Paddleboarding",
-    "description": "There are so many ways to glide across Lake Mohonk! You have your choice of boats—canoes, rowboats, kayaks, paddleboats, and stand-up paddleboards. Our stand-up paddleboards will test your balance and agility and offer an entirely new way to experience our lake!",
+    "description": "There are so many ways to glide across Lake Mohonk! You have your choice of boatsï¿½canoes, rowboats, kayaks, paddleboats, and stand-up paddleboards. Our stand-up paddleboards will test your balance and agility and offer an entirely new way to experience our lake!",
     "path": "assets/models/paddleBoard/Paddle.gltf",
     "position": {
       "x": "-8.46",
@@ -141,12 +141,12 @@
   },
   "carriage": {
     "name": "Carriage Rides",
-    "description": "There’s no better way to tour Mohonk’s grounds than in an old-fashioned mule-drawn carriage. During Mohonk’s early years, horses were the sole means of transportation for guests, baggage, and freight. Visitors arrived in their own horse-drawn buggies or were picked up at train stations by Mohonk carriages.",
+    "description": "Thereï¿½s no better wayï¿½to tour Mohonkï¿½s grounds than in an old-fashioned mule-drawn carriage. During Mohonkï¿½s early years, horses were the sole means of transportation for guests, baggage, and freight. Visitors arrived in their own horse-drawn buggies or were picked up at train stations by Mohonk carriages.",
     "path": "assets/models/carriage/CarriageRides.gltf",
     "position": {
-      "x": "6.5",
-      "y": "-0.1",
-      "z": "-2.07"
+      "x": "-10.5",
+      "y": "-1.1",
+      "z": "-8.07"
     },
     "scale": {
       "x": ".001",
@@ -159,9 +159,9 @@
       "z": 0
     },
     "cameraPosition": {
-      "x": 3.783,
-      "y": 1.400,
-      "z": -5.188
+      "x": -15.13,
+      "y": 0.80,
+      "z": -12.62
     },
     "season": "3",
     "photo": "assets/img/CarriageRides.jpg",
@@ -169,12 +169,12 @@
   },
   "horses": {
     "name": "Horseback Riding",
-    "description": "Embark on a trail ride over our scenic carriage roads at Mohonk Mountain House. Led by experienced trail guides, we’ll take you through some of the most beautiful parts of our property on horseback.",
+    "description": "Embark on a trail ride over our scenic carriage roads at Mohonk Mountain House. Led by experienced trail guides, weï¿½ll take you through some of the most beautiful parts of our property on horseback.",
     "path": "assets/models/horse/HorseRiding.gltf",
     "position": {
-      "x": "13.514",
-      "y": "0.55",
-      "z": "-8.071"
+      "x": "-21.06",
+      "y": "0.85",
+      "z": "15.35"
     },
     "scale": {
       "x": ".002",
@@ -182,14 +182,14 @@
       "z": ".002"
     },
     "rotation": {
-      "x": 0,
+      "x": -0.2,
       "y": 0,
-      "z": 0
+      "z": -0.1
     },
     "cameraPosition": {
-      "x": 10.538,
-      "y": 1.043,
-      "z": -7.493
+      "x": -23.50,
+      "y": 1.30,
+      "z": 13.43
     },
     "season": "3",
     "photo": "assets/img/HorsebackRiding.jpg",
@@ -200,8 +200,8 @@
     "description": "Experience the rugged, scenic beauty of the Hudson Valley on a mountain bike. Explore over 40 miles of wooded trails and dramatic overlooks.",
     "path": "assets/models/bike/Bike.gltf",
     "position": {
-      "x": "-14.15",
-      "y": "0.27",
+      "x": "-17.15",
+      "y": "0.05",
       "z": "6.55"
     },
     "scale": {
@@ -215,7 +215,7 @@
       "z": 0.1
     },
     "cameraPosition": {
-      "x": -17.2,
+      "x": -19.2,
       "y": 1.59,
       "z": 6.04
     },
@@ -250,34 +250,6 @@
     "season": "3",
     "photo": "assets/img/Campfire.jpg",
     "video": "https://player.vimeo.com/video/294826225"
-  },
-  "garden": {
-    "name": "The Garden",
-    "description": "Explore the spectacular gardens at Mohonk on your own, or join one of our master gardeners for a tour through our Victorian Show Garden. Each year, the Garden showcases a different theme and incorporates more than 300 species of flowers and plants.",
-    "path": "assets/models/garden/Garden.gltf",
-    "position": {
-      "x": "11.849",
-      "y": "0.694",
-      "z": "1.771"
-    },
-    "scale": {
-      "x": "8.8523",
-      "y": "-0.0413",
-      "z": "0.9830"
-    },
-    "rotation": {
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "cameraPosition": {
-      "x": 11.003,
-      "y": 2.1977,
-      "z": -1.873
-    },
-    "season": "3",
-    "photo": "assets/img/Garden.jpg",
-    "video": "https://player.vimeo.com/video/294826250"
   },
   "climbing": {
     "name": "Rock climbing",
@@ -365,7 +337,7 @@
   },
   "summerHouse": {
     "name": "Summer House",
-    "description": "Summerhouses are our iconic gazebos scattered all across Mohonk’s property. Intentionally designed for rest and relaxation along the trails, each one offers you a unique and scenic view.",
+    "description": "Summerhouses are our iconic gazebos scattered all across Mohonkï¿½s property. Intentionally designed for rest and relaxation along the trails, each one offers you a unique and scenic view.",
     "path": "assets/models/summerHouse/SummerHouse.gltf",
     "position": {
       "x": "11.849",
@@ -391,13 +363,13 @@
     "photo": "assets/img/Summerhouse.jpg",
     "video": "https://player.vimeo.com/video/294826077"
   },
-  "garden2": {
+  "garden": {
     "name": "The Garden",
     "description": "Explore the spectacular gardens at Mohonk on your own, or join one of our master gardeners for a tour through our Victorian Show Garden. Each year, the Garden showcases a different theme and incorporates more than 300 species of flowers and plants.",
     "path": "assets/models/garden/garden.gltf",
     "position": {
-      "x": "7.8960",
-      "y": "-0.1336",
+      "x": "8.8960",
+      "y": "0.2",
       "z": "1.4226"
     },
     "scale": {
@@ -421,7 +393,7 @@
   },
   "golf": {
     "name": "Golfing",
-    "description": "Surrounded by lush greenery and rolling hills, our golf course offers incredible views of the Hudson Valley region for golfers of all levels. Named one of the “Top 10 Environmentally Friendly Courses in the United States” by Links magazine and a “Dream Eighteen” destination by The Poughkeepsie Journal for its challenging first hole, the golf course at Mohonk Mountain House is a must-play!",
+    "description": "Surrounded by lush greenery and rolling hills, our golf course offers incredible views of the Hudson Valley region for golfers of all levels. Named one of the ï¿½Top 10 Environmentally Friendly Courses in the United Statesï¿½ byï¿½Linksï¿½magazine and a ï¿½Dream Eighteenï¿½ destination byï¿½The Poughkeepsie Journalï¿½for its challenging first hole, the golf course at Mohonk Mountain House is a must-play!",
     "path": "assets/models/golf/Golf.gltf",
     "position": {
       "x": "22.5239",
