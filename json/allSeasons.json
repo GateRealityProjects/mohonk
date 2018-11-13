@@ -201,7 +201,7 @@
     "path": "assets/models/barn/Barn_Positioned.gltf",
     "position": {
       "x": "8.204",
-      "y": "-1.3",
+      "y": "-2",
       "z": "-13.145"
     },
     "scale": {
@@ -215,9 +215,9 @@
       "z": 0.05
     },
     "cameraPosition": {
-      "x": 10,
-      "y": 1.5,
-      "z": -8.17
+      "x": 5.162988651564337,
+      "y": 0.5672009968226761,
+      "z": -7.145891854935
     },
     "season": "0",
     "photo": "assets/img/BarnMuseum.jpg",

@@ -37,8 +37,8 @@ THREE.OrbitControls = function ( object, domElement ) {
 	// How far you can orbit vertically, upper and lower limits.
 	// Range is 0 to Math.PI radians.
 
-		this.minPolarAngle = 1.3; // radians // NOTE: was at 1.1 changed for modelPlacementMode
-		this.maxPolarAngle = 1.3; // radians 1.2 NOTE: also at 1.1
+		this.minPolarAngle = 1.2; // radians // NOTE: was at 1.1 changed for modelPlacementMode
+		this.maxPolarAngle = 1.2; // radians 1.2 NOTE: also at 1.1
 
 
 	// How far you can orbit horizontally, upper and lower limits.
@@ -72,7 +72,7 @@ THREE.OrbitControls = function ( object, domElement ) {
 	this.autoRotateSpeed = .4; // 30 seconds per round when fps is 60
 
 	// Set to false to disable use of the keys
-	this.enableKeys = true;
+	this.enableKeys = false;
 
 	// The four arrow keys
 	this.keys = { LEFT: 37, UP: 38, RIGHT: 39, BOTTOM: 40 };

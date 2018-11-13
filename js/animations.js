@@ -2,7 +2,7 @@ var count = 0;
 let prevPos;
 let nodeOffswitch;
 let currNode;
-function trigger_animations(scene,objects,animating){
+function trigger_animations(scene, objects, animating){
   scene.traverse((node) => {
     nodeOffswitch = ["Rock climbing", "cloud"];
     if ( node.selectable && !nodeOffswitch.includes(node.name) ) {
@@ -91,6 +91,7 @@ function moveCamera(object){
     };
   }
   animating = true;
+
   new TWEEN.Tween( camera.position ).to( {
     x: object.cameraPosition.x,
     y: object.cameraPosition.y,
