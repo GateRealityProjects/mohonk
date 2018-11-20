@@ -202,6 +202,7 @@ async function seasonChanger(season){
     }
 
     if (!terrains) {
+      console.log("IN It")
       seasonChanger();
     }
 }
