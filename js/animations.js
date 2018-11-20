@@ -12,7 +12,22 @@ function trigger_animations(scene, objects, animating){
       node.on('mouseover', (ev) => {
         bounce(node);
       });
-        node.on('mousedown', (ev) => {
+
+      var event;
+      function checkMedia(x) {
+          if (x.matches) { // If media query matches
+              event = 'touchstart';
+          } else {
+            event = 'mousedown'
+          }
+      }
+
+      var x = window.matchMedia("(max-width: 600px)")
+      checkMedia(x) // Call listener function at run time
+      x.addListener(checkMedia) // Attach listener function on state changes
+
+
+        node.on(event, (ev) => {
           console.log(ev);
 
         controls.alanDollyOff();
