@@ -342,19 +342,26 @@ function endIntro(){
   animating = true;
     intro = true;
 
-  let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 1500);
-  let introTween2 = new TWEEN.Tween(camera.position).to({x:-34.7, y:27.2, z:40.6},1500);
-  let introTween3 = new TWEEN.Tween(camera.position).to({x:17.4, y:13.9, z:21.2},1500);
-  let introTween4 = new TWEEN.Tween(camera.position).to({x:26.83, y:7.48, z:-12.98}, 1500);
-
-  introTween1.chain(introTween2);
-  introTween2.chain(introTween3);
-  introTween3.chain(introTween4);
-  introTween4.chain().onComplete(() => {
-    intro = false;
-    animating = false;
-  });
-    introTween1.start();
+  // let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 1500);
+  // let introTween2 = new TWEEN.Tween(camera.position).to({x:-34.7, y:27.2, z:40.6},1500);
+  // let introTween3 = new TWEEN.Tween(camera.position).to({x:17.4, y:13.9, z:21.2},1500);
+  // let introTween4 = new TWEEN.Tween(camera.position).to({x:26.83, y:7.48, z:-12.98}, 1500);
+  //
+  // introTween1.chain(introTween2);
+  // introTween2.chain(introTween3);
+  // introTween3.chain(introTween4);
+  // introTween4.chain().onComplete(() => {
+  //   intro = false;
+  //   animating = false;
+  // });
+  //   introTween1.start();
+  controls.autoRotate = true;
+  controls.autoRotateSpeed = 15;
+  controls.update();
+  setTimeout(() => {
+    controls.autoRotate = false;
+    controls.update();
+  }, 6000)
       hide();
 };
 
@@ -544,9 +551,12 @@ const sun = createSun();
 function render(){
   requestAnimationFrame( render );
   if (intro) {
+    controls.update();
     TWEEN.update();
     camera.lookAt(new THREE.Vector3(0,0,0));
   } else {
+    controls.enabled = true;
+    controls.update();
     TWEEN.update();
     if (winterSnow) {
       //snow.removeParticleSystem();
