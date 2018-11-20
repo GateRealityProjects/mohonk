@@ -153,9 +153,9 @@ async function seasonChanger(season){
     for (var key in allSeasons){
       loadGlb(allSeasons[key], true);
     }
-    if (season === 0) { //TESTING SEASON
+    if (season == 0) { //TESTING SEASON
       current_season = 0;
-    } else if(season === 1) { //SPRING
+    } else if(season == 1) { //SPRING
       current_season = 1;
        winterSnow = false
        fallFog = false;
@@ -165,7 +165,7 @@ async function seasonChanger(season){
       for (var key in spring){
         loadGlb(spring[key], true);
       }
-    } else if(season === 2) { //SUMMER
+    } else if(season == 2) { //SUMMER
        winterSnow = false
        fallFog = false;
        summerSun = true;
@@ -175,7 +175,7 @@ async function seasonChanger(season){
       for (var key in summer){
         loadGlb(summer[key], true);
       }
-    } else if (season === 3) { //FALL
+    } else if (season == 3) { //FALL
       current_season = 3;
        winterSnow = false;
        summerSun = false

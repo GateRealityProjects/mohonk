@@ -28,7 +28,7 @@ THREE.OrbitControls = function (object, domElement) {
 
     // How far you can dolly in and out ( PerspectiveCamera only )
     this.minDistance = 0;
-    this.maxDistance = 38; 
+    this.maxDistance = 38;
 
     // How far you can zoom in and out ( OrthographicCamera only )
     this.minZoom = 0;
@@ -520,13 +520,13 @@ THREE.OrbitControls = function (object, domElement) {
     }
 
     function handleAlanDolly() {
-        
+
       //  console.log("Current");
         console.log(spherical.theta);
         //console.log(spherical.radius);
        // console.log("Previous");
        // console.log(sphericalPrevious);
-        
+
 
         if (spherical.theta > -2.2 && spherical.theta < -1.8) {
             if (sphericalPrevious > spherical.theta) {
