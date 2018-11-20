@@ -217,6 +217,7 @@
     }
 
     #mainVideo {
+      margin-top: 20px;
       height: 100%;
       width: 100%;
     }
@@ -336,8 +337,6 @@
 }
 
 #mainVideo {
-  margin-top: 50px;
-  margin-left: 30px;
 }
 
 
@@ -364,6 +363,10 @@
     margin-bottom: 10px;
     opacity: 88%;
     font-size: 100px;
+    }
+    #mainVideo {
+      margin-top: 50px;
+      margin-left: 30px;
     }
 
   #modalTitleRow{
