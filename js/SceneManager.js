@@ -145,26 +145,25 @@ async function init(){
 // Refresh scene and switch to selected Season
 async function seasonChanger(season){
     document.getElementById('loadingScreen').style.opacity = 1;
-
     // Select Model for Placement
     if (modelPlacementMode) {
       await testGlb(winter.ski);
     }
 
     for (var key in allSeasons){
-      loadGlb(allSeasons[key], true);
+      await loadGlb(allSeasons[key], true);
     }
 
     if (season == 0) { //TESTING SEASON
       current_season = 0;
 
-    } else if(season == 1 && terrains) { //SPRING
+    } else if (season == 1 && terrains) { //SPRING
        current_season = 1;
        winterSnow = false;
        fallFog = false;
        summerSun = false;
       refresh();
-      loadGlb(terrains.springTerrain,false);
+      await loadGlb(terrains.springTerrain,false);
       for (var key in spring){
         loadGlb(spring[key], true);
       }
@@ -174,9 +173,9 @@ async function seasonChanger(season){
        fallFog = false;
        summerSun = true;
       refresh();
-      loadGlb(terrains.summerTerrain, false);
+      await loadGlb(terrains.summerTerrain, false);
       for (var key in summer){
-        loadGlb(summer[key], true);
+        await loadGlb(summer[key], true);
       }
     } else if (season == 3 && terrains) { //FALL
        current_season = 3;
@@ -184,7 +183,7 @@ async function seasonChanger(season){
        summerSun = false
        fallFog = true;
       refresh();
-      loadGlb(terrains.fallTerrain, false);
+      await loadGlb(terrains.fallTerrain, false);
       for (var key in fall){
         loadGlb(fall[key], true);
       }
@@ -195,15 +194,10 @@ async function seasonChanger(season){
        removedParticles = false;
        summerSun = false;
       refresh();
-      loadGlb(terrains.winterTerrain, false);
+      await loadGlb(terrains.winterTerrain, false);
       for (var key in winter){
-        loadGlb(winter[key], true);
+        await loadGlb(winter[key], true);
       }
-    }
-
-    if (!terrains) {
-      console.log("IN It")
-      seasonChanger();
     }
 }
 
