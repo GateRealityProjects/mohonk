@@ -156,7 +156,7 @@ async function seasonChanger(season){
     if (season == 0) { //TESTING SEASON
       current_season = 0;
     } else if(season == 1) { //SPRING
-      current_season = 1;
+       current_season = 1;
        winterSnow = false
        fallFog = false;
        summerSun = false;
@@ -166,17 +166,17 @@ async function seasonChanger(season){
         loadGlb(spring[key], true);
       }
     } else if(season == 2) { //SUMMER
+       current_season = 2;
        winterSnow = false
        fallFog = false;
        summerSun = true;
-      current_season = 2;
       refresh();
       loadGlb(terrains.summerTerrain,false);
       for (var key in summer){
         loadGlb(summer[key], true);
       }
     } else if (season == 3) { //FALL
-      current_season = 3;
+       current_season = 3;
        winterSnow = false;
        summerSun = false
        fallFog = true;
@@ -186,7 +186,7 @@ async function seasonChanger(season){
         loadGlb(fall[key], true);
       }
     } else if (season == 4) { //WINTER
-      current_season = 4;
+       current_season = 4;
        winterSnow = true
        fallFog = true;
        removedParticles = false;
@@ -294,8 +294,8 @@ async function testGlb(object) {
 
 //intro sequence
 function startIntro(){
+  intro = true;
   controls.enabled = false;
-  controls.update();
   if (document.getElementById('click')) {
     document.getElementById("click").style.animation = "fadeInOut 2s";
     document.getElementById("zoom").style.animation = "fadeInOut 2s 2s";
@@ -315,16 +315,18 @@ function startIntro(){
     // })
 
     setTimeout(() => {
-      if (!interrupted) {
-        endIntro();
-        controls.enabled = true;
-        controls.update();
-      } else {
-        document.removeEventListener('click', () => {})
+      intro = false;
+      endIntro();
+      controls.enabled = true;
+      controls.update();
+            // if (!interrupted) {
+      // } else {
+        // document.removeEventListener('click', () => {})
         // interrupted = false;
-
-      }
+      // }
     }, 9000)
+  } else {
+      intro = false;
   }
 };
 
@@ -339,6 +341,7 @@ function hide() {
 };
 
 function endIntro(){
+  console.log("RUNNING END");
   animating = true;
     intro = true;
 
@@ -351,19 +354,18 @@ function endIntro(){
   // introTween2.chain(introTween3);
   // introTween3.chain(introTween4);
   // introTween4.chain().onComplete(() => {
-  //   intro = false;
-  //   animating = false;
-  // });
-  //   introTween1.start();
   controls.autoRotate = true;
   controls.autoRotateSpeed = 15;
-  controls.update();
-  setTimeout(() => {
+
+  setTimeout( () => {
     controls.autoRotate = false;
-    controls.update();
-  }, 6000)
-      hide();
-};
+    intro = false;
+  }, 6000 )
+
+    animating = false;
+    // introTween1.start();
+    hide();
+  }
 
 
 //scaling
@@ -581,6 +583,7 @@ function render(){
     }
 
     if (!animating) {
+      controls.enabled = true;
       controls.update();
     } else {
        controls.update();
