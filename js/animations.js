@@ -28,7 +28,6 @@ function trigger_animations(scene, objects, animating){
 
 
         node.on(event, (ev) => {
-          console.log(ev);
 
         controls.alanDollyOff();
         currNode = node;

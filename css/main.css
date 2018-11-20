@@ -294,6 +294,7 @@
 
 /* Modal stuff*/
 #infoBox{
+  min-width: 640px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -319,11 +320,13 @@
 }
 
 #mainVideo {
+  margin-top: 20px;
 }
 
 #modalTitleRow{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   position: absolute;
   padding-left: 3vw;
   padding-right: 3vw;
