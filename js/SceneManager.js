@@ -55,22 +55,22 @@ async function init(){
   }
 
   //terrain files from json for season changer
-  await loadJSON('json/terrains.json',function(response) {
+  await loadJSON('json/terrains.json',(response) => {
     terrains = JSON.parse(response);
   });
-  await loadJSON('json/spring.json',function(response) {
+  await loadJSON('json/spring.json',(response) => {
     spring = JSON.parse(response);
   });
-  await loadJSON('json/summer.json',function(response) {
+  await loadJSON('json/summer.json',(response) => {
     summer = JSON.parse(response);
   });
-  await loadJSON('json/fall.json',function(response) {
+  await loadJSON('json/fall.json',(response) => {
     fall = JSON.parse(response);
   });
-  await loadJSON('json/winter.json',function(response) {
+  await loadJSON('json/winter.json',(response) => {
     winter = JSON.parse(response);
   });
-  await loadJSON('json/allSeasons.json',async function(response) {
+  await loadJSON('json/allSeasons.json',async (response) => {
     allSeasons = JSON.parse(response);
     seasonChanger(seasonActualizer()); //Load inital season after parsing json
   });
@@ -100,7 +100,7 @@ async function init(){
   //Orbit Controls
   controls = new THREE.OrbitControls( camera );
   controls.update();
-    
+
   // Lighting
   var light = new THREE.DirectionalLight( 0xffffff, 1, 100);
   light.position.set(-30,60,45);
@@ -120,7 +120,7 @@ async function init(){
   var ambient = new THREE.AmbientLight(0xfffffff);
   ambient.intensity = 0.6;
   scene.add(ambient);
- 
+
 
   //Have loading screen update on Loading Manager
   THREE.DefaultLoadingManager.onLoad = function ( ) {
@@ -329,13 +329,13 @@ function startIntro(){
 function hide() {
    let elem = document.getElementById('tutorialScreen');
     elem.parentNode.removeChild(elem);
-    
+
 };
 
 function endIntro(){
   animating = true;
     intro = true;
-    
+
   let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 1500);
   let introTween2 = new TWEEN.Tween(camera.position).to({x:-34.7, y:27.2, z:40.6},1500);
   let introTween3 = new TWEEN.Tween(camera.position).to({x:17.4, y:13.9, z:21.2},1500);
