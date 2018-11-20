@@ -1,6 +1,7 @@
 {
   "tower": {
     "name": "Sky Top Tower",
+    "seasonNames": "All Seasons",
     "description": "If you only take one hike while you're here, you have to visit the iconic Sky Top Tower that can be seen from several miles away. Once you arrive, take the steps all the way up the tower-you'll feel on top of the world!",
     "path": "assets/models/tower/Tower.glb",
     "position": {
@@ -29,6 +30,7 @@
   },
   "spa": {
     "name": "Spa",
+    "seasonNames": "All Seasons",    
     "description": "Named the Number One Resort Spa in the United States by Conde Nast Traveler, complete your wellness getaway with a nature-inspired treatment. Relax inside our 16 treatment rooms, solarium, verandas, outdoor heated mineral pool, eucalyptus steam rooms, and dry rock saunas.",
     "path": "assets/models/spa/Spa_tilted.gltf",
     "position": {
@@ -57,6 +59,7 @@
   },
   "diningRoom": {
     "name": "Main Dining Room",
+    "seasonNames": "All Seasons",
     "description": "Settle into old world elegance as you enjoy artfully prepared cuisine from our award-winning culinary team. Our historic Main Dining Room features panoramic views of the Catskill Mountains, dramatic cathedral ceilings, and original woodwork from 1893.",
     "path": "assets/models/diningRoom/DinningRoom.gltf",
     "position": {
@@ -85,6 +88,7 @@
   },
   "carriageLounge": {
     "name": "Carriage Lounge",
+    "seasonNames": "All Seasons",
     "description": "Enjoy good food, good company, and a timeless feel in our fireside bar and lounge featuring handcrafted cocktails, hyper-local draft beer, and more than 20 varieties of New York spirits.",
     "path": "assets/models/CarriageLounge/CarriageLounge.gltf",
     "position": {
@@ -113,6 +117,7 @@
   },
   "giftShop": {
     "name": "The Gift Shop",
+    "seasonNames": "All Seasons",
     "description": "Our Gift Shop offers unique products that nourish the body, mind, and spirit. Discover soothing bath products, gourmet goodies, and classic Mohonk apparel. We also showcase handmade gifts, jewelry, and artwork made by local artisans in the Hudson Valley.",
     "path": "assets/models/GiftShop/GiftShop.gltf",
     "position": {
@@ -141,6 +146,7 @@
   },
   "greenhouse": {
     "name": "Greenhouse",
+    "seasonNames": "All Seasons",
     "description": "Just a short walk from the Mountain House, the Greenhouse provides visitors with a year-round glimpse at where our award-winning gardens get their start. Visit the Greenhouse to meet Mohonk Mountain House horticulturists and gardeners.",
     "path": "assets/models/greenhouse/Greenhouse_.gltf",
     "position": {
@@ -169,6 +175,7 @@
   },
   "indoorPool": {
     "name": "Indoor Pool",
+    "seasonNames": "All Seasons",
     "description": "Featuring panoramic views of the Catskill Mountains, our indoor swimming pool offers an oasis of tranquility among nature. Stretch out in our lounge chairs or take a dip in our 60-foot-long heated pool featuring underwater music.",
     "path": "assets/models/indoorPool/IndoorPool.gltf",
     "position": {
@@ -197,6 +204,7 @@
   },
   "barn": {
     "name": "Barn Museum",
+    "seasonNames": "All Seasons",
     "description": "The Mohonk Barn Museum is a step back in time to the founding of Mohonk Mountain House, also featuring live demonstrations on classic blacksmithing and rustic carpentry techniques. With most artifacts dating back to the 1800s, the museum showcases items such as Victorian-era carriages, antique farm and kitchen equipment, and a 1929 Model A Ford Station Wagon.",
     "path": "assets/models/barn/Barn_Positioned.gltf",
     "position": {
@@ -225,6 +233,7 @@
   },
   "kidsClub": {
     "name": "Kids' Club",
+    "seasonNames": "All Seasons",
     "description": "Applauded as one of the Best Hotel Kids' Programs in the U.S. by Travel + Leisure magazine, our Kids' Club is a complimentary drop-off program available to overnight guests for kids age 2 to 12. Your kids will get artsy and active in a supportive and fun environment that lets kids be kids while exploring and learning about the wonders of nature.",
     "path": "assets/models/kidsClub/KidsClub.gltf",
     "position": {

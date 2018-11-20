@@ -1,6 +1,7 @@
 {
   "rowboat": {
     "name": "Rowboating",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Enjoy peaceful moments in nature during a leisurely row around beautiful Lake Mohonk. Our classic wooden row boats are uniquely designed for Mohonk Mountain House.",
     "path": "assets/models/rowboat/Rowboat.gltf",
     "position": {
@@ -29,6 +30,7 @@
   },
   "granary": {
     "name": "Granary",
+    "seasonNames": "Summer",
     "description": "Enjoy a casual outdoor dining experience with stunning views of Lake Mohonk and Sky Top Tower! Checkered tablecloths and wooden picnic tables create the perfect atmosphere for a relaxed lunch or an evening cookout.",
     "path": "assets/models/granary/Granary.gltf",
     "position": {
@@ -57,6 +59,7 @@
   },
   "beach": {
     "name": "Swimming Beach",
+    "seasonNames": "Summer",
     "description": "Cool off from the heat with a refreshing dip in our glacial mountain lake, or sun yourself on our sandy beach and take in the peaceful views.",
     "path": "assets/models/beach/Beach.gltf",
     "position": {
@@ -85,6 +88,7 @@
   },
   "paddleBoard": {
     "name": "Paddleboarding",
+    "seasonNames": "Summer",
     "description": "There are so many ways to glide across Lake Mohonk! You have your choice of boats, canoes, rowboats, kayaks, paddleboats, and stand-up paddleboards. Our stand-up paddleboards will test your balance and agility and offer an entirely new way to experience our lake!",
     "path": "assets/models/paddleBoard/Paddle.gltf",
     "position": {
@@ -113,6 +117,7 @@
   },
   "forestBathing": {
     "name": "Forest Bathing",
+    "seasonNames": "All Seasons",
     "description": "Explore a dynamic range of mindfulness and wellness programs throughout your stay that can reduce stress and enhance well-being. Join us for meditation, forest bathing, yoga, and fitness programs, all in a beautiful natural setting.",
     "path": "assets/models/forest/ForestBathing.gltf",
     "position": {
@@ -141,6 +146,7 @@
   },
   "carriage": {
     "name": "Carriage Rides",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "There's no better way to tour Mohonk's grounds than in an old-fashioned mule-drawn carriage. During Mohonk's early years, horses were the sole means of transportation for guests, baggage, and freight. Visitors arrived in their own horse-drawn buggies or were picked up at train stations by Mohonk carriages.",
     "path": "assets/models/carriage/CarriageRides.gltf",
     "position": {
@@ -169,6 +175,7 @@
   },
   "horses": {
     "name": "Horseback Riding",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Embark on a trail ride over our scenic carriage roads at Mohonk Mountain House. Led by experienced trail guides, we'll take you through some of the most beautiful parts of our property on horseback.",
     "path": "assets/models/horse/HorseRiding.gltf",
     "position": {
@@ -197,6 +204,7 @@
   },
   "bike": {
     "name": "Biking",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Experience the rugged, scenic beauty of the Hudson Valley on a mountain bike. Explore over 40 miles of wooded trails and dramatic overlooks.",
     "path": "assets/models/bike/Bike.gltf",
     "position": {
@@ -225,6 +233,7 @@
   },
   "fire": {
     "name": "CampFire",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Take a seat by the campfire and make everlasting memories during your stay at Mohonk!",
     "path": "assets/models/Campfire/Fire.gltf",
     "position": {
@@ -253,6 +262,7 @@
   },
   "climbing": {
     "name": "Rock climbing",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Mohonk offers some of the best rock climbing in the Northeast! Take in breathtaking views of the Hudson Valley as you scale the heights of the Shawangunk Ridge. Climbers must be escorted by an authorized guide from Alpine Endeavors.",
     "path": "assets/models/rockClimbing/Climbing.gltf",
     "position": {
@@ -281,6 +291,7 @@
   },
   "tennisRed": {
     "name": "Tennis",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "The resort features four beautifully groomed Har-Tru courts and two red clay soft courts, and was named one of the Top World Tennis Resorts by Tennis Resorts Online! Overnight guests can enjoy complimentary court time or book a private lesson with our Head Tennis Pro. ",
     "path": "assets/models/tennis/RedTennisCourt.gltf",
     "position": {
@@ -309,6 +320,7 @@
   },
   "archery": {
     "name": "Archery and Tomahawk Throwing",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Learn and master the art of balance, aim, and power with archery & tomahawk throwing. Quiet your mind and focus your aim in a tranquil, natural setting.",
     "path": "assets/models/archery/BowTarget.gltf",
     "position": {
@@ -337,6 +349,7 @@
   },
   "summerHouse": {
     "name": "Summer House",
+    "seasonNames": "Summer",
     "description": "Summerhouses are our iconic gazebos scattered all across Mohonk's property. Intentionally designed for rest and relaxation along the trails, each one offers you a unique and scenic view.",
     "path": "assets/models/summerHouse/SummerHouse.gltf",
     "position": {
@@ -365,6 +378,7 @@
   },
   "garden": {
     "name": "The Garden",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Explore the spectacular gardens at Mohonk on your own, or join one of our master gardeners for a tour through our Victorian Show Garden. Each year, the Garden showcases a different theme and incorporates more than 300 species of flowers and plants.",
     "path": "assets/models/garden/AlanGarden_v5.gltf",
     "position": {
@@ -393,6 +407,7 @@
   },
   "golf": {
     "name": "Golfing",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Surrounded by lush greenery and rolling hills, our golf course offers incredible views of the Hudson Valley region for golfers of all levels. Named one of the Top 10 Environmentally Friendly Courses in the United States by Linksmagazine and a Dream Eighteen destination by The Poughkeepsie Journal for its challenging first hole, the golf course at Mohonk Mountain House is a must-play!",
     "path": "assets/models/golf/Golf.gltf",
     "position": {
@@ -421,6 +436,7 @@
   },
   "hiking": {
     "name": "Hiking",
+    "seasonNames": "All Seasons",
     "description": "Mohonk Mountain House offers over 85 miles of hiking trails, ranging from beginner to advanced levels of difficulty. From carriage roads to rock scrambles, we have some of the best and most diverse hiking trails in New York!",
     "path": "assets/models/Hiking/Walking.gltf",
     "position": {
@@ -449,6 +465,7 @@
   },
   "climber": {
     "name": "Rock Climbing",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Mohonk offers some of the best rock climbing in the Northeast! Take in breathtaking views of the Hudson Valley as you scale the heights of the Shawangunk Ridge. Climbers must be escorted by an authorized guide from Alpine Endeavors.",
     "path": "assets/models/rockClimbing/Climbing_man.gltf",
     "position": {
@@ -477,6 +494,7 @@
   },
   "labryinth": {
     "name": "The Labyrinth",
+    "seasonNames": "Fall, Summer, Spring",
     "description": "Mohonk is famous for the Labyrinth rock scramble created by naturally-formed boulders. On your journey in the Labyrinth, climb through the Lemon Squeeze to reach iconic views of the Hudson Valley.",
     "path": "assets/models/labryinth/Labryinth.gltf",
     "position": {

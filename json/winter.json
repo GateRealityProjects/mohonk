@@ -1,6 +1,7 @@
 {
   "iceSkating": {
     "name": "Ice Skating",
+    "seasonNames": "Winter",
     "description": "Glide across the ice on our award-winning skating rink, perched high above the lake in our outdoor Pavilion. In between skating sessions, warm up with a hot chocolate in front of our 39-foot-tall stone fireplace.",
     "path": "assets/models/iceSkating/IceSkating.gltf",
     "position": {
@@ -29,6 +30,7 @@
   },
   "ski": {
     "name": "Cross-Country Skiing",
+    "seasonNames": "Winter",
     "description": "Explore more than 30 miles of groomed trails with sweeping views of the Catskills and Shawangunks. Our Ski Shop provides maps and tips on which trails are best suited to your skill level. Ski alongside the lake, head for Sky Top Tower, or choose one of the many other trails throughout the property.",
     "path": "assets/models/ski/Ski.gltf",
     "position": {
@@ -57,6 +59,7 @@
   },
   "snowShoe": {
     "name": "Snowshoeing",
+    "seasonNames": "Winter",
     "description": "Snowshoes allow you to explore places you can't reach by skis for unbelievable views. Our Ski Shop provides snowshoes, maps, and advice on trail conditions.",
     "path": "assets/models/snowShoe/SnowShoes_R2.gltf",
     "position": {
@@ -85,6 +88,7 @@
   },
   "hiking": {
     "name": "Hiking",
+      "seasonNames": "All Seasons",
     "description": "Mohonk Mountain House offers over 85 miles of hiking trails, ranging from beginner to advanced levels of difficulty. From carriage roads to rock scrambles, we have some of the best and most diverse hiking trails in New York!",
     "path": "assets/models/Hiking/Walking.gltf",
     "position": {
@@ -113,6 +117,7 @@
   },
   "hotChocolate": {
     "name": "Hot Chocolate on the Porch",
+    "seasonNames": "Winter",
     "description": "Stop by our Gift Shop to get a delicious mug of hot chocolate with whipped cream on top, and then head outside to our Parlor Porch to enjoy breathtaking views of Lake Mohonk and Sky Top Tower.",
     "path": "assets/models/porch/porch.gltf",
     "position": {
@@ -141,6 +146,7 @@
   },
   "forestBathing": {
     "name": "Forest Bathing",
+    "seasonNames": "All Seasons",
     "description": "Explore a dynamic range of mindfulness and wellness programs throughout your stay that can reduce stress and enhance well-being. Join us for meditation, forest bathing, yoga, and fitness programs, all in a beautiful natural setting.",
     "path": "assets/models/forest/ForestBathing_Winter.gltf",
     "position": {
@@ -169,6 +175,7 @@
   },
   "cloud1": {
     "name": "cloud",
+    "seasonNames": "",
     "description": "clouds",
     "path": "assets/models/Cloud/Cloud.gltf",
     "position": {
@@ -197,6 +204,7 @@
   },
   "cloud2": {
     "name": "cloud",
+    "seasonNames": "",
     "description": "clouds",
     "path": "assets/models/Cloud/Cloud.gltf",
     "position": {

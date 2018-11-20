@@ -231,6 +231,7 @@ function loadGlb(object,selectable) {
         });
         gltf.scene.name = object.name;
         gltf.scene.description = object.description;
+        gltf.scene.seasonNames = object.seasonNames;
 
         gltf.scene.scale.x = object.scale.x;
         gltf.scene.scale.y = object.scale.y;

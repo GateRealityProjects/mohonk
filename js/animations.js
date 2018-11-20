@@ -32,8 +32,14 @@ function trigger_animations(scene, objects, animating){
         var modalTitle = document.getElementById("modalTitle");
         modalTitle.innerHTML = node.name;
 
+
         var modalDescription = document.getElementById("modalDescription");
         modalDescription.innerHTML = node.description;
+
+        let seasonNames = node.seasonNames;
+        var modalSeason = document.getElementById("modalSeason");
+        modalSeason.innerHTML = seasonNames;
+
 
         // jquery for loading backgrounds
         $('#modalFullscreen').css('background', 'url('+ node.photo +')');
