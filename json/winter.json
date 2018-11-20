@@ -57,7 +57,7 @@
   },
   "snowShoe": {
     "name": "Snowshoeing",
-    "description": "Snowshoes allow you to explore places you can�t reach by skis for unbelievable views. Our Ski Shop provides snowshoes, maps, and advice on trail conditions.",
+    "description": "Snowshoes allow you to explore places you can't reach by skis for unbelievable views. Our Ski Shop provides snowshoes, maps, and advice on trail conditions.",
     "path": "assets/models/snowShoe/SnowShoes_R2.gltf",
     "position": {
       "x": "14.12",
@@ -107,7 +107,7 @@
       "y": 4,
       "z": 31.61
     },
-    "season": "3",
+    "season": "0",
     "photo": "assets/img/Hiking.jpg",
     "video": "https://player.vimeo.com/video/294826545"
   },
@@ -163,7 +163,7 @@
       "y": -0.285,
       "z": -23.26
     },
-    "season": "2",
+    "season": "0",
     "photo": "assets/img/ForestBathing.jpg",
     "video": "https://player.vimeo.com/video/294826013"
   },

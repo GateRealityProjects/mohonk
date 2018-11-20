@@ -165,7 +165,7 @@
       font-size: 8pt;
       color: #014631;
       border: 0px;
-      padding-left: 5x;
+      padding-left: 5px;
       padding-right: 5px;
       padding-top: 15px;
       padding-bottom: 16px;
@@ -248,7 +248,7 @@
   color: #014631;
   width: 100%;
   height: 100%;
-  padding-left: 10px;
+  padding-left: 20px;
   padding-right: 20px;
   padding-top: 14px;
   padding-bottom: 14px;
@@ -385,11 +385,6 @@ iframe {
   height: 100vw; */
   background-color: rgba(51,51,51,0.0);
 }
-.videoModalContent{
-  /* width: 100vw;
-  height: 100vw; */
-  background-color: rgba(51,51,51,0.0);
-}
 
 video{
   width: 85vw;
@@ -481,18 +476,3 @@ canvas {
     opacity: 0;
   }
 }
-
-/* .sun-parent{
-  margin-right: 120px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-
-}
-.sun{
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: linear-gradient(#e9ed07 ,#ffd600 );
-  padding: 10px;
-} */

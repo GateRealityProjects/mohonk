@@ -12,7 +12,9 @@ function trigger_animations(scene, objects, animating){
       node.on('mouseover', (ev) => {
         bounce(node);
       });
-      node.on('click', (ev) => {
+        node.on('click', (ev) => {
+            
+            controls.alanDollyOff();
         currNode = node;
         animating = true;
         moveCamera(node);
@@ -113,12 +115,13 @@ function moveCamera(object){
 
 
 function resetCamera() {
-  if (controls.target !== 0) {
+    if (controls.target !== 0) {
+       controls.alanDollyOn();
     new TWEEN.Tween( controls.target).to( scene.position, 2100)
       .easing( TWEEN.Easing.Cubic.Out).onUpdate(() => {
           controls.update();
         }).start();
-    // resetTarget();
+      // resetTarget();
   }
 
   new TWEEN.Tween( camera.position ).to( {

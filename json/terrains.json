@@ -1,114 +1,114 @@
 {
-  "winterTerrain":{
-    "name":"winterTerrain",
-    "description":"",
-    "path":"assets/models/terrain/Winter_Static.gltf",
-    "position":{
-      "x":0,
-      "y":0,
-      "z":0
+  "winterTerrain": {
+    "name": "winterTerrain",
+    "description": "",
+    "path": "assets/models/terrain/Winter_Static.gltf",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":10,
-      "y":10,
-      "z":10
+    "cameraPosition": {
+      "x": 10,
+      "y": 10,
+      "z": 10
     },
-    "season":"",
-    "photo":"",
-    "video":""
+    "season": "",
+    "photo": "",
+    "video": ""
   },
-  "springTerrain":{
-    "name":"springTerrain",
-    "description":"",
-    "path":"assets/models/terrain/Spring_Static.gltf",
-    "position":{
-      "x":0,
-      "y":0,
-      "z":0
+  "springTerrain": {
+    "name": "springTerrain",
+    "description": "",
+    "path": "assets/models/terrain/Spring_Static.gltf",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":10,
-      "y":10,
-      "z":10
+    "cameraPosition": {
+      "x": 10,
+      "y": 10,
+      "z": 10
     },
-    "season":"",
-    "photo":"",
-    "video":""
+    "season": "",
+    "photo": "",
+    "video": ""
   },
-  "summerTerrain":{
-    "name":"summerTerrain",
-    "description":"",
-    "path":"assets/models/terrain/Summer_Static.gltf",
-    "position":{
-      "x":0,
-      "y":0,
-      "z":0
+  "summerTerrain": {
+    "name": "summerTerrain",
+    "description": "",
+    "path": "assets/models/terrain/Summer_Static.gltf",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":10,
-      "y":10,
-      "z":10
+    "cameraPosition": {
+      "x": 10,
+      "y": 10,
+      "z": 10
     },
-    "season":"",
-    "photo":"",
-    "video":""
+    "season": "",
+    "photo": "",
+    "video": ""
   },
-  "fallTerrain":{
-    "name":"fallTerrain",
-    "description":"",
-    "path":"assets/models/terrain/Fall_Static.gltf",
-    "position":{
-      "x":0,
-      "y":0,
-      "z":0
+  "fallTerrain": {
+    "name": "fallTerrain",
+    "description": "",
+    "path": "assets/models/terrain/Fall_Static.gltf",
+    "position": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "scale":{
-      "x":".001",
-      "y":".001",
-      "z":".001"
+    "scale": {
+      "x": ".001",
+      "y": ".001",
+      "z": ".001"
     },
-    "rotation":{
-      "x":0,
-      "y":0,
-      "z":0
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
     },
-    "cameraPosition":{
-      "x":10,
-      "y":10,
-      "z":10
+    "cameraPosition": {
+      "x": 10,
+      "y": 10,
+      "z": 10
     },
-    "season":"",
-    "photo":"",
-    "video":""
+    "season": "",
+    "photo": "",
+    "video": ""
   }
 }

@@ -32,23 +32,7 @@ init();
 
 async function init(){
 
-  //create scene
-  scene = new THREE.Scene();
-  scene.background = new THREE.Color( 0x4FAFFF);
 
-  // Camera
-  camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
-
-  camera.receiveShadow = true;
-  camera.castShadow = true;
-
-  //Renderer
-  renderer = new THREE.WebGLRenderer({antialias: true});
-  renderer.shadowMap.enabled = true;
-  renderer.shadowMapSoft = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-  renderer.setSize( window.innerWidth, window.innerHeight );
-  document.body.appendChild( renderer.domElement );
 
   //Load correct season by current month (loads not current but upcoming season)
   function seasonActualizer() {
@@ -91,6 +75,24 @@ async function init(){
     seasonChanger(seasonActualizer()); //Load inital season after parsing json
   });
 
+    //create scene
+    scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x59b5f7);
+
+    // Camera
+    camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+    camera.receiveShadow = true;
+    camera.castShadow = true;
+
+    //Renderer
+    renderer = new THREE.WebGLRenderer({ antialias: true });
+    renderer.shadowMap.enabled = true;
+    renderer.shadowMapSoft = true;
+    renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
   // Object Interaction
   interaction = new THREE.Interaction(renderer, scene, camera);
   interaction.on;
@@ -98,8 +100,7 @@ async function init(){
   //Orbit Controls
   controls = new THREE.OrbitControls( camera );
   controls.update();
-
-
+    
   // Lighting
   var light = new THREE.DirectionalLight( 0xffffff, 1, 100);
   light.position.set(-30,60,45);
@@ -119,6 +120,7 @@ async function init(){
   var ambient = new THREE.AmbientLight(0xfffffff);
   ambient.intensity = 0.6;
   scene.add(ambient);
+ 
 
   //Have loading screen update on Loading Manager
   THREE.DefaultLoadingManager.onLoad = function ( ) {
@@ -406,8 +408,8 @@ let targetRotation = 0;
 document.addEventListener('mousedown', onDocumentMouseDown, true);
 
 function onDocumentMouseDown(event) {
-  // event.preventDefault();
-  // event.stopPropagation();
+   //event.preventDefault();
+   //event.stopPropagation();
   window.addEventListener('touchmove', onDocumentTouchMove, true)
   window.addEventListener('mousemove', onDocumentMouseMove, true);
   window.addEventListener('mouseup', removeListeners, true);
@@ -418,15 +420,15 @@ function onDocumentMouseDown(event) {
 
 function onDocumentTouchMove( event ) {
   if ( event.touches.length == 1 ) {
-    // event.preventDefault();
+     //event.preventDefault();
     mouseX = event.touches[0].clientX - windowHalfX;
     targetRotation = rotateOnMouseDown + ( mouseX - mouseXOnMouseDown ) * 0.05;
     currPoint = (targetRotation - rotateOnMouseDown) * 0.05;
   }
 }
 function onDocumentMouseMove(event) {
-  // event.preventDefault();
-  // event.stopPropagation();
+   //event.preventDefault();
+   //event.stopPropagation();
   let deltaMouseX = event.clientX - mouseXOnMouseDown;
   currPoint = THREE.Math.euclideanModulo(currPointOnMouseDown + deltaMouseX * 0.0005, 1);
 }

@@ -51,13 +51,13 @@
       "y": -0.285,
       "z": -23.26
     },
-    "season": "3",
+    "season": "0",
     "photo": "assets/img/ForestBathing.jpg",
     "video": "https://player.vimeo.com/video/294826013"
   },
   "carriage": {
     "name": "Carriage Rides",
-    "description": "There�s no better way�to tour Mohonk�s grounds than in an old-fashioned mule-drawn carriage. During Mohonk�s early years, horses were the sole means of transportation for guests, baggage, and freight. Visitors arrived in their own horse-drawn buggies or were picked up at train stations by Mohonk carriages.",
+    "description": "There's no better way to tour Mohonk's grounds than in an old-fashioned mule-drawn carriage. During Mohonk's early years, horses were the sole means of transportation for guests, baggage, and freight. Visitors arrived in their own horse-drawn buggies or were picked up at train stations by Mohonk carriages.",
     "path": "assets/models/carriage/CarriageRides.gltf",
     "position": {
       "x": "-10.5",
@@ -85,7 +85,7 @@
   },
   "horses": {
     "name": "Horseback Riding",
-    "description": "Embark on a trail ride over our scenic carriage roads at Mohonk Mountain House. Led by experienced trail guides, we�ll take you through some of the most beautiful parts of our property on horseback.",
+    "description": "Embark on a trail ride over our scenic carriage roads at Mohonk Mountain House. Led by experienced trail guides, we'll take you through some of the most beautiful parts of our property on horseback.",
     "path": "assets/models/horse/HorseRiding.gltf",
     "position": {
       "x": "-21.06",
@@ -224,8 +224,8 @@
     "video": "https://player.vimeo.com/video/294826205"
   },
   "labryinth": {
-    "name": "labryinth",
-    "description": "labryinth info lorem ipsum",
+    "name": "The Labyrinth",
+    "description": "Mohonk is famous for the Labyrinth rock scramble created by naturally-formed boulders. On your journey in the Labyrinth, climb through the Lemon Squeeze to reach iconic views of the Hudson Valley.",
     "path": "assets/models/labryinth/Labryinth.gltf",
     "position": {
       "x": "-4.4",
@@ -248,8 +248,8 @@
       "z": 9.40621
     },
     "season": "3",
-    "photo": "",
-    "video": ""
+    "photo": "assets/img/Labyrinth.jpg",
+    "video": "https://player.vimeo.com/video/294826322"
   },
   "tennisRed": {
     "name": "Tennis",
@@ -309,7 +309,7 @@
   },
   "golf": {
     "name": "Golfing",
-    "description": "Surrounded by lush greenery and rolling hills, our golf course offers incredible views of the Hudson Valley region for golfers of all levels. Named one of the �Top 10 Environmentally Friendly Courses in the United States� by�Links�magazine and a �Dream Eighteen� destination by�The Poughkeepsie Journal�for its challenging first hole, the golf course at Mohonk Mountain House is a must-play!",
+    "description": "Surrounded by lush greenery and rolling hills, our golf course offers incredible views of the Hudson Valley region for golfers of all levels. Named one of the Top 10 Environmentally Friendly Courses in the United States by Linksmagazine and a Dream Eighteen destination by The Poughkeepsie Journal for its challenging first hole, the golf course at Mohonk Mountain House is a must-play!",
     "path": "assets/models/golf/Golf.gltf",
     "position": {
       "x": "22.8239",
@@ -359,7 +359,7 @@
       "y": 4,
       "z": 31.61
     },
-    "season": "3",
+    "season": "0",
     "photo": "assets/img/Hiking.jpg",
     "video": "https://player.vimeo.com/video/294826545"
   },
