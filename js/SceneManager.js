@@ -150,14 +150,17 @@ async function seasonChanger(season){
     if (modelPlacementMode) {
       await testGlb(winter.ski);
     }
+
     for (var key in allSeasons){
       loadGlb(allSeasons[key], true);
     }
+
     if (season == 0) { //TESTING SEASON
       current_season = 0;
-    } else if(season == 1) { //SPRING
+
+    } else if(season == 1 && terrains) { //SPRING
        current_season = 1;
-       winterSnow = false
+       winterSnow = false;
        fallFog = false;
        summerSun = false;
       refresh();
@@ -165,37 +168,41 @@ async function seasonChanger(season){
       for (var key in spring){
         loadGlb(spring[key], true);
       }
-    } else if(season == 2) { //SUMMER
+    } else if(season == 2 && terrains) { //SUMMER
        current_season = 2;
-       winterSnow = false
+       winterSnow = false;
        fallFog = false;
        summerSun = true;
       refresh();
-      loadGlb(terrains.summerTerrain,false);
+      loadGlb(terrains.summerTerrain, false);
       for (var key in summer){
         loadGlb(summer[key], true);
       }
-    } else if (season == 3) { //FALL
+    } else if (season == 3 && terrains) { //FALL
        current_season = 3;
        winterSnow = false;
        summerSun = false
        fallFog = true;
       refresh();
-      loadGlb(terrains.fallTerrain,false);
+      loadGlb(terrains.fallTerrain, false);
       for (var key in fall){
         loadGlb(fall[key], true);
       }
-    } else if (season == 4) { //WINTER
+    } else if (season == 4 && terrains) { //WINTER
        current_season = 4;
        winterSnow = true
        fallFog = true;
        removedParticles = false;
        summerSun = false;
       refresh();
-      loadGlb(terrains.winterTerrain,false);
+      loadGlb(terrains.winterTerrain, false);
       for (var key in winter){
         loadGlb(winter[key], true);
       }
+    }
+
+    if (!terrains) {
+      seasonChanger();
     }
 }
 
