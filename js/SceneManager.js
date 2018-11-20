@@ -341,7 +341,6 @@ function hide() {
 };
 
 function endIntro(){
-  console.log("RUNNING END");
   animating = true;
     intro = true;
 

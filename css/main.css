@@ -157,6 +157,7 @@
   color: #014631;
 }
 
+/*  phone*/
 @media only screen and (max-width: 600px) {
     #backButtonButton {
       background: rgba(165, 204, 198, 0.69);
@@ -175,16 +176,39 @@
       border: 3px solid #014631;
     }
 
-    #modalPlayButton{
-      color: grey;
-      margin-top: 40px;
-      margin-left: 0;
-      opacity: 88%;
-      font-size: 40px;
+    #infoBox{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height:100vh;
+      background: rgba(255,255,255,.88);
+      font-family: 'Open Sans',serif;
+      color: white;
     }
+  #modalPlayButton{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    color: grey;
+    margin-bottom: 10px;
+    opacity: 88%;
+    font-size: 100px;
+    }
+    #modalTitleRow{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: absolute;
+      padding-left: 3vw;
+      padding-right: 3vw;
+    }
+
 
     #video {
       color: grey;
+      margin-bottom: 10px;
       margin-top: 15vh;
       margin-left: 0;
       opacity: 88%;
@@ -194,13 +218,8 @@
 
     #mainVideo {
       height: 100%;
-      wifth: 100%;
+      width: 100%;
     }
-
-    #modalTitleRow {
-      min-height: 100%;
-    }
-
 
     #exitButton {
       z-index: 5;
@@ -208,7 +227,7 @@
     }
 }
 
-
+/* comp */
 @media only screen and (min-width: 601px) {
 
   #backButtonButton{
@@ -293,18 +312,6 @@
 }
 
 /* Modal stuff*/
-#infoBox{
-  min-width: 640px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height:100vh;
-  background: rgba(255,255,255,.88);
-  display: flex;
-  font-family: 'Open Sans',serif;
-  color: white;
-}
 #exitButton{
   /* position: absolute; */
   z-index: 5;
@@ -323,19 +330,22 @@
   margin-top: 20px;
 }
 
-#modalTitleRow{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: absolute;
-  padding-left: 3vw;
-  padding-right: 3vw;
-}
 
+/* comp */
 @media only screen and (min-width: 601px) {
+  #infoBox{
+    min-width: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background: rgba(255,255,255,.88);
+    font-family: 'Open Sans',serif;
+    color: white;
+  }
 #modalPlayButton{
   margin-top: 5px;
-  object-fit: cover;
   display: flex;
   justify-content: center;
   z-index: 1;
@@ -344,7 +354,16 @@
   opacity: 88%;
   font-size: 100px;
   }
+  #modalTitleRow{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  }
 }
+
 #modalTitle{
   font-family: GothamBold;
   font-size: 28pt;
