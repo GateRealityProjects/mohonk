@@ -288,15 +288,18 @@
 
 /* Modal stuff*/
 #infoBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height:100vh;
   background: rgba(255,255,255,.88);
-  /* padding: 5%; */
   display: flex;
   font-family: 'Open Sans',serif;
   color: white;
 }
 #exitButton{
-  position: absolute;
+  /* position: absolute; */
   z-index: 5;
   margin: 10px;
   font-family: GothamLight;
@@ -304,25 +307,30 @@
   color: #014631;
   border: 0px;
   padding: 0;
-  margin-left: 10vh;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 90vh;
 }
 
 iframe {
-  margin: 10%;
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
 }
 
 #modalTitleRow{
+  display: flex;
+  justify-content: center;
   position: absolute;
-  width: 100%;
   padding-left: 3vw;
   padding-right: 3vw;
-  /* top: 35vh; */
-  /* padding-right: 3em; */
 }
+
 @media only screen and (min-width: 601px) {
 #modalPlayButton{
+  min-height: 90%;
+  display: flex;
+  justify-content: center;
   z-index: 1;
   color: grey;
   margin-bottom: 10px;
@@ -387,9 +395,12 @@ iframe {
 }
 
 video{
-  width: 85vw;
-  margin-left: 7.5vw;
-  z-index: 99;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /* margin-left: 7.5vw; */
+  /* z-index: 99; */
 }
 
 
