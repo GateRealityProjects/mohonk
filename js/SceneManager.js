@@ -294,6 +294,8 @@ async function testGlb(object) {
 
 //intro sequence
 function startIntro(){
+  controls.enabled = false;
+  controls.update();
   if (document.getElementById('click')) {
     document.getElementById("click").style.animation = "fadeInOut 2s";
     document.getElementById("zoom").style.animation = "fadeInOut 2s 2s";
@@ -315,9 +317,12 @@ function startIntro(){
     setTimeout(() => {
       if (!interrupted) {
         endIntro();
+        controls.enabled = true;
+        controls.update();
       } else {
         document.removeEventListener('click', () => {})
-        interrupted = false;
+        // interrupted = false;
+
       }
     }, 9000)
   }
