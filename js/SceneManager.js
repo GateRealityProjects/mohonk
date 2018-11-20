@@ -185,7 +185,7 @@ async function seasonChanger(season){
       for (var key in fall){
         loadGlb(fall[key], true);
       }
-    } else if (season === 4) { //WINTER
+    } else if (season == 4) { //WINTER
       current_season = 4;
        winterSnow = true
        fallFog = true;

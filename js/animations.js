@@ -12,9 +12,10 @@ function trigger_animations(scene, objects, animating){
       node.on('mouseover', (ev) => {
         bounce(node);
       });
-        node.on('click', (ev) => {
-            
-            controls.alanDollyOff();
+        node.on('mousedown', (ev) => {
+          console.log(ev);
+
+        controls.alanDollyOff();
         currNode = node;
         animating = true;
         moveCamera(node);

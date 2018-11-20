@@ -522,7 +522,7 @@ THREE.OrbitControls = function (object, domElement) {
     function handleAlanDolly() {
 
       //  console.log("Current");
-        console.log(spherical.theta);
+        // console.log(spherical.theta);
         //console.log(spherical.radius);
        // console.log("Previous");
        // console.log(sphericalPrevious);
