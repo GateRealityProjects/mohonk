@@ -356,8 +356,8 @@ function endIntro(){
   // introTween2.chain(introTween3);
   // introTween3.chain(introTween4);
   // introTween4.chain().onComplete(() => {
-  controls.autoRotate = true;
   controls.autoRotateSpeed = 15;
+  controls.autoRotate = true;
 
   setTimeout( () => {
     controls.autoRotate = false;
