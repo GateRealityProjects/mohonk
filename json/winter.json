@@ -232,8 +232,8 @@
     "video": ""
   },
   "summerHouse": {
-    "name": "Winter House",
-    "seasonNames": "Summer",
+    "name": "Summer House",
+    "seasonNames": "All Seasons",
     "description": "Summerhouses are our iconic gazebos scattered all across Mohonk's property. Intentionally designed for rest and relaxation along the trails, each one offers you a unique and scenic view.",
     "path": "assets/models/summerHouse/WinterHouse.gltf",
     "position": {
