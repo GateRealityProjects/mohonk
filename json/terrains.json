@@ -30,7 +30,7 @@
   "springTerrain": {
     "name": "springTerrain",
     "description": "",
-    "path": "assets/models/terrain/Spring_Static.gltf",
+    "path": "assets/models/terrain/Spring_New.gltf",
     "position": {
       "x": 0,
       "y": 0,
@@ -58,7 +58,7 @@
   "summerTerrain": {
     "name": "summerTerrain",
     "description": "",
-    "path": "assets/models/terrain/Summer_Static.gltf",
+    "path": "assets/models/terrain/Summer_New.gltf",
     "position": {
       "x": 0,
       "y": 0,
@@ -86,7 +86,7 @@
   "fallTerrain": {
     "name": "fallTerrain",
     "description": "",
-    "path": "assets/models/terrain/Fall_Static.gltf",
+    "path": "assets/models/terrain/Fall_New.gltf",
     "position": {
       "x": 0,
       "y": 0,
