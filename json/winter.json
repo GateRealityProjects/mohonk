@@ -238,13 +238,13 @@
     "path": "assets/models/summerHouse/WinterHouse.gltf",
     "position": {
       "x": "11.849",
-      "y": "1.5",
+      "y": "2.15",
       "z": "3.771"
     },
     "scale": {
-      "x": ".003",
-      "y": ".003",
-      "z": ".003"
+      "x": ".002",
+      "y": ".002",
+      "z": ".002"
     },
     "rotation": {
       "x": 0,
