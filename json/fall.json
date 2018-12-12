@@ -380,10 +380,10 @@
     "name": "Rock Climbing",
     "seasonNames": "Fall, Summer, Spring",
     "description": "Mohonk offers some of the best rock climbing in the Northeast! Take in breathtaking views of the Hudson Valley as you scale the heights of the Shawangunk Ridge. Climbers must be escorted by an authorized guide from Alpine Endeavors.",
-    "path": "assets/models/rockClimbing/Climbing_man.gltf",
+    "path": "assets/models/rockClimbing/RockClimber.gltf",
     "position": {
-      "x": "-11.2",
-      "y": "0.5",
+      "x": "-9.5",
+      "y": "0.7",
       "z": "19"
     },
     "scale": {
@@ -392,9 +392,9 @@
       "z": "2.5"
     },
     "rotation": {
-      "x": -1.8,
-      "y": 2.2,
-      "z": 1.6
+      "x": -0.8,
+      "y": 5,
+      "z": -0.8
     },
     "cameraPosition": {
       "x": -14.44,
