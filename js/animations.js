@@ -42,6 +42,7 @@ function trigger_animations(scene, objects, animating){
         titleBox.hidden = false;
         backButton.hidden = false;
 
+
         //PRELOAD MODAL WITH INFORMATION
         var modalTitle = document.getElementById("modalTitle");
         modalTitle.innerHTML = node.name;
@@ -141,6 +142,8 @@ function resetCamera() {
     new TWEEN.Tween( controls.target).to( scene.position, 2100)
       .easing( TWEEN.Easing.Cubic.Out).onUpdate(() => {
           controls.update();
+          let dropdown = document.getElementById('seasonCard');
+          dropdown.hidden = false;
         }).start();
       // resetTarget();
   }

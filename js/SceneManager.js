@@ -549,15 +549,17 @@ const leafYellow = new Particle(50, 0xe38e1c, 5, "leaf", true, 'leaf7.png' );
 const leafRed = new Particle(75, 0xe38e1c, 5, "leaf", true, 'leaf.png' );
 */
 const sun = createSun();
-
+let dropdown = document.getElementById('seasonDropdown');
 
 function render(){
   requestAnimationFrame( render );
   if (intro) {
+    dropdown.hidden = true;
     controls.update();
     TWEEN.update();
     camera.lookAt(new THREE.Vector3(0,0,0));
   } else {
+    dropdown.hidden = false;
     controls.enabled = true;
     controls.update();
     TWEEN.update();
@@ -583,10 +585,12 @@ function render(){
       //scene.fog = false;
     }
 
+    // let seasonsDropdown = document.getElementById('seasonCard');
     if (!animating) {
-      controls.enabled = true;
+      // controls.enabled = true;
       controls.update();
     } else {
+      dropdown.hidden = true;
        controls.update();
 
     }
