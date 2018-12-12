@@ -34,6 +34,7 @@ async function init(){
 
 
 
+
   //Load correct season by current month (loads not current but upcoming season)
   function seasonActualizer() {
     let date = new Date
@@ -147,7 +148,7 @@ async function seasonChanger(season){
     document.getElementById('loadingScreen').style.opacity = 1;
     // Select Model for Placement
     if (modelPlacementMode) {
-      await testGlb(winter.ski);
+       testGlb(winter.ski);
     }
 
     for (var key in allSeasons){
