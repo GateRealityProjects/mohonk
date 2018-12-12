@@ -3,20 +3,20 @@
     "name": "Ice Skating",
     "seasonNames": "Winter",
     "description": "Glide across the ice on our award-winning skating rink, perched high above the lake in our outdoor Pavilion. In between skating sessions, warm up with a hot chocolate in front of our 39-foot-tall stone fireplace.",
-    "path": "assets/models/iceSkating/IceSkating.gltf",
+    "path": "assets/models/Pavilion/Pavilion.glb",
     "position": {
       "x": "2.302",
       "y": "2.27",
       "z": "10.66"
     },
     "scale": {
-      "x": ".001",
-      "y": ".001",
-      "z": ".001"
+      "x": ".008",
+      "y": ".008",
+      "z": ".008"
     },
     "rotation": {
       "x": 0,
-      "y": 0,
+      "y": 2.4,
       "z": 0
     },
     "cameraPosition": {

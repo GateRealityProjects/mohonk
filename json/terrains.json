@@ -2,7 +2,7 @@
   "winterTerrain": {
     "name": "winterTerrain",
     "description": "",
-    "path": "assets/models/terrain/Winter_Static.gltf",
+    "path": "assets/models/terrain/winterTerrFinal.gltf",
     "position": {
       "x": 0,
       "y": 0,
