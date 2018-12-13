@@ -588,9 +588,9 @@
       "name": "TAN",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          1,
-          0.898039,
-          0.8,
+          0.376,
+          0.282,
+          0.039,
           1
         ],
         "metallicFactor": 0,
@@ -608,9 +608,9 @@
       "name": "_22",
       "pbrMetallicRoughness": {
         "baseColorFactor": [
-          0.12549,
-          0.568627,
-          0.086275,
+          0.376,
+          0.282,
+          0.039,
           1
         ],
         "metallicFactor": 0,
