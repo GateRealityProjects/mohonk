@@ -50,8 +50,10 @@ async function init(){
       return 4;
     } else if (winter.includes(month)) {
       return 1;
-    } else {
+    } else if (spring.includes(month)){
       return 2;
+    } else {
+      return 1
     }
   }
 
@@ -358,6 +360,7 @@ function endIntro(){
   // introTween4.chain().onComplete(() => {
   controls.autoRotateSpeed = 15;
   controls.autoRotate = true;
+
 
   setTimeout( () => {
     controls.autoRotate = false;
