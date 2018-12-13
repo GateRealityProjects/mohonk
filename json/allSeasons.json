@@ -3,7 +3,7 @@
     "name": "Sky Top Tower",
     "seasonNames": "All Seasons",
     "description": "If you only take one hike while you're here, you have to visit the iconic Sky Top Tower that can be seen from several miles away. Once you arrive, take the steps all the way up the tower-you'll feel on top of the world!",
-    "path": "assets/models/tower/Tower.glb",
+    "path": "assets/models/tower/Tower.gltf",
     "position": {
       "x": "-3.2",
       "y": "3.3",
