@@ -349,13 +349,13 @@ function endIntro(){
   animating = true;
     intro = true;
 
-  let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 1500);
-  let introTween2 = new TWEEN.Tween(camera.position).to({x:-34.7, y:27.2, z:40.6},1500);
-  let introTween3 = new TWEEN.Tween(camera.position).to({x:17.4, y:13.9, z:21.2},1500);
+  let introTween1 = new TWEEN.Tween(camera.position).to({x:-12, y:10, z: -17}, 3000).easing(TWEEN.Easing.Quadratic.Out);
+  let introTween2 = new TWEEN.Tween(camera.position).to({x:-34.7, y:27.2, z:40.6},3000).easing(TWEEN.Easing.Quadratic.Out);
+  let introTween3 = new TWEEN.Tween(camera.position).to({x:17.4, y:13.9, z:21.2},3000).easing(TWEEN.Easing.Quadratic.Out);
   let introTween4 = new TWEEN.Tween(camera.position).to({
     x:25.782090662513703,
     y:11.134940132457546,
-    z:-12.473035288834451}, 1500);
+    z:-12.473035288834451}, 3000).easing(TWEEN.Easing.Quadratic.Out);
 
   introTween1.chain(introTween2);
   introTween2.chain(introTween3);
